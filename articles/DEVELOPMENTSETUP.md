@@ -29,7 +29,7 @@ To clone to your local system, first navigate to the main page of the repository
 $ git clone [your_url.goes/here]
 ```
 
-This should creat a new directory inside your current directory that holds a copy of the repository. You should only have to do this once; getting a more up to date version after the repository is already cloned only requires you to run `$ git pull` in the terminal.
+This should create a new directory inside your current directory that holds a copy of the repository. You should only have to do this once; getting a more up to date version after the repository is already cloned only requires you to run `$ git pull` in the terminal.
 
 ## Yarn
 
