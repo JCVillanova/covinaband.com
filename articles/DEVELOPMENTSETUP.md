@@ -32,7 +32,23 @@ $ git clone [your_url.goes/here]
 This should creat a new directory inside your current directory that holds a copy of the repository. You should only have to do this once; getting a more up to date version after the repository is already cloned only requires you to run `$ git pull` in the terminal.
 
 ## Yarn
+Yarn is a package manager that handles all of the website's dependencies, making the development process much smoother. To see if you have Yarn already, type this into your terminal:
+```
+$ yarn --version
+```
 
+This should return something like this (similarly to Git, the actual version number may vary):
+```
+1.22.22
+```
+
+Assuming you don't have Yarn, you can install it (on Debian-based systems) with this:
+```
+$ npm install --global yarn
+```
+If you don't have NPM, go download [Node.js](https://nodejs.org/en) (which comes bundled with NPM), then run the above command again.
+
+Once Yarn is fully set up, you should be able to run `$ yarn dev` while in the directory of your local repository, and Yarn will locally host the website, giving you a URL to access it through (for example, `localhost:3000`). Going to that URL on a browser should display the website if everything has been set up properly.
 
 ## Typescript
 
