@@ -31,7 +31,10 @@ $ git clone [your_url.goes/here]
 
 This should create a new directory inside your current directory that holds a copy of the repository. You should only have to do this once; getting a more up to date version after the repository is already cloned only requires you to run `$ git pull` in the terminal.
 
+
 ## Yarn
+You will need Node.js installed in order to install Yarn. For help on installing Node.js, see their [website](https://nodejs.org/en).
+
 Yarn is a package manager that handles all of the website's dependencies, making the development process much smoother. To see if you have Yarn already, type this into your terminal:
 ```
 $ yarn --version
@@ -48,12 +51,6 @@ $ npm install --global yarn
 ```
 If you don't have NPM, go download [Node.js](https://nodejs.org/en) (which comes bundled with NPM), then run the above command again.
 
-Once Yarn is fully set up, you should be able to run `$ yarn dev` while in the directory of your local repository, and Yarn will locally host the website, giving you a URL to access it through (for example, `localhost:3000`). Going to that URL on a browser should display the website if everything has been set up properly.
+Once Yarn is fully set up, run the command `$ yarn install` while in the root directory of the cloned repository. Yarn will then handle the installation of the remaining dependencies of the website (TypeScript, React, and Material UI).
 
-## Typescript
-
-
-## React
-
-
-## Material UI
+You should then be able to run `$ yarn dev` while in the directory of your local repository, and Yarn will start a local development server that hosts the website, giving you a URL to access it through (for example, `localhost:3000`). Going to that URL on a browser should display the website if everything has been set up properly. The server set up by Yarn will also watch for any changes in the local codebase, meaning you can make changes and see the results in your browser in real time.
