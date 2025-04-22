@@ -6,6 +6,31 @@ import "@fontsource/montserrat";
 
 const theme = createTheme({
     components: {
+        MuiButton: {
+            defaultProps: {
+                disableElevation: true,
+            },
+            styleOverrides: {
+                sizeLarge: {
+                    borderColor: '#fcfcfc',
+                    borderRadius: '1rem',
+                    color: '#fcfcfc',
+                    fontSize: '2rem',
+                    padding: '1.5rem 3rem',
+                },
+                sizeMedium: {
+                    borderColor: '#fcfcfc',
+                    color: '#fcfcfc',
+                },
+                sizeSmall: {
+                    borderColor: '#fcfcfc',
+                    color: '#fcfcfc',
+                },
+                endIcon: {
+
+                },
+            }
+        },
         MuiCssBaseline: {
             styleOverrides: {
                 '*, ::before, ::after': {
@@ -15,7 +40,7 @@ const theme = createTheme({
                     margin: 0,
                 },
                 'body': {
-                    backgroundColor: '#585b5c',
+                    backgroundColor: '#26282e',
                     lineHeight: 1.5,
                     '-webkit-font-smoothing': 'antialiased',
                 },
@@ -30,6 +55,13 @@ const theme = createTheme({
                 },
                 'p, h1, h2, h3, h4, h5, h6': {
                     overflowWrap: 'break-word',
+                },
+            },
+        },
+        MuiDivider: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#fcfcfc',
                 },
             },
         },
@@ -53,22 +85,34 @@ theme.typography = {
     ...theme.typography,
 
     h1: {
+        color: '#80263F',
         fontFamily,
-        fontSize: '5rem',
-        lineHeight: 1.2,
+        fontSize: '4rem',
+        lineHeight: 1,
+        margin: '1.5rem 1rem',
     },
     h2: {
         color: '#fcfcfc',
         fontFamily,
         fontSize: '3rem',
-        fontWeight: 600,
-        lineHeight: 1.2,
+        fontWeight: 400,
+        letterSpacing: 8,
+        lineHeight: 1,
+        margin: '1.5rem 1rem',
     },
     body1: {
         color: '#fcfcfc',
         fontFamily,
         fontSize: '1.25rem',
+        lineHeight: 1.5,
+        margin: '1.5rem 1rem',
     },
+    button: {
+        fontFamily,
+        fontSize: '1.25rem',
+        lineHeight: 1,
+        margin: '1rem',
+    }
 }
 
 export default theme;
