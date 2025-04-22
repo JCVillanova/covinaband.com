@@ -7,11 +7,20 @@ export default function Homepage() {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Box sx={{ p: 2 }}>
-                <Typography variant="h1" component="h1">
-                    Covina Band & Color Guard
+                <Typography 
+                    variant="h1"
+                    component="h1"
+                    sx={{
+                        color: '#80263F',
+                    }}
+                >
+                    Covina High School
+                </Typography>
+                <Typography variant="h2" component="h2">
+                    Band & Guard
                 </Typography>
                 <Typography variant="body1">
-                    Something something something something something something something something something something something something something
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes.
                 </Typography>
             </Box>
         </ThemeProvider>
