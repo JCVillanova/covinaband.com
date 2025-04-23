@@ -1,4 +1,6 @@
 {
+    "private": false,
+    "homepage": "httpd://jcvillanova.github.io/covinaband.com/",
     "scripts": {
         "dev": "next dev"
     },
