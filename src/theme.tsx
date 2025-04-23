@@ -16,7 +16,17 @@ const theme = createTheme({
                     borderRadius: '1rem',
                     color: '#fcfcfc',
                     fontSize: '2rem',
+                    overflow: 'hidden',
                     padding: '1.5rem 3rem',
+                    '&:hover': {
+                        backgroundColor: '#6c6c6c',
+                    },
+                    '&:hover > .button-anim': {
+                        animation: 'diagonal-anim-in 0.4s both',
+                    },
+                    '> .button-anim': {
+                        animation: 'diagonal-anim-out 0.4s both',
+                    },
                 },
                 sizeMedium: {
                     borderColor: '#fcfcfc',
@@ -56,6 +66,20 @@ const theme = createTheme({
                 'p, h1, h2, h3, h4, h5, h6': {
                     overflowWrap: 'break-word',
                 },
+                '@keyframes diagonal-anim-in': {
+                    '0%': {},
+                    '100%': {
+                        right: '-65%',
+                    },
+                },
+                '@keyframes diagonal-anim-out': {
+                    '0%': {
+                        right: '-65%'
+                    },
+                    '100%': {
+                        right: '-200%',
+                    }
+                }
             },
         },
         MuiDivider: {
@@ -65,6 +89,10 @@ const theme = createTheme({
                 },
             },
         },
+        MuiTypography: {
+            styleOverrides: {
+            }
+        }
     },
     palette: {
         primary: {
@@ -111,8 +139,8 @@ theme.typography = {
         fontFamily,
         fontSize: '1.25rem',
         lineHeight: 1,
-        margin: '1rem',
-    }
+        margin: '0 1rem',
+    },
 }
 
 export default theme;

@@ -25,7 +25,27 @@ export default function Homepage() {
                     Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes.
                 </Typography>
                 <Button variant='outlined' size='large'>
-                    Join Now
+                    <Box
+                        className='button-anim'
+                        sx={{
+                            backgroundColor: '#6c6c6c',
+                            bottom: '-200%',
+                            height: '500%',
+                            position: 'absolute',
+                            right: '85%',
+                            width: '200%',
+                            '-webkit-transform': 'skewY(-45deg)',
+                        }}
+                    ></Box>
+                    <Typography
+                        className='button-text'
+                        sx={{
+                            fontSize: '2rem',
+                            lineHeight: 1,
+                            margin: '0 1rem',
+                            zIndex: 1,
+                        }}
+                    >Join Now</Typography>
                 </Button>
             </Box>
         </ThemeProvider>
