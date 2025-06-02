@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Box, Button, CssBaseline, Divider, ThemeProvider, Typography } from '@mui/material';
 import theme from '../theme';
 
-function ClickableButton({ buttonSize }) {
+function ClickableButton({ buttonSize, buttonText }) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
@@ -20,22 +20,26 @@ function ClickableButton({ buttonSize }) {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-                <Button variant='outlined' size={buttonSize}
+                <Button 
+                    variant='outlined' 
+                    size={ buttonSize }
                     onClick={handleClick}
+                    sx={{
+                        position: 'relative',
+                    }}
                 >
-                    <Box
-                        className='button-anim'
+                    <Box // Lighter box that fades in on hover (and fades back out)
+                        className='button-hover-anim'
                         sx={{
                             backgroundColor: '#6c6c6c',
-                            bottom: '-200%',
-                            height: '500%',
+                            height: '120%',
+                            inset: 0,
+                            opacity: 0,
                             position: 'absolute',
-                            right: '85%',
-                            width: '200%',
-                            '-webkit-transform': 'skewY(-45deg)',
+                            width: '120%',
                         }}
                     ></Box>
-                    <Box
+                    <Box // Another diagonal box that expands from center of button on click (then shrinks)
                         className={`button-click-anim ${clicked ? 'clicked' : ''}`}
                         sx={{
                             backgroundColor: '#8c8c8c',
@@ -50,12 +54,13 @@ function ClickableButton({ buttonSize }) {
                     <Typography
                         className='button-text'
                         sx={{
+                            // Change the font size of text based on button's size
                             fontSize: buttonSize == 'large' ? '2rem' : buttonSize == 'medium' ? '1.5rem' : '1rem',
                             lineHeight: 1,
                             margin: '0 1rem',
                             zIndex: 1,
                         }}
-                    >Join Now</Typography>
+                    >{ buttonText }</Typography>
                 </Button>
         </ThemeProvider>
     );

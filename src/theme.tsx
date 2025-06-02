@@ -25,14 +25,14 @@ const theme = createTheme({
                     fontSize: '2rem',
                     overflow: 'hidden',
                     padding: '1.5rem 3rem',
-                    '&:hover > .button-anim': {
-                        animation: 'diagonal-anim-in 0.4s both',
+                    '&:hover > .button-hover-anim': {
+                        animation: 'fade-anim-in 0.4s both',
                     },
                     '.button-click-anim.clicked': {
                         animation: 'diagonal-anim-expand 0.4s both',
                     },
-                    '> .button-anim': {
-                        animation: 'diagonal-anim-out 0.4s both',
+                    '> .button-hover-anim': {
+                        animation: 'fade-anim-out 0.4s both',
                     },
                 },
                 sizeMedium: {
@@ -42,14 +42,14 @@ const theme = createTheme({
                     fontSize: '1.5rem',
                     overflow: 'hidden',
                     padding: '1rem 2rem',
-                    '&:hover > .button-anim': {
-                        animation: 'diagonal-anim-in 0.4s both',
+                    '&:hover > .button-hover-anim': {
+                        animation: 'fade-anim-in 0.4s both',
                     },
                     '.button-click-anim.clicked': {
                         animation: 'diagonal-anim-expand 0.4s both',
                     },
-                    '> .button-anim': {
-                        animation: 'diagonal-anim-out 0.4s both',
+                    '> .button-hover-anim': {
+                        animation: 'fade-anim-out 0.4s both',
                     },
                 },
                 sizeSmall: {
@@ -59,14 +59,14 @@ const theme = createTheme({
                     fontSize: '1rem',
                     overflow: 'hidden',
                     padding: '0.75rem 1.5rem',
-                    '&:hover > .button-anim': {
-                        animation: 'diagonal-anim-in 0.4s both',
+                    '&:hover > .button-hover-anim': {
+                        animation: 'fade-anim-in 0.4s both',
                     },
                     '.button-click-anim.clicked': {
                         animation: 'diagonal-anim-expand 0.4s both',
                     },
-                    '> .button-anim': {
-                        animation: 'diagonal-anim-out 0.4s both',
+                    '> .button-hover-anim': {
+                        animation: 'fade-anim-out 0.4s both',
                     },
                 },
                 endIcon: {
@@ -99,18 +99,20 @@ const theme = createTheme({
                 'p, h1, h2, h3, h4, h5, h6': {
                     overflowWrap: 'break-word',
                 },
-                '@keyframes diagonal-anim-in': {
-                    '0%': {},
+                '@keyframes fade-anim-in': {
+                    '0%': {
+                        opacity: 0,
+                    },
                     '100%': {
-                        right: '-55%',
+                        opacity: 100,
                     },
                 },
-                '@keyframes diagonal-anim-out': {
+                '@keyframes fade-anim-out': {
                     '0%': {
-                        right: '-55%'
+                        opacity: 100,
                     },
                     '100%': {
-                        right: '-190%',
+                        opacity: 0,
                     }
                 },
                 '@keyframes diagonal-anim-expand': {
