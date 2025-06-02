@@ -6,6 +6,12 @@ import "@fontsource/montserrat";
 
 const theme = createTheme({
     components: {
+        MuiButtonBase: {
+            defaultProps: {
+                disableRipple: true,
+                disableTouchRipple: true,
+            },
+        },
         MuiButton: {
             defaultProps: {
                 disableElevation: true,
@@ -18,11 +24,11 @@ const theme = createTheme({
                     fontSize: '2rem',
                     overflow: 'hidden',
                     padding: '1.5rem 3rem',
-                    '&:hover': {
-                        backgroundColor: '#6c6c6c',
-                    },
                     '&:hover > .button-anim': {
                         animation: 'diagonal-anim-in 0.4s both',
+                    },
+                    '.button-click-anim.clicked': {
+                        animation: 'diagonal-anim-expand 0.4s both',
                     },
                     '> .button-anim': {
                         animation: 'diagonal-anim-out 0.4s both',
@@ -69,17 +75,24 @@ const theme = createTheme({
                 '@keyframes diagonal-anim-in': {
                     '0%': {},
                     '100%': {
-                        right: '-65%',
+                        right: '-55%',
                     },
                 },
                 '@keyframes diagonal-anim-out': {
                     '0%': {
-                        right: '-65%'
+                        right: '-55%'
                     },
                     '100%': {
-                        right: '-200%',
+                        right: '-190%',
                     }
-                }
+                },
+                '@keyframes diagonal-anim-expand': {
+                    '0%': {},
+                    '100%': {
+                        right: '100%',
+                        width: '200%',
+                    }
+                },
             },
         },
         MuiDivider: {
