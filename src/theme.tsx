@@ -3,6 +3,7 @@ import "@fontsource/montserrat/800.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat";
+import { loadEnvFile } from 'process';
 
 const theme = createTheme({
     components: {
@@ -87,10 +88,21 @@ const theme = createTheme({
                     }
                 },
                 '@keyframes diagonal-anim-expand': {
-                    '0%': {},
-                    '100%': {
-                        right: '100%',
+                    '0%': {
+                        right: '50%',
+                        width: '0%',
+                    },
+                    '25%': {
+                        right: '-50%',
                         width: '200%',
+                    },
+                    '50%': {
+                        right: '-50%',
+                        width: '200%',
+                    },
+                    '100%': {
+                        right: '50%',
+                        width: '0%',
                     }
                 },
             },

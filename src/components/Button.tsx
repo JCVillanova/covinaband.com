@@ -7,7 +7,11 @@ function ClickableButton() {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
-        setClicked(!clicked);
+        setClicked(false);
+        setTimeout(() => {
+            setClicked(true);
+            setTimeout(() => setClicked(false), 400);
+        }, 10);
     };
 
     return (
@@ -36,7 +40,7 @@ function ClickableButton() {
                             height: '500%',
                             position: 'absolute',
                             right: '50%',
-                            width: '1%',
+                            width: '0%',
                             '-webkit-transform': 'skewX(-45deg)',
                         }}
                     ></Box>
