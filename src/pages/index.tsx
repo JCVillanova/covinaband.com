@@ -26,7 +26,9 @@ export default function Homepage() {
                 <Typography variant="body1">
                     Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes.
                 </Typography>
-                <ClickableButton />
+                <ClickableButton buttonSize='small' />
+                <ClickableButton buttonSize='medium' />
+                <ClickableButton buttonSize='large' />
             </Box>
         </ThemeProvider>
     );

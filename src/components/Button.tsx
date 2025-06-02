@@ -3,21 +3,24 @@ import { useState } from 'react';
 import { Box, Button, CssBaseline, Divider, ThemeProvider, Typography } from '@mui/material';
 import theme from '../theme';
 
-function ClickableButton() {
+function ClickableButton({ buttonSize }) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
+        // Immediately reset clicked state to false: this removes the clicked class from the animated component, allowing it to be added
+        // again on a rapid subsequent click (retriggering the animation in case it hasn't finished the first time). This is a rather
+        // unnecessary edgecase, but it's still nice to have
         setClicked(false);
         setTimeout(() => {
             setClicked(true);
-            setTimeout(() => setClicked(false), 400);
+            setTimeout(() => setClicked(false), 400); // Set clicked back to false after the animation plays
         }, 10);
     };
 
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-                <Button variant='outlined' size='large'
+                <Button variant='outlined' size={buttonSize}
                     onClick={handleClick}
                 >
                     <Box
@@ -47,7 +50,7 @@ function ClickableButton() {
                     <Typography
                         className='button-text'
                         sx={{
-                            fontSize: '2rem',
+                            fontSize: buttonSize == 'large' ? '2rem' : buttonSize == 'medium' ? '1.5rem' : '1rem',
                             lineHeight: 1,
                             margin: '0 1rem',
                             zIndex: 1,

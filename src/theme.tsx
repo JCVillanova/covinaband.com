@@ -37,11 +37,37 @@ const theme = createTheme({
                 },
                 sizeMedium: {
                     borderColor: '#fcfcfc',
+                    borderRadius: '0.8rem',
                     color: '#fcfcfc',
+                    fontSize: '1.5rem',
+                    overflow: 'hidden',
+                    padding: '1rem 2rem',
+                    '&:hover > .button-anim': {
+                        animation: 'diagonal-anim-in 0.4s both',
+                    },
+                    '.button-click-anim.clicked': {
+                        animation: 'diagonal-anim-expand 0.4s both',
+                    },
+                    '> .button-anim': {
+                        animation: 'diagonal-anim-out 0.4s both',
+                    },
                 },
                 sizeSmall: {
                     borderColor: '#fcfcfc',
+                    borderRadius: '0.5rem',
                     color: '#fcfcfc',
+                    fontSize: '1rem',
+                    overflow: 'hidden',
+                    padding: '0.75rem 1.5rem',
+                    '&:hover > .button-anim': {
+                        animation: 'diagonal-anim-in 0.4s both',
+                    },
+                    '.button-click-anim.clicked': {
+                        animation: 'diagonal-anim-expand 0.4s both',
+                    },
+                    '> .button-anim': {
+                        animation: 'diagonal-anim-out 0.4s both',
+                    },
                 },
                 endIcon: {
 
