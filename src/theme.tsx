@@ -85,6 +85,7 @@ const theme = createTheme({
                 'body': {
                     backgroundColor: '#26282e',
                     lineHeight: 1.5,
+                    margin: 0,
                     '-webkit-font-smoothing': 'antialiased',
                 },
                 '@media (prefers-reduced-motion: no-preference)': {
@@ -142,10 +143,31 @@ const theme = createTheme({
                 },
             },
         },
+        MuiList: {
+            styleOverrides: {
+                root: {
+                    padding: 0,
+                },
+            }
+        },
+        MuiListItemButton: {
+            styleOverrides: {
+                root: {
+                    padding: 0,
+                },
+            }
+        },
+        MuiListItem: {
+            styleOverrides: {
+                root: {
+                    padding: 0,
+                },
+            }
+        },
         MuiTypography: {
             styleOverrides: {
             }
-        }
+        },
     },
     palette: {
         primary: {
