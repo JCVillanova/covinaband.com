@@ -28,7 +28,7 @@ function ContentList() {
                     </ListItemButton>
                 </ListItem>
                 <ListItem className="navbar-item">
-                    <ListItemButton>
+                    <ListItemButton component='a' href='/'>
                         <ListItemText primary='COVINA BAND&GUARD' />
                     </ListItemButton>
                 </ListItem>
@@ -39,27 +39,27 @@ function ContentList() {
                 }}
             >
                 <ListItem className="navbar-item">
-                    <ListItemButton>
+                    <ListItemButton component='a' href='/Shows'>
                         <ListItemText primary='Shows' />
                     </ListItemButton>
                 </ListItem>
                 <ListItem className="navbar-item">
-                    <ListItemButton>
+                    <ListItemButton component='a' href='/Ensembles'>
                         <ListItemText primary='Ensembles' />
                     </ListItemButton>
                 </ListItem>
                 <ListItem className="navbar-item">
-                    <ListItemButton>
+                    <ListItemButton component='a' href='/Staff'>
                         <ListItemText primary='Staff' />
                     </ListItemButton>
                 </ListItem>
                 <ListItem className="navbar-item">
-                    <ListItemButton>
+                    <ListItemButton component='a' href='/Schedule'>
                         <ListItemText primary='Schedule' />
                     </ListItemButton>
                 </ListItem>
                 <ListItem className="navbar-item">
-                    <ListItemButton>
+                    <ListItemButton component='a' href='/Contact'>
                         <ListItemText primary='Contact' />
                     </ListItemButton>
                 </ListItem>
