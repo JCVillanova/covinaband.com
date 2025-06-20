@@ -12,6 +12,13 @@ const theme = createTheme({
                 disableRipple: true,
                 disableTouchRipple: true,
             },
+            styleOverrides: {
+                root: {
+                    '&:hover': {
+                        background: 'none',
+                    },
+                },
+            },
         },
         MuiButton: {
             defaultProps: {
@@ -116,6 +123,22 @@ const theme = createTheme({
                         opacity: 0,
                     }
                 },
+                '@keyframes background-anim-in': {
+                    '0%': {
+                        backgroundColor: 'transparent',
+                    },
+                    '100%': {
+                        backgroundColor: '#6c6c6c',
+                    },
+                },
+                '@keyframes background-anim-out': {
+                    '0%': {
+                        backgroundColor: '#6c6c6c',
+                    },
+                    '100%': {
+                        backgroundColor: 'transparent',
+                    },
+                },
                 '@keyframes diagonal-anim-expand': {
                     '0%': {
                         right: '50%',
@@ -154,6 +177,12 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     padding: 0,
+                    '&:hover .button-hover-anim': {
+                        animation: 'background-anim-in 0.4s both',
+                    },
+                    '.button-hover-anim': {
+                        animation: 'background-anim-out 0.4s both',
+                    },
                 },
             }
         },
@@ -161,6 +190,9 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     padding: 0,
+                    '&hover': {
+                        backgroundColor: 'transparent',
+                    },
                 },
             }
         },

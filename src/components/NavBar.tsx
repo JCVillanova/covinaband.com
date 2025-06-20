@@ -38,29 +38,111 @@ function ContentList() {
                     display: 'flex',
                 }}
             >
-                <ListItem className="navbar-item">
-                    <ListItemButton component='a' href='/Shows'>
-                        <ListItemText primary='Shows' />
+                <ListItem className='navbar-item'
+                    sx={{
+                        overflow: 'hidden',
+                        width: '40em',
+                    }}
+                >
+                    <ListItemButton component='a' href='/Shows'
+                        sx={{
+                            backgroundColor: 'transparent',
+                            inset: 0,
+                            position: 'absolute',
+                            textAlign: 'center',
+                            transition: 'background-color 0.4s ease',
+                            '&:hover': { backgroundColor: '#6c6c6c' },
+                        }}
+                    >
+                        <ListItemText primary='Shows'/>
                     </ListItemButton>
                 </ListItem>
-                <ListItem className="navbar-item">
-                    <ListItemButton component='a' href='/Ensembles'>
-                        <ListItemText primary='Ensembles' />
+                <ListItem className='navbar-item'
+                    sx={{
+                        overflow: 'hidden',
+                    }}
+                >
+                    <ListItemButton component='a' href='/Ensembles'
+                        sx={{
+                            backgroundColor: 'transparent',
+                            inset: 0,
+                            position: 'absolute',
+                            textAlign: 'center',
+                            transition: 'background-color 0.4s ease',
+                            '&:hover': { backgroundColor: '#6c6c6c' },
+                        }}
+                    >
+                        <ListItemText primary='Ensembles'
+                            sx={{
+                                
+                            }}
+                        />
                     </ListItemButton>
                 </ListItem>
-                <ListItem className="navbar-item">
-                    <ListItemButton component='a' href='/Staff'>
-                        <ListItemText primary='Staff' />
+                <ListItem className='navbar-item'
+                    sx={{
+                        overflow: 'hidden',
+                    }}
+                >
+                    <ListItemButton component='a' href='/Staff'
+                        sx={{
+                            backgroundColor: 'transparent',
+                            inset: 0,
+                            position: 'absolute',
+                            textAlign: 'center',
+                            transition: 'background-color 0.4s ease',
+                            '&:hover': { backgroundColor: '#6c6c6c' },
+                        }}
+                    >
+                        <ListItemText primary='Staff'
+                            sx={{
+                                
+                            }}
+                        />
                     </ListItemButton>
                 </ListItem>
-                <ListItem className="navbar-item">
-                    <ListItemButton component='a' href='/Schedule'>
-                        <ListItemText primary='Schedule' />
+                <ListItem className='navbar-item'
+                    sx={{
+                        overflow: 'hidden',
+                    }}
+                >
+                    <ListItemButton component='a' href='/Schedule'
+                        sx={{
+                            backgroundColor: 'transparent',
+                            inset: 0,
+                            position: 'absolute',
+                            textAlign: 'center',
+                            transition: 'background-color 0.4s ease',
+                            '&:hover': { backgroundColor: '#6c6c6c' },
+                        }}
+                    >
+                        <ListItemText primary='Schedule'
+                            sx={{
+                                
+                            }}
+                        />
                     </ListItemButton>
                 </ListItem>
-                <ListItem className="navbar-item">
-                    <ListItemButton component='a' href='/Contact'>
-                        <ListItemText primary='Contact' />
+                <ListItem className='navbar-item'
+                    sx={{
+                        overflow: 'hidden',
+                    }}
+                >
+                    <ListItemButton component='a' href='/Contact'
+                        sx={{
+                            backgroundColor: 'transparent',
+                            inset: 0,
+                            position: 'absolute',
+                            textAlign: 'center',
+                            transition: 'background-color 0.4s ease',
+                            '&:hover': { backgroundColor: '#6c6c6c' },
+                        }}
+                    >
+                        <ListItemText primary='Contact'
+                            sx={{
+                                
+                            }}
+                        />
                     </ListItemButton>
                 </ListItem>
             </List>
