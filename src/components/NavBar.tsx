@@ -23,12 +23,24 @@ function ContentList() {
                 }}
             >
                 <ListItem className="navbar-item">
-                    <ListItemButton>
+                    <ListItemButton
+                        sx={{
+                            '&:hover': {
+                                backgroundColor: 'transparent',
+                            },
+                        }}
+                    >
                         <ListItemText primary='Image (Placeholder)' />
                     </ListItemButton>
                 </ListItem>
                 <ListItem className="navbar-item">
-                    <ListItemButton component='a' href='/'>
+                    <ListItemButton component='a' href='/'
+                        sx={{
+                            '&:hover': {
+                                backgroundColor: 'transparent',
+                            },
+                        }}
+                    >
                         <ListItemText primary='COVINA BAND&GUARD' />
                     </ListItemButton>
                 </ListItem>
