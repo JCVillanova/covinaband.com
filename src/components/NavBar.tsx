@@ -23,19 +23,20 @@ function ContentList() {
                 }}
             >
                 <ListItem className="navbar-item">
-                    <ListItemButton
+                    <Box component='img'
                         sx={{
-                            '&:hover': {
-                                backgroundColor: 'transparent',
-                            },
+                            marginLeft: '1.5rem',
+                            marginRight: '1.5rem',
+                            width: '4rem',
                         }}
-                    >
-                        <ListItemText primary='Image (Placeholder)' />
-                    </ListItemButton>
+                        alt="Covina High School's logo"
+                        src="/assets/images/icons/covina-logo.png"
+                    />
                 </ListItem>
                 <ListItem className="navbar-item">
                     <ListItemButton component='a' href='/'
                         sx={{
+                            whiteSpace: 'nowrap',
                             '&:hover': {
                                 backgroundColor: 'transparent',
                             },
