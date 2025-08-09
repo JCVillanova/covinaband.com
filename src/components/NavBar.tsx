@@ -33,9 +33,15 @@ function ContentList() {
                     </ListItemButton>
                 </ListItem>
             </List>
+            <Box
+                sx={{
+                    width: '50rem',
+                }}
+            />
             <List // Right hand side of the navbar---various links
                 sx={{
                     display: 'flex',
+                    flex: '1 1'
                 }}
             >
                 <ListItem className='navbar-item'
