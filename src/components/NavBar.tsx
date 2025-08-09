@@ -26,8 +26,9 @@ function ContentList() {
                 <ListItem className="navbar-item">
                     <Box component='img'
                         sx={{
-                            marginLeft: '1.5rem',
-                            marginRight: '1.5rem',
+                            flex: '0 0 auto',
+                            marginLeft: '1rem',
+                            marginRight: '0.5rem',
                             width: '2.5rem',
                         }}
                         alt="Covina High School's logo"
@@ -37,13 +38,25 @@ function ContentList() {
                 <ListItem className="navbar-item">
                     <ListItemButton component='a' href='/'
                         sx={{
+                            flex: '0 0 auto',
+                            fontWeight: 'bold',
                             whiteSpace: 'nowrap',
                             '&:hover': {
                                 backgroundColor: 'transparent',
                             },
                         }}
                     >
-                        <ListItemText primary='COVINA BAND&GUARD' />
+                        <ListItemText primary='COVINA ' 
+                            sx={{ margin: '0px' }}
+                            slotProps={{
+                                primary: { sx: { color: theme.palette.text.secondary, margin: '0px' } }
+                            }}
+                        />
+                        <ListItemText primary='BAND&GUARD' sx={{ margin: '0' }}
+                            slotProps={{
+                                primary: { sx: { margin: '0 0 0 0.5rem' } }
+                            }}
+                        />
                     </ListItemButton>
                 </ListItem>
             </List>

@@ -3,7 +3,7 @@ import "@fontsource/montserrat/800.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat";
-import { loadEnvFile } from 'process';
+import { PaletteOptions } from '@mui/material/styles';
 
 const theme = createTheme({
     components: {
@@ -202,8 +202,9 @@ const theme = createTheme({
         },
     },
     palette: {
-        primary: {
-            main: '#303030',
+        text: {
+            primary: '#FCFCFC',
+            secondary: '#80263F'
         },
         secondary: {
             main: '#B0B0B0',
