@@ -14,6 +14,7 @@ function ContentList() {
             sx={{
                 border: '1px solid white',
                 display: 'flex',
+                height: '4rem',
                 justifyContent: 'space-between',
             }}
         >
@@ -27,7 +28,7 @@ function ContentList() {
                         sx={{
                             marginLeft: '1.5rem',
                             marginRight: '1.5rem',
-                            width: '4rem',
+                            width: '2.5rem',
                         }}
                         alt="Covina High School's logo"
                         src="/assets/images/icons/covina-logo.png"
