@@ -190,6 +190,15 @@ const theme = createTheme({
                 },
             },
         },
+        MuiOutlinedInput: {
+            styleOverrides: {
+                root: {
+                    '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                        borderColor: palette.text.secondary,
+                    },
+                },
+            },
+        },
         MuiInputLabel: {
             styleOverrides: {
                 root: ({ theme }) => ({
