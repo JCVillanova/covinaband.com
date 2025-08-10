@@ -5,7 +5,22 @@ import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat";
 import { PaletteOptions } from '@mui/material/styles';
 
+const palette = {
+    text: {
+        primary: '#FCFCFC',
+        secondary: '#80263F'
+    },
+    secondary: {
+        main: '#6C6C6C',
+    },
+    background: {
+        default: '#12141A',
+        other: '#3d181c',
+    }
+};
+
 const theme = createTheme({
+    palette,
     components: {
         MuiButtonBase: {
             defaultProps: {
@@ -90,7 +105,7 @@ const theme = createTheme({
                     margin: 0,
                 },
                 'body': {
-                    backgroundColor: '#26282e',
+                    backgroundColor: '#12141a',
                     lineHeight: 1.5,
                     margin: 0,
                     '-webkit-font-smoothing': 'antialiased',
@@ -166,6 +181,25 @@ const theme = createTheme({
                 },
             },
         },
+        MuiFilledInput: {
+            styleOverrides: {
+                underline: {
+                    '&:after': {
+                        borderBottomColor: palette.text.secondary,
+                    },
+                },
+            },
+        },
+        MuiInputLabel: {
+            styleOverrides: {
+                root: ({ theme }) => ({
+                    color: theme.palette.text.primary,
+                    '&.Mui-focused': {
+                        color: theme.palette.text.secondary,
+                    },
+                }),
+            },
+        },
         MuiList: {
             styleOverrides: {
                 root: {
@@ -196,18 +230,22 @@ const theme = createTheme({
                 },
             }
         },
+        MuiTextField: {
+            styleOverrides: {
+                root: ({ theme }) => ({
+                    input: {
+                        backgroundColor: theme.palette.secondary.main,
+                        color: theme.palette.text.primary,
+                    },
+                    select: {
+                        color: theme.palette.text.secondary,
+                    },
+                }),
+            }
+        },
         MuiTypography: {
             styleOverrides: {
             }
-        },
-    },
-    palette: {
-        text: {
-            primary: '#FCFCFC',
-            secondary: '#80263F'
-        },
-        secondary: {
-            main: '#B0B0B0',
         },
     },
     typography: {
@@ -221,7 +259,7 @@ theme.typography = {
     ...theme.typography,
 
     h1: {
-        color: '#80263F',
+        color: theme.palette.text.secondary,
         fontFamily,
         fontSize: '4rem',
         lineHeight: 1,
