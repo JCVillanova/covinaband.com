@@ -15,10 +15,17 @@ const palette = {
         light: '#A0465F',
         dark: '#400018',
     },
+    darkgray: {
+        main: '#1C1E24',
+        light: '#22242A',
+        dark: '#12141A',
+        contrastText: '#FCFCFC',
+    },
     lightgray: {
         main: '#6C6C6C',
         light: '#878787',
         dark: '#4C4C4C',
+        contrastText: '#FCFCFC',
     },
     background: {
         default: '#12141A',
@@ -117,6 +124,8 @@ const theme = createTheme({
                 },
                 'body': {
                     backgroundColor: '#12141a',
+                    display: 'flex',
+                    flexDirection: 'column',
                     lineHeight: 1.5,
                     margin: 0,
                     '-webkit-font-smoothing': 'antialiased',
@@ -278,8 +287,13 @@ const theme = createTheme({
             }
         },
         MuiTypography: {
+            defaultProps: {
+                variantMapping: {
+                    body2: 'span',
+                },
+            },
             styleOverrides: {
-            }
+            },
         },
     },
     typography: {
@@ -309,6 +323,13 @@ theme.typography = {
         margin: '1.5rem 1rem',
     },
     body1: {
+        color: '#fcfcfc',
+        fontFamily,
+        fontSize: '1.25rem',
+        lineHeight: 1.5,
+        margin: '1.5rem 1rem',
+    },
+    body2: {
         color: '#fcfcfc',
         fontFamily,
         fontSize: '1.25rem',

@@ -12,9 +12,10 @@ function ContentList() {
     return (
         <Box
             sx={{
-                border: '1px solid white',
+                borderBottom: '2px solid',
+                borderColor: theme.palette.red.main,
                 display: 'flex',
-                height: '4rem',
+                height: '6vh',
                 justifyContent: 'space-between',
             }}
         >

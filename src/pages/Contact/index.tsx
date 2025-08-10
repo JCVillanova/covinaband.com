@@ -18,7 +18,7 @@ export default function Contact() {
             <NavBar />
             <Box className='secondary-bg'
                 sx={{
-                    height: '100vh',
+                    height: '94vh',
                     padding: '2rem 0',
                 }}
             >
@@ -39,43 +39,68 @@ export default function Contact() {
                     >
                         CONTACT US
                     </Typography>
-                    <Divider variant='middle' sx={{ margin: '0' }}/>
-                    <Typography variant='body1'
+                    <Divider variant='middle' sx={{ margin: '0 0 1.5rem' }}/>
+                    <Typography variant='body2'
                         sx={{
                             margin: '1.5rem 0 0',
                         }}
                     >
                         Name
                     </Typography>
-                    <TextField label='First' variant='outlined'
+                    <Typography variant='body2'
                         sx={{
-                            '& .MuiOutlinedInput-root': {
-                                margin: '0.5rem 0 1.5rem',
-                            },
-                            '& .MuiInputLabel-root': {
-                                margin: '0.5rem 0 1.5rem',
-                            },
+                            color: theme.palette.red.main,
+                            marginLeft: '0.25rem',
                         }}
-                    />
-                    <TextField label='Last' variant='outlined'
+                    >
+                        *
+                    </Typography>
+                    <Box
                         sx={{
-                            '& .MuiOutlinedInput-root': {
-                                margin: '0.5rem 0 1.5rem 1rem',
-                            },
-                            '& .MuiInputLabel-root': {
-                                margin: '0.5rem 0 1.5rem 1rem',
-                            },
+                            display: 'flex',
                         }}
-                    />
-                    <Typography variant='body1'
+                    >
+                        <TextField label='First' variant='outlined'
+                            sx={{
+                                flex: '1 1 auto',
+                                '& .MuiOutlinedInput-root': {
+                                    margin: '0.5rem 0 1.5rem',
+                                },
+                                '& .MuiInputLabel-root': {
+                                    margin: '0.5rem 0 1.5rem',
+                                },
+                            }}
+                        />
+                        <TextField label='Last' variant='outlined'
+                            sx={{
+                                flex: '1 1 auto',
+                                '& .MuiOutlinedInput-root': {
+                                    margin: '0.5rem 0 1.5rem 1rem',
+                                },
+                                '& .MuiInputLabel-root': {
+                                    margin: '0.5rem 0 1.5rem 1rem',
+                                },
+                            }}
+                        />
+                    </Box>
+                    <Typography variant='body2'
                         sx={{
                             margin: '0',
                         }}
                     >
                         Email
                     </Typography>
+                    <Typography variant='body2'
+                        sx={{
+                            color: theme.palette.red.main,
+                            marginLeft: '0.25rem',
+                        }}
+                    >
+                        *
+                    </Typography>
                     <TextField variant='outlined'
                         sx={{
+                            width: '100%',
                             '& .MuiOutlinedInput-root': {
                                 margin: '0.5rem 0 1.5rem',
                             },
@@ -93,6 +118,7 @@ export default function Contact() {
                     </Typography>
                     <TextField variant='outlined'
                         sx={{
+                            width: '100%',
                             '& .MuiOutlinedInput-root': {
                                 margin: '0.5rem 0 1.5rem',
                             },
@@ -101,12 +127,20 @@ export default function Contact() {
                             },
                         }}
                     />
-                    <Typography variant='body1'
+                    <Typography variant='body2'
                         sx={{
                             margin: '0',
                         }}
                     >
                         Message
+                    </Typography>
+                    <Typography variant='body2'
+                        sx={{
+                            color: theme.palette.red.main,
+                            marginLeft: '0.25rem',
+                        }}
+                    >
+                        *
                     </Typography>
                     <TextField multiline='true' rows='4' variant='outlined'
                         sx={{
