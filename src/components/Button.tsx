@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Box, Button, CssBaseline, Divider, ThemeProvider, Typography } from '@mui/material';
 import theme from '../theme';
 
-function ClickableButton({ buttonSize, buttonText }) {
+function ClickableButton({ buttonSize, buttonText, sx }) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
@@ -24,9 +24,7 @@ function ClickableButton({ buttonSize, buttonText }) {
                     variant='outlined' 
                     size={ buttonSize }
                     onClick={handleClick}
-                    sx={{
-                        position: 'relative',
-                    }}
+                    sx={sx}
                 >
                     <Box // Lighter box that fades in on hover (and fades back out)
                         className='button-hover-anim'
@@ -37,6 +35,7 @@ function ClickableButton({ buttonSize, buttonText }) {
                             opacity: 0,
                             position: 'absolute',
                             width: '120%',
+                            zIndex: 0,
                         }}
                     ></Box>
                     <Box // Another diagonal box that expands from center of button on click (then shrinks)
@@ -48,6 +47,7 @@ function ClickableButton({ buttonSize, buttonText }) {
                             position: 'absolute',
                             right: '50%',
                             width: '0%',
+                            zIndex: 0,
                             '-webkit-transform': 'skewX(-45deg)',
                         }}
                     ></Box>
@@ -58,6 +58,7 @@ function ClickableButton({ buttonSize, buttonText }) {
                             fontSize: buttonSize == 'large' ? '2rem' : buttonSize == 'medium' ? '1.5rem' : '1rem',
                             lineHeight: 1,
                             margin: '0 1rem',
+                            position: 'relative',
                             zIndex: 1,
                         }}
                     >{ buttonText }</Typography>

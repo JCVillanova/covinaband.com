@@ -8,65 +8,125 @@ import theme from '../../theme';
 export default function Contact() {
     return (
         <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <NavBar />
-            <Box
+            <CssBaseline 
                 sx={{
-                    margin: 'auto',
-                    width: '45vw',
+                    'body': {
+                        backgroundColor: theme.palette.red.dark,
+                    }
+                }}
+            />
+            <NavBar />
+            <Box className='secondary-bg'
+                sx={{
+                    height: '100vh',
+                    padding: '2rem 0',
                 }}
             >
-                <Typography variant='h2' component='h2' sx={{ textAlign: 'center' }}>
-                    CONTACT US
-                </Typography>
-                <Divider variant='middle'/>
-                <Typography variant='body1'
+                <Box
                     sx={{
-                        marginBottom: '0',
+                        backgroundColor: theme.palette.lightgray.light,
+                        borderRadius: '2rem',
+                        margin: 'auto',
+                        padding: '2rem',
+                        width: '45vw',
                     }}
                 >
-                    Name
-                </Typography>
-                <TextField label='First' variant='filled'/>
-                <TextField label='Last' variant='filled'/>
-                <Typography variant='body1'
-                    sx={{
-                        marginBottom: '0',
-                        marginTop: '0',
-                    }}
-                >
-                    Email
-                </Typography>
-                <TextField variant='outlined'/>
-                <Typography variant='body1'
-                    sx={{
-                        marginBottom: '0',
-                        marginTop: '0',
-                    }}
-                >
-                    Phone
-                </Typography>
-                <TextField variant='outlined'/>
-                <Typography variant='body1'
-                    sx={{
-                        marginBottom: '0',
-                        marginTop: '0',
-                    }}
-                >
-                    Message
-                </Typography>
-                <TextField multiline='true' rows='4' variant='outlined'
-                    sx={{
-                        width: '100%',
-                        '& .MuiOutlinedInput-root': {
-                            backgroundColor: theme.palette.secondary.main,
-                        },
-                    }}
-                />
-                <ClickableButton buttonSize='medium' buttonText='Submit'
-                    sx={{
-                    }}
-                />
+                    <Typography variant='h2' component='h2' 
+                        sx={{
+                            margin: '0 0 1.5rem',
+                            textAlign: 'center',
+                        }}
+                    >
+                        CONTACT US
+                    </Typography>
+                    <Divider variant='middle' sx={{ margin: '0' }}/>
+                    <Typography variant='body1'
+                        sx={{
+                            margin: '1.5rem 0 0',
+                        }}
+                    >
+                        Name
+                    </Typography>
+                    <TextField label='First' variant='outlined'
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                margin: '0.5rem 0 1.5rem',
+                            },
+                            '& .MuiInputLabel-root': {
+                                margin: '0.5rem 0 1.5rem',
+                            },
+                        }}
+                    />
+                    <TextField label='Last' variant='outlined'
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                margin: '0.5rem 0 1.5rem 1rem',
+                            },
+                            '& .MuiInputLabel-root': {
+                                margin: '0.5rem 0 1.5rem 1rem',
+                            },
+                        }}
+                    />
+                    <Typography variant='body1'
+                        sx={{
+                            margin: '0',
+                        }}
+                    >
+                        Email
+                    </Typography>
+                    <TextField variant='outlined'
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                margin: '0.5rem 0 1.5rem',
+                            },
+                            '& .MuiInputLabel-root': {
+                                margin: '0.5rem 0 1.5rem',
+                            },
+                        }}
+                    />
+                    <Typography variant='body1'
+                        sx={{
+                            margin: '0',
+                        }}
+                    >
+                        Phone
+                    </Typography>
+                    <TextField variant='outlined'
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                margin: '0.5rem 0 1.5rem',
+                            },
+                            '& .MuiInputLabel-root': {
+                                margin: '0.5rem 0 1.5rem',
+                            },
+                        }}
+                    />
+                    <Typography variant='body1'
+                        sx={{
+                            margin: '0',
+                        }}
+                    >
+                        Message
+                    </Typography>
+                    <TextField multiline='true' rows='4' variant='outlined'
+                        sx={{
+                            width: '100%',
+                            '& .MuiOutlinedInput-root': {
+                                backgroundColor: theme.palette.lightgray.main,
+                                margin: '0.5rem 0 1.5rem',
+                            },
+                            '& .MuiInputLabel-root': {
+                                margin: '0.5rem 0 1.5rem',
+                            },
+                        }}
+                    />
+                    <ClickableButton buttonSize='medium' buttonText='Submit'
+                        sx={{
+                            display: 'block',
+                            mx: 'auto',
+                        }}
+                    />
+                </Box>
             </Box>
         </ThemeProvider>
     );

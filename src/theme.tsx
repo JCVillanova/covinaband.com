@@ -10,8 +10,15 @@ const palette = {
         primary: '#FCFCFC',
         secondary: '#80263F'
     },
-    secondary: {
+    red: {
+        main: '#80263F',
+        light: '#A0465F',
+        dark: '#400018',
+    },
+    lightgray: {
         main: '#6C6C6C',
+        light: '#878787',
+        dark: '#4C4C4C',
     },
     background: {
         default: '#12141A',
@@ -33,6 +40,10 @@ const theme = createTheme({
                         background: 'none',
                     },
                 },
+            },
+        },
+        MuiBox: {
+            styleOverrides: {
             },
         },
         MuiButton: {
@@ -122,6 +133,9 @@ const theme = createTheme({
                 'p, h1, h2, h3, h4, h5, h6': {
                     overflowWrap: 'break-word',
                 },
+                '.secondary-bg': {
+                    backgroundColor: palette.red.dark,
+                },
                 '@keyframes fade-anim-in': {
                     '0%': {
                         opacity: 0,
@@ -181,14 +195,21 @@ const theme = createTheme({
                 },
             },
         },
+        MuiInput: {
+            styleOverrides: {
+                root: {
+                    margin: '0',
+                },
+            },
+        },
         MuiFilledInput: {
             styleOverrides: {
                 root: {
-                    backgroundColor: palette.secondary.main,
+                    backgroundColor: palette.lightgray.main,
                 },
                 underline: {
                     '&:after': {
-                        borderBottomColor: palette.text.secondary,
+                        borderBottomColor: palette.red.main,
                     },
                 },
             },
@@ -196,9 +217,9 @@ const theme = createTheme({
         MuiOutlinedInput: {
             styleOverrides: {
                 root: {
-                    backgroundColor: palette.secondary.main,
+                    backgroundColor: palette.lightgray.main,
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                        borderColor: palette.text.secondary,
+                        borderColor: palette.red.light,
                     },
                 },
             },
@@ -208,7 +229,8 @@ const theme = createTheme({
                 root: ({ theme }) => ({
                     color: theme.palette.text.primary,
                     '&.Mui-focused': {
-                        color: theme.palette.text.secondary,
+                        color: theme.palette.red.light,
+                        fontWeight: '600',
                     },
                 }),
             },
@@ -250,7 +272,7 @@ const theme = createTheme({
                         color: theme.palette.text.primary,
                     },
                     select: {
-                        color: theme.palette.text.secondary,
+                        color: theme.palette.red.main,
                     },
                 }),
             }
@@ -271,7 +293,7 @@ theme.typography = {
     ...theme.typography,
 
     h1: {
-        color: theme.palette.text.secondary,
+        color: theme.palette.red.main,
         fontFamily,
         fontSize: '4rem',
         lineHeight: 1,
