@@ -183,6 +183,9 @@ const theme = createTheme({
         },
         MuiFilledInput: {
             styleOverrides: {
+                root: {
+                    backgroundColor: palette.secondary.main,
+                },
                 underline: {
                     '&:after': {
                         borderBottomColor: palette.text.secondary,
@@ -193,6 +196,7 @@ const theme = createTheme({
         MuiOutlinedInput: {
             styleOverrides: {
                 root: {
+                    backgroundColor: palette.secondary.main,
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
                         borderColor: palette.text.secondary,
                     },
@@ -243,7 +247,6 @@ const theme = createTheme({
             styleOverrides: {
                 root: ({ theme }) => ({
                     input: {
-                        backgroundColor: theme.palette.secondary.main,
                         color: theme.palette.text.primary,
                     },
                     select: {

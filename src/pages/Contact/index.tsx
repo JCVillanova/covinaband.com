@@ -12,11 +12,11 @@ export default function Contact() {
             <NavBar />
             <Box
                 sx={{
-                    margin: '1.5rem 1rem',
+                    margin: 'auto',
                     width: '45vw',
                 }}
             >
-                <Typography variant='h2' component='h2'>
+                <Typography variant='h2' component='h2' sx={{ textAlign: 'center' }}>
                     CONTACT US
                 </Typography>
                 <Divider variant='middle'/>
@@ -32,6 +32,7 @@ export default function Contact() {
                 <Typography variant='body1'
                     sx={{
                         marginBottom: '0',
+                        marginTop: '0',
                     }}
                 >
                     Email
@@ -40,6 +41,7 @@ export default function Contact() {
                 <Typography variant='body1'
                     sx={{
                         marginBottom: '0',
+                        marginTop: '0',
                     }}
                 >
                     Phone
@@ -48,15 +50,21 @@ export default function Contact() {
                 <Typography variant='body1'
                     sx={{
                         marginBottom: '0',
+                        marginTop: '0',
                     }}
                 >
                     Message
                 </Typography>
                 <TextField multiline='true' rows='4' variant='outlined'
                     sx={{
+                        width: '100%',
                         '& .MuiOutlinedInput-root': {
                             backgroundColor: theme.palette.secondary.main,
                         },
+                    }}
+                />
+                <ClickableButton buttonSize='medium' buttonText='Submit'
+                    sx={{
                     }}
                 />
             </Box>
