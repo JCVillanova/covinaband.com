@@ -3,7 +3,6 @@ import "@fontsource/montserrat/800.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat";
-import { PaletteOptions } from '@mui/material/styles';
 
 const palette = {
     text: {
@@ -47,10 +46,6 @@ const theme = createTheme({
                         background: 'none',
                     },
                 },
-            },
-        },
-        MuiBox: {
-            styleOverrides: {
             },
         },
         MuiButton: {
