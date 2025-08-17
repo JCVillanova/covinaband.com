@@ -5,12 +5,11 @@ import NavBar from '../../components/NavBar';
 
 export default function Contact() {
     return (
-        <div className='secondary-bg'>
+        <div className='secondary-bg' style={{ height: '100vh' }}>
             <NavBar />
-            <div className='secondary-bg'
+            <div
                 style={{
-                    height: '94vh',
-                    padding: '2rem 0',
+                    padding: '2rem 0 0',
                 }}
             >
                 <div

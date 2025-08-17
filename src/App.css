@@ -37,7 +37,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+button {
+    animation: border-anim-out 0.4s both;
+    margin: 2px;
+    z-index: 1;
+}
+
 button:hover {
+    animation: border-anim-in 0.4s both;
     cursor: pointer;
 }
 
@@ -70,6 +77,10 @@ h2 {
     letter-spacing: 0.5rem;
     line-height: 1;
     margin: 1.5rem 1rem;
+}
+
+hr {
+    border: 1px solid var(--color-text-primary);
 }
 
 img, picture, video, canvas, svg {
@@ -140,6 +151,36 @@ textarea:focus {
 textarea:hover {
     border: 2px solid var(--color-text-primary);
     outline: none;
+}
+
+.animated-border {
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+}
+
+.animated-border::before {
+    animation: rotate 8s linear infinite;
+    background: linear-gradient(
+        90deg,
+        white
+    );
+    content: '';
+    display: block;
+    height: 300px;
+    position: absolute;
+    width: 300px;
+    z-index: 0;
+}
+
+.animated-border:hover::before {
+    background: linear-gradient(
+        90deg,
+        var(--color-red-main),
+        white
+    );
 }
 
 .form-label {
@@ -266,6 +307,22 @@ textarea:hover {
     justify-content: space-between;
 }
 
+@keyframes border-anim-in {
+    0% {
+    }
+    100% {
+        border-color: var(--color-lightgray-main);
+    }
+}
+
+@keyframes border-anim-out {
+    0% {
+    }
+    100% {
+        border-color: var(--color-text-primary);
+    }
+}
+
 @keyframes fade-anim-in {
     0% {
         opacity: 0;
@@ -310,5 +367,14 @@ textarea:hover {
     100% {
         right: -50%;
         width: 200%;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

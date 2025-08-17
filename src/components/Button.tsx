@@ -16,55 +16,69 @@ function ClickableButton({ className, buttonSize, buttonText, style }) {
     };
 
     return (
-        <div className={className}>
-            <button
-                onClick={handleClick}
+        <div className={className} style={style}>
+            <div
                 style={{
-                    backgroundColor: '#FFFFFF00',
-                    border: '1px solid var(--color-text-primary)',
-                    borderRadius: '0.8rem',
-                    overflow: 'hidden',
-                    padding: '1rem 2rem',
-                    position: 'relative',
+                    borderRadius: buttonSize == 'large' ? '1rem' : buttonSize == 'medium' ? '0.8rem' : '0.5rem',
+                    height: 'fit-content',
+                    width: 'fit-content',
                 }}
             >
-                <div // Lighter box that fades in on hover (and fades back out)
-                    className='button-hover-anim'
+                <div className='animated-border'
                     style={{
-                        backgroundColor: '#6c6c6c',
-                        height: '100%',
-                        inset: 0,
-                        opacity: 0,
-                        position: 'absolute',
-                        width: '100%',
-                        zIndex: 0,
+                        borderRadius: buttonSize == 'large' ? '1rem' : buttonSize == 'medium' ? '0.8rem' : '0.5rem',
                     }}
-                ></div>
-                <div // Another diagonal box that expands from center of button on click (then shrinks)
-                    className={`button-click-anim ${clicked ? 'clicked' : ''}`}
-                    style={{
-                        backgroundColor: '#8c8c8c',
-                        bottom: '-200%',
-                        height: '500%',
-                        position: 'absolute',
-                        right: '50%',
-                        width: '0%',
-                        zIndex: 0,
-                        WebkitTransform: 'skewX(-45deg)',
-                    }}
-                ></div>
-                <p
-                    className='button-text'
-                    style={{
-                        // Change the font size of text based on button's size
-                        fontSize: buttonSize == 'large' ? '2rem' : buttonSize == 'medium' ? '1.5rem' : '1rem',
-                        lineHeight: 1,
-                        margin: '0 1rem',
-                        position: 'relative',
-                        zIndex: 1,
-                    }}
-                >{ buttonText }</p>
-            </button>
+                >
+                    <button
+                        onClick={handleClick}
+                        style={{
+                            backgroundColor: 'var(--color-darkgray-main)',
+                            border: 'none',
+                            borderRadius: buttonSize == 'large' ? '1rem' : buttonSize == 'medium' ? '0.8rem' : '0.5rem',
+                            overflow: 'hidden',
+                            padding: buttonSize == 'large' ? '1.5rem 3rem' : buttonSize == 'medium' ? '1rem 2rem' : '0.75rem 1.5rem',
+                            position: 'relative',
+                        }}
+                    >
+                        <div // Lighter box that fades in on hover (and fades back out)
+                            className='button-hover-anim'
+                            style={{
+                                backgroundColor: '#6c6c6c',
+                                height: '100%',
+                                inset: 0,
+                                opacity: 0,
+                                position: 'absolute',
+                                width: '100%',
+                                zIndex: 0,
+                            }}
+                        ></div>
+                        <div // Another diagonal box that expands from center of button on click (then shrinks)
+                            className={`button-click-anim ${clicked ? 'clicked' : ''}`}
+                            style={{
+                                backgroundColor: '#8c8c8c',
+                                bottom: '-200%',
+                                height: '500%',
+                                position: 'absolute',
+                                right: '50%',
+                                width: '0%',
+                                zIndex: 0,
+                                WebkitTransform: 'skewX(-45deg)',
+                            }}
+                        ></div>
+                        <p
+                            className='button-text'
+                            style={{
+                                // Change the font size of text based on button's size
+                                fontSize: buttonSize == 'large' ? '2rem' : buttonSize == 'medium' ? '1.5rem' : '1rem',
+                                lineHeight: 1,
+                                margin: '0 1rem',
+                                position: 'relative',
+                                zIndex: 1,
+                            }}
+                        >{ buttonText }</p>
+                    </button>
+                </div>
+            </div>
         </div>
     );
 }
