@@ -1,18 +1,13 @@
 import * as React from 'react';
 import useState from 'react';
-import { Box, Button, CssBaseline, Divider, ThemeProvider, Typography } from '@mui/material';
 import ClickableButton from '../../components/Button';
 import NavBar from '../../components/NavBar';
-import theme from '../../theme';
 
 export default function Shows() {
     return (
-        <ThemeProvider theme={theme}>
-            <CssBaseline />
+        <div className='primary-bg'>
             <NavBar />
-            <Typography variant='h2' component='h2'>
-                Shows
-            </Typography>
-        </ThemeProvider>
+            <h2>Shows</h2>
+        </div>
     );
 }

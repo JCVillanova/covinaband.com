@@ -1,9 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Box, Button, CssBaseline, Divider, ThemeProvider, Typography } from '@mui/material';
-import theme from '../theme';
 
-function ClickableButton({ buttonSize, buttonText, sx }) {
+function ClickableButton({ className, buttonSize, buttonText, style }) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
@@ -18,52 +16,56 @@ function ClickableButton({ buttonSize, buttonText, sx }) {
     };
 
     return (
-        <ThemeProvider theme={theme}>
-            <CssBaseline />
-                <Button 
-                    variant='outlined' 
-                    size={ buttonSize }
-                    onClick={handleClick}
-                    sx={sx}
-                >
-                    <Box // Lighter box that fades in on hover (and fades back out)
-                        className='button-hover-anim'
-                        sx={{
-                            backgroundColor: '#6c6c6c',
-                            height: '120%',
-                            inset: 0,
-                            opacity: 0,
-                            position: 'absolute',
-                            width: '120%',
-                            zIndex: 0,
-                        }}
-                    ></Box>
-                    <Box // Another diagonal box that expands from center of button on click (then shrinks)
-                        className={`button-click-anim ${clicked ? 'clicked' : ''}`}
-                        sx={{
-                            backgroundColor: '#8c8c8c',
-                            bottom: '-200%',
-                            height: '500%',
-                            position: 'absolute',
-                            right: '50%',
-                            width: '0%',
-                            zIndex: 0,
-                            '-webkit-transform': 'skewX(-45deg)',
-                        }}
-                    ></Box>
-                    <Typography
-                        className='button-text'
-                        sx={{
-                            // Change the font size of text based on button's size
-                            fontSize: buttonSize == 'large' ? '2rem' : buttonSize == 'medium' ? '1.5rem' : '1rem',
-                            lineHeight: 1,
-                            margin: '0 1rem',
-                            position: 'relative',
-                            zIndex: 1,
-                        }}
-                    >{ buttonText }</Typography>
-                </Button>
-        </ThemeProvider>
+        <div className={className}>
+            <button
+                onClick={handleClick}
+                style={{
+                    backgroundColor: '#FFFFFF00',
+                    border: '1px solid var(--color-text-primary)',
+                    borderRadius: '0.8rem',
+                    overflow: 'hidden',
+                    padding: '1rem 2rem',
+                    position: 'relative',
+                }}
+            >
+                <div // Lighter box that fades in on hover (and fades back out)
+                    className='button-hover-anim'
+                    style={{
+                        backgroundColor: '#6c6c6c',
+                        height: '100%',
+                        inset: 0,
+                        opacity: 0,
+                        position: 'absolute',
+                        width: '100%',
+                        zIndex: 0,
+                    }}
+                ></div>
+                <div // Another diagonal box that expands from center of button on click (then shrinks)
+                    className={`button-click-anim ${clicked ? 'clicked' : ''}`}
+                    style={{
+                        backgroundColor: '#8c8c8c',
+                        bottom: '-200%',
+                        height: '500%',
+                        position: 'absolute',
+                        right: '50%',
+                        width: '0%',
+                        zIndex: 0,
+                        WebkitTransform: 'skewX(-45deg)',
+                    }}
+                ></div>
+                <p
+                    className='button-text'
+                    style={{
+                        // Change the font size of text based on button's size
+                        fontSize: buttonSize == 'large' ? '2rem' : buttonSize == 'medium' ? '1.5rem' : '1rem',
+                        lineHeight: 1,
+                        margin: '0 1rem',
+                        position: 'relative',
+                        zIndex: 1,
+                    }}
+                >{ buttonText }</p>
+            </button>
+        </div>
     );
 }
 

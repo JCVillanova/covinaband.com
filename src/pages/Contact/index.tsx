@@ -1,6 +1,6 @@
 import * as React from 'react';
 import useState from 'react';
-//import ClickableButton from '../../components/Button';
+import ClickableButton from '../../components/Button';
 import NavBar from '../../components/NavBar';
 
 export default function Contact() {
@@ -69,6 +69,8 @@ export default function Contact() {
                                 width: '100%',
                             }}
                         />
+
+                        <ClickableButton className='submit-button' buttonSize='medium' buttonText='Submit' style={{}}/>
                     </form>
                     
                 </div>
