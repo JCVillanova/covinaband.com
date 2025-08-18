@@ -24,7 +24,7 @@ function ClickableButton({ className, buttonSize, buttonText, style }) {
                     width: 'fit-content',
                 }}
             >
-                <div className='animated-border'
+                <div className={`animated-border ${buttonSize}`}
                     style={{
                         borderRadius: buttonSize == 'large' ? '1rem' : buttonSize == 'medium' ? '0.8rem' : '0.5rem',
                     }}

@@ -169,10 +169,23 @@ textarea:hover {
     );
     content: '';
     display: block;
-    height: 300px;
     position: absolute;
-    width: 300px;
     z-index: 0;
+}
+
+.animated-border.large::before {
+    height: 290px;
+    width: 290px;
+}
+
+.animated-border.medium::before {
+    height: 200px;
+    width: 200px;
+}
+
+.animated-border.small::before {
+    height: 150px;
+    width: 150px;
 }
 
 .animated-border:hover::before {
