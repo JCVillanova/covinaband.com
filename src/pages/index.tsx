@@ -23,7 +23,7 @@ export default function Homepage() {
                 <p>
                     Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes.
                 </p>
-                <ClickableButton className='' buttonSize='large' buttonText='Join now' 
+                <ClickableButton className='' buttonSize='large' buttonColor='dark' buttonText='Join now' 
                     style={{
                         marginLeft: '1rem',
                     }}

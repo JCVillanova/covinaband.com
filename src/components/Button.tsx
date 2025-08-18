@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 
-function ClickableButton({ className, buttonSize, buttonText, style }) {
+function ClickableButton({ className, buttonSize, buttonColor, buttonText, style }) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
@@ -32,7 +32,7 @@ function ClickableButton({ className, buttonSize, buttonText, style }) {
                     <button
                         onClick={handleClick}
                         style={{
-                            backgroundColor: 'var(--color-darkgray-main)',
+                            backgroundColor: buttonColor == 'dark' ? 'var(--color-darkgray-main)' : 'var(--color-lightgray-light)',
                             border: 'none',
                             borderRadius: buttonSize == 'large' ? '1rem' : buttonSize == 'medium' ? '0.8rem' : '0.5rem',
                             overflow: 'hidden',

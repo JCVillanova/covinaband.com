@@ -69,7 +69,7 @@ export default function Contact() {
                             }}
                         />
 
-                        <ClickableButton className='submit-button' buttonSize='medium' buttonText='Submit' style={{}}/>
+                        <ClickableButton className='submit-button' buttonSize='medium' buttonColor='light' buttonText='Submit' style={{}}/>
                     </form>
                     
                 </div>
