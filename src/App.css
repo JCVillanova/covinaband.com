@@ -39,7 +39,6 @@ body {
 
 button {
     animation: border-anim-out 0.4s both;
-    margin: 2px;
     z-index: 1;
 }
 
@@ -58,6 +57,11 @@ button > .button-hover-anim {
 
 button:hover > .button-hover-anim {
     animation: fade-anim-in 0.4s both;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
 }
 
 h1 {
@@ -155,13 +159,24 @@ textarea:hover {
 
 .animated-border {
     align-items: center;
+    border: 2px solid var(--color-text-primary);
     display: flex;
     overflow: hidden;
     position: relative;
     justify-content: center;
 }
 
-.animated-border::before {
+.animated-border:hover {
+    animation: 8s rotate linear infinite;
+    background: linear-gradient(
+        var(--angle),
+        var(--color-red-main),
+        var(--color-text-primary)
+    ) border-box;
+    border-color: #0000;
+}
+
+/* .animated-border::before {
     animation: rotate 8s linear infinite;
     background: linear-gradient(
         90deg,
@@ -194,7 +209,7 @@ textarea:hover {
         var(--color-red-main),
         white
     );
-}
+} */
 
 .form-label {
     display: block;
@@ -385,10 +400,13 @@ textarea:hover {
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(0);
-    }
     to {
-        transform: rotate(360deg);
+        --angle: 360deg;
     }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
 }

@@ -30,39 +30,43 @@ export default function Contact() {
                         CONTACT US
                     </h2>
                     <hr />
-                    <form>
-                        <label className='form-label'>Name <span className='required'>*</span></label>
-                        <div className='same-line-inputs'
-                            style={{
-                                display: 'flex',
-                            }}
-                        >
-                            <input type='text' name='firstname'
+                    <form action='/contact-form-submissions' method='post'>
+                        <label className='form-label' htmlFor='name'>Name <span className='required'>*</span></label>
+                        <div className='same-line-inputs'>
+                            <fieldset
                                 style={{
-                                    flex: '1 1 auto',
+                                    display: 'flex',
+                                    gap: '1rem',
                                 }}
-                            />
-                            <input type='text' name='lastname'
-                                style={{
-                                    flex: '1 1 auto',
-                                }}
-                            />
+                            >
+                                <legend>Name</legend>
+                                <input type='text' name='firstname'
+                                    style={{
+                                        flex: '1 1 auto',
+                                    }}
+                                />
+                                <input type='text' name='lastname'
+                                    style={{
+                                        flex: '1 1 auto',
+                                    }}
+                                />
+                            </fieldset>
                         </div>
 
-                        <label className='form-label'>Email <span className='required'>*</span></label>
+                        <label className='form-label' htmlFor='email'>Email <span className='required'>*</span></label>
                         <input type='email' name='email'
                             style={{
                                 width: '100%',
                             }}
                         />
                         
-                        <label className='form-label'>Phone</label>
+                        <label className='form-label' htmlFor='phone'>Phone</label>
                         <input type='number' name='phone'
                             style={{
                                 width: '100%',
                             }}
                         />
-                        <label className='form-label'>Message <span className='required'>*</span></label>
+                        <label className='form-label' htmlFor='msg'>Message <span className='required'>*</span></label>
                         <textarea name='message' rows={4}
                             style={{
                                 width: '100%',
