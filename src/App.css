@@ -16,6 +16,8 @@
 
 *, ::before, ::after {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 * {
@@ -94,7 +96,8 @@ img, picture, video, canvas, svg {
 
 input {
     background-color: var(--color-lightgray-main);
-    border: 1px solid var(--color-lightgray-dark);
+    /*border: 1px solid var(--color-lightgray-dark);*/
+    border: none;
     border-radius: 0.25rem;
     color: var(--color-text-primary);
     font-family: 'Montserrat', sans-serif;
@@ -104,12 +107,13 @@ input {
 }
 
 input:focus {
-    border: 2px solid var(--color-red-light);
+    /*border: 2px solid var(--color-red-light);*/
+    border: none;
     outline: none;
 }
 
 input:hover {
-    border: 2px solid var(--color-text-primary);
+    /*border: 2px solid var(--color-text-primary);*/
     outline: none;
 }
 
@@ -174,6 +178,34 @@ textarea:hover {
         var(--color-text-primary)
     ) border-box;
     border-color: #0000;
+}
+
+.animated-border-input {
+    border: 1px solid var(--color-lightgray-dark);
+    border-radius: 0.25rem;
+    margin: 1px;
+}
+
+.animated-border-input:hover {
+    align-items: center;
+    border: 2px solid var(--color-text-primary);
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+}
+
+.animated-border-input.focused {
+    animation: 8s rotate linear infinite;
+    background: linear-gradient(var(--color-lightgray-main), var(--color-lightgray-main)) padding-box,
+        linear-gradient(
+        var(--angle),
+        var(--color-red-main),
+        var(--color-text-primary)
+    ) border-box;
+    border: 2px solid #0000;
+    margin: 0;
 }
 
 /* .animated-border::before {

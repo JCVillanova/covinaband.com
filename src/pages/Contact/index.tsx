@@ -2,6 +2,7 @@ import * as React from 'react';
 import useState from 'react';
 import ClickableButton from '../../components/Button';
 import NavBar from '../../components/NavBar';
+import InteractableInput from '../../components/Input';
 
 export default function Contact() {
     return (
@@ -40,32 +41,24 @@ export default function Contact() {
                                 }}
                             >
                                 <legend>Name</legend>
-                                <input type='text' name='firstname'
-                                    style={{
-                                        flex: '1 1 auto',
-                                    }}
-                                />
-                                <input type='text' name='lastname'
-                                    style={{
-                                        flex: '1 1 auto',
-                                    }}
-                                />
+                                <InteractableInput className='' style={{flex: '1 1 auto'}} inputType='text' inputName='firstname'/>
+                                <InteractableInput className='' style={{flex: '1 1 auto'}} inputType='text' inputName='lastname'/>
                             </fieldset>
                         </div>
 
                         <label className='form-label' htmlFor='email'>Email <span className='required'>*</span></label>
-                        <input type='email' name='email'
-                            style={{
-                                width: '100%',
-                            }}
-                        />
+                        {/*<div className='animated-border-input'>
+                            <input type='email' name='email'
+                                style={{
+                                    width: '100%',
+                                }}
+                            />
+                        </div>*/}
+                        <InteractableInput className='' style={{}} inputType='email' inputName='email'/>
                         
                         <label className='form-label' htmlFor='phone'>Phone</label>
-                        <input type='number' name='phone'
-                            style={{
-                                width: '100%',
-                            }}
-                        />
+                        <InteractableInput className='' style={{}} inputType='number' inputName='phone'/>
+
                         <label className='form-label' htmlFor='msg'>Message <span className='required'>*</span></label>
                         <textarea name='message' rows={4}
                             style={{
