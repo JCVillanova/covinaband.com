@@ -208,41 +208,6 @@ textarea:hover {
     margin: 0;
 }
 
-/* .animated-border::before {
-    animation: rotate 8s linear infinite;
-    background: linear-gradient(
-        90deg,
-        white
-    );
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 0;
-}
-
-.animated-border.large::before {
-    height: 290px;
-    width: 290px;
-}
-
-.animated-border.medium::before {
-    height: 200px;
-    width: 200px;
-}
-
-.animated-border.small::before {
-    height: 150px;
-    width: 150px;
-}
-
-.animated-border:hover::before {
-    background: linear-gradient(
-        90deg,
-        var(--color-red-main),
-        white
-    );
-} */
-
 .form-label {
     display: block;
     padding: 1rem 0 0.5rem;
@@ -302,6 +267,10 @@ textarea:hover {
     flex: 0 0 auto;
     margin-left: 1rem;
     width: 2.5rem;
+}
+
+.no-display {
+    display: none;
 }
 
 .primary-bg {

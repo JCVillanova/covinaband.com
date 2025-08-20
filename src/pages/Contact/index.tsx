@@ -40,20 +40,13 @@ export default function Contact() {
                                     gap: '1rem',
                                 }}
                             >
-                                <legend>Name</legend>
+                                <legend className='no-display'>Name</legend>
                                 <InteractableInput className='' style={{flex: '1 1 auto'}} inputType='text' inputName='firstname'/>
                                 <InteractableInput className='' style={{flex: '1 1 auto'}} inputType='text' inputName='lastname'/>
                             </fieldset>
                         </div>
 
                         <label className='form-label' htmlFor='email'>Email <span className='required'>*</span></label>
-                        {/*<div className='animated-border-input'>
-                            <input type='email' name='email'
-                                style={{
-                                    width: '100%',
-                                }}
-                            />
-                        </div>*/}
                         <InteractableInput className='' style={{}} inputType='email' inputName='email'/>
                         
                         <label className='form-label' htmlFor='phone'>Phone</label>
