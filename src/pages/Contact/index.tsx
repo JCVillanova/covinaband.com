@@ -3,6 +3,7 @@ import useState from 'react';
 import ClickableButton from '../../components/Button';
 import NavBar from '../../components/NavBar';
 import InteractableInput from '../../components/Input';
+import InteractableTextArea from '../../components/TextArea';
 
 export default function Contact() {
     return (
@@ -32,32 +33,33 @@ export default function Contact() {
                     </h2>
                     <hr />
                     <form action='/contact-form-submissions' method='post'>
-                        <label className='form-label' htmlFor='name'>Name <span className='required'>*</span></label>
-                        <div className='same-line-inputs'>
-                            <fieldset
+                            <div className='same-line-inputs'
                                 style={{
-                                    display: 'flex',
-                                    gap: '1rem',
+                                    paddingTop: '0.5rem',
                                 }}
                             >
-                                <legend className='no-display'>Name</legend>
-                                <InteractableInput className='' style={{flex: '1 1 auto'}} inputType='text' inputName='firstname'/>
-                                <InteractableInput className='' style={{flex: '1 1 auto'}} inputType='text' inputName='lastname'/>
-                            </fieldset>
-                        </div>
+                                <fieldset
+                                    style={{
+                                        display: 'flex',
+                                        gap: '1rem',
+                                    }}
+                                >
+                                    <legend className='form-label'>Name <span className='required' aria-hidden='true'>*</span></legend>
+                                    <label className='visually-hidden' htmlFor='first'>First name</label>
+                                    <InteractableInput className='' style={{flex: '1 1 auto'}} inputID='first' inputType='text' inputName='firstname' required={true}/>
+                                    <label className='visually-hidden' htmlFor='last'>Last name</label>
+                                    <InteractableInput className='' style={{flex: '1 1 auto'}} inputID='last' inputType='text' inputName='lastname' required={true}/>
+                                </fieldset>
+                            </div>
 
-                        <label className='form-label' htmlFor='email'>Email <span className='required'>*</span></label>
-                        <InteractableInput className='' style={{}} inputType='email' inputName='email'/>
+                        <label className='form-label' htmlFor='email'>Email <span className='required' aria-hidden='true'>*</span></label>
+                        <InteractableInput className='' style={{}} inputID='email' inputType='email' inputName='email' required={true}/>
                         
-                        <label className='form-label' htmlFor='phone'>Phone</label>
-                        <InteractableInput className='' style={{}} inputType='number' inputName='phone'/>
+                        <label className='form-label' htmlFor='phone-number'>Phone</label>
+                        <InteractableInput className='' style={{}} inputID='phone-number' inputType='tel' inputName='phone' required={false}/>
 
-                        <label className='form-label' htmlFor='msg'>Message <span className='required'>*</span></label>
-                        <textarea name='message' rows={4}
-                            style={{
-                                width: '100%',
-                            }}
-                        />
+                        <label className='form-label' htmlFor='message'>Message <span className='required' aria-hidden='true'>*</span></label>
+                        <InteractableTextArea className='' inputID='message' inputName='message' numRows={4} required={true} style={{}} />
 
                         <ClickableButton className='submit-button' buttonSize='medium' buttonColor='light' buttonText='Submit' style={{}}/>
                     </form>

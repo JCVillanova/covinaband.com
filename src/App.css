@@ -96,7 +96,6 @@ img, picture, video, canvas, svg {
 
 input {
     background-color: var(--color-lightgray-main);
-    /*border: 1px solid var(--color-lightgray-dark);*/
     border: none;
     border-radius: 0.25rem;
     color: var(--color-text-primary);
@@ -107,17 +106,22 @@ input {
 }
 
 input:focus {
-    /*border: 2px solid var(--color-red-light);*/
     border: none;
     outline: none;
 }
 
 input:hover {
-    /*border: 2px solid var(--color-text-primary);*/
     outline: none;
 }
 
 label {
+    color: var(--color-text-primary);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+legend {
     color: var(--color-text-primary);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
@@ -142,7 +146,7 @@ span {
 
 textarea {
     background-color: var(--color-lightgray-main);
-    border: 1px solid var(--color-lightgray-dark);
+    border: none;
     border-radius: 0.25rem;
     color: var(--color-text-primary);
     font-family: 'Montserrat', sans-serif;
@@ -152,12 +156,11 @@ textarea {
 }
 
 textarea:focus {
-    border: 2px solid var(--color-red-light);
+    border: none;
     outline: none;
 }
 
 textarea:hover {
-    border: 2px solid var(--color-text-primary);
     outline: none;
 }
 
@@ -197,7 +200,7 @@ textarea:hover {
 }
 
 .animated-border-input.focused {
-    animation: 8s rotate linear infinite;
+    animation: 16s rotate linear infinite;
     background: linear-gradient(var(--color-lightgray-main), var(--color-lightgray-main)) padding-box,
         linear-gradient(
         var(--angle),
@@ -209,8 +212,17 @@ textarea:hover {
 }
 
 .form-label {
-    display: block;
+    display: inline-block;
     padding: 1rem 0 0.5rem;
+}
+
+.form-label:hover {
+    cursor: text;
+}
+
+.form-label-nested {
+    display: block;
+    padding: 1rem 0 0;
 }
 
 .left-navbar {
@@ -306,6 +318,18 @@ textarea:hover {
     display: flex;
     justify-content: center;
     margin-top: 1.75rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0;
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+    white-space: nowrap;
 }
 
 #logo-text {

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 
-function InteractableInput({ className, inputID, inputType, inputName, style, required }) {
+function InteractableTextArea({ className, inputID, inputName, numRows, style, required }) {
     const [focused, setFocused] = useState(false);
 
     const handleFocus = () => {
@@ -17,17 +17,20 @@ function InteractableInput({ className, inputID, inputType, inputName, style, re
                 <div className={`animated-border-input ${focused ? 'focused' : ''}`}
                     style={{
                         borderRadius: '0.25rem',
+                        display: 'flex',
                     }}
                 >
-                    <input onFocus={handleFocus} onBlur={handleFocus} id={inputID} type={inputType} name={inputName} required={required}
+                    <textarea onFocus={handleFocus} onBlur={handleFocus} id={inputID} name={inputName} rows={numRows} required={required}
                         style={{
+                            height: '100%',
+                            marginBottom: focused ? '0px' : '0px',
                             width: '100%',
                         }}
-                    ></input>
+                    ></textarea>
                 </div>
             </div>
         </div>
     );
 }
 
-export default InteractableInput;
+export default InteractableTextArea;
