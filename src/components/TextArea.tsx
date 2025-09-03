@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 
-function InteractableTextArea({ className, inputID, inputName, numRows, style, required }) {
+function InteractableTextArea({ className, autofocus, inputID, inputName, placeholder, numRows, spellcheck, style, required }) {
     const [focused, setFocused] = useState(false);
 
     const handleFocus = () => {
@@ -20,7 +20,8 @@ function InteractableTextArea({ className, inputID, inputName, numRows, style, r
                         display: 'flex',
                     }}
                 >
-                    <textarea onFocus={handleFocus} onBlur={handleFocus} id={inputID} name={inputName} rows={numRows} required={required}
+                    <textarea onFocus={handleFocus} onBlur={handleFocus} autoFocus={autofocus} id={inputID} name={inputName} placeholder={placeholder} rows={numRows} required={required}
+                    spellCheck={spellcheck}
                         style={{
                             height: '100%',
                             marginBottom: focused ? '0px' : '0px',

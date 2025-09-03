@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 
-function InteractableInput({ className, inputID, inputType, inputName, style, required }) {
+function InteractableInput({ className, autofocus, inputID, inputType, inputName, placeholder, style, required }) {
     const [focused, setFocused] = useState(false);
 
     const handleFocus = () => {
@@ -19,7 +19,7 @@ function InteractableInput({ className, inputID, inputType, inputName, style, re
                         borderRadius: '0.25rem',
                     }}
                 >
-                    <input onFocus={handleFocus} onBlur={handleFocus} id={inputID} type={inputType} name={inputName} required={required}
+                    <input onFocus={handleFocus} onBlur={handleFocus} autoFocus={autofocus} id={inputID} type={inputType} name={inputName} placeholder={placeholder} required={required}
                         style={{
                             width: '100%',
                         }}

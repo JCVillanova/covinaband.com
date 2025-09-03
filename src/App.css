@@ -114,6 +114,10 @@ input:hover {
     outline: none;
 }
 
+input::placeholder {
+    color: var(--color-lightgray-light);
+}
+
 label {
     color: var(--color-text-primary);
     font-family: 'Montserrat', sans-serif;
@@ -162,6 +166,10 @@ textarea:focus {
 
 textarea:hover {
     outline: none;
+}
+
+textarea::placeholder {
+    color: var(--color-lightgray-light);
 }
 
 .animated-border {
@@ -308,6 +316,12 @@ textarea:hover {
     gap: 1rem;
 }
 
+.screen-height-image {
+    margin: auto 0;
+    height: 48rem;
+    width: auto;
+}
+
 .secondary-bg {
     background-color: var(--color-red-dark);
     min-height: 100vh;
@@ -359,6 +373,10 @@ textarea:hover {
     display: flex;
     height: 6vh;
     justify-content: space-between;
+}
+
+::spelling-error {
+    text-decoration-color: var(--color-text-secondary);
 }
 
 @keyframes border-anim-in {
