@@ -13,18 +13,16 @@ function InteractableInput({ className, autofocus, inputID, inputType, inputName
 
     return (
         <div className={className} style={style}>
-            <div>
-                <div className={`animated-border-input ${focused ? 'focused' : ''}`}
+            <div className={`animated-border-input ${focused ? 'focused' : ''}`}
+                style={{
+                    borderRadius: '0.25rem',
+                }}
+            >
+                <input onFocus={handleFocus} onBlur={handleFocus} autoFocus={autofocus} id={inputID} type={inputType} name={inputName} placeholder={placeholder} required={required}
                     style={{
-                        borderRadius: '0.25rem',
+                        width: '100%',
                     }}
-                >
-                    <input onFocus={handleFocus} onBlur={handleFocus} autoFocus={autofocus} id={inputID} type={inputType} name={inputName} placeholder={placeholder} required={required}
-                        style={{
-                            width: '100%',
-                        }}
-                    ></input>
-                </div>
+                ></input>
             </div>
         </div>
     );

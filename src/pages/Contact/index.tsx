@@ -7,7 +7,7 @@ import InteractableTextArea from '../../components/TextArea';
 
 export default function Contact() {
     return (
-        <div className='secondary-bg'
+        <div className='primary-bg'
             style={{
                 display: 'flex',
                 flexDirection: 'column',
