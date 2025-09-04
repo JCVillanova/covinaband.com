@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
+import ClickableButton from './Button';
 
-function ShowCard({ className, style }) {
+function ShowCard({ className, href, title, img, style }) {
     const [focused, setFocused] = useState(false);
 
     const handleFocus = () => {
@@ -12,7 +13,7 @@ function ShowCard({ className, style }) {
     };
 
     return (
-        <div className={className} style={style}>
+        <a className={className} href={href} style={style}>
             <div className={`animated-border ${focused ? 'focused' : ''}`}
                 style={{
                     borderRadius: '0.25rem',
@@ -22,8 +23,9 @@ function ShowCard({ className, style }) {
             >
                 <button onFocus={handleFocus} onBlur={handleFocus}
                     style={{
-                        backgroundImage: 'url(/assets/images/drum-majors-and-guard-captains.png)',
+                        backgroundImage: img,
                         backgroundColor: 'var(--color-darkgray-main)',
+                        backgroundPosition: 'center center',
                         backgroundSize: 'cover',
                         border: 'none',
                         height: '100%',
@@ -42,9 +44,28 @@ function ShowCard({ className, style }) {
                             zIndex: 0,
                         }}
                     ></div>
+
+                    <div className='show-card-text'
+                        style={{
+                            height: '100%',
+                        }}
+                    >
+                        <h3
+                            style={{
+                                position: 'relative',
+                            }}
+                        >{title}</h3>
+                        <hr
+                            style={{
+                                position: 'relative',
+                                margin: 'auto',
+                                width: '80%',
+                            }}
+                        />
+                    </div>
                 </button>
             </div>
-        </div>
+        </a>
     );
 }
 

@@ -32,7 +32,7 @@ function ClickableButton({ className, buttonSize, buttonColor, buttonText, style
                     <button
                         onClick={handleClick}
                         style={{
-                            backgroundColor: buttonColor == 'dark' ? 'var(--color-darkgray-main)' : 'var(--color-lightgray-light)',
+                            backgroundColor: buttonColor == 'dark' ? 'var(--color-darkgray-main)' : buttonColor == 'transparent' ? 'var(--color-transparent)' : 'var(--color-lightgray-light)',
                             border: 'none',
                             borderRadius: buttonSize == 'large' ? '1rem' : buttonSize == 'medium' ? '0.8rem' : '0.5rem',
                             overflow: 'hidden',

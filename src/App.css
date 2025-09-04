@@ -12,6 +12,7 @@
   --color-lightgray-dark: #4C4C4C;
   --color-background-default: #12141A;
   --color-background-other: #3d181c;
+  --color-transparent: #0000;
 }
 
 *, ::before, ::after {
@@ -89,6 +90,15 @@ h2 {
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
+    line-height: 1;
+    margin: 1.5rem 1rem;
+}
+
+h3 {
+    color: var(--color-text-primary);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
     line-height: 1;
     margin: 1.5rem 1rem;
 }
@@ -305,6 +315,10 @@ textarea::placeholder {
     display: none;
 }
 
+.no-text-decoration {
+    text-decoration: none;
+}
+
 .primary-bg {
     background-color: var(--color-darkgray-main);
     min-height: 100vh;
@@ -337,6 +351,10 @@ textarea::placeholder {
 .secondary-bg {
     background-color: var(--color-red-dark);
     min-height: 100vh;
+}
+
+.show-over {
+    z-index: 1;
 }
 
 .shows-grid {
