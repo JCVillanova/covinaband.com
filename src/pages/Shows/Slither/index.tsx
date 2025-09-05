@@ -4,7 +4,7 @@ import ClickableButton from '../../../components/Button';
 import NavBar from '../../../components/NavBar';
 import ShowPage from '../../../components/ShowPage';
 
-export default function Daredevil() {
+export default function Slither() {
     return (
         <div className='primary-bg'
             style={{
@@ -14,7 +14,7 @@ export default function Daredevil() {
             }}
         >
             <NavBar />
-            <ShowPage className='' backgroundImage='url(/assets/images/show-logos/slither.png)' title='SLITHER'
+            <ShowPage className='' backgroundImage='assets/images/show-logos/slither.png' title='SLITHER'
                 style={{
                     display: 'flex',
                     flex: '1 0 auto',

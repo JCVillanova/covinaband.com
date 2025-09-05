@@ -1,11 +1,14 @@
 import * as React from 'react';
 import useState from 'react';
+import { useRouter } from 'next/router';
 import ClickableButton from '../../components/Button';
 import NavBar from '../../components/NavBar';
 import InteractableInput from '../../components/Input';
 import InteractableTextArea from '../../components/TextArea';
 
 export default function Contact() {
+    const { basePath } = useRouter();
+
     return (
         <div className='primary-bg'
             style={{
@@ -90,7 +93,7 @@ export default function Contact() {
                     >
                         <img className='screen-height-image'
                             alt="Covina High School's 2024-2025 drum majors and guard captains"
-                            src='/assets/images/drum-majors-and-guard-captains.png'
+                            src={`${basePath}/assets/images/drum-majors-and-guard-captains.png`}
                             style={{
                                 borderRadius: '0 2rem 2rem 0',
                                 flex: 'none',

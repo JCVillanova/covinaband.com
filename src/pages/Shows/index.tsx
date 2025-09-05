@@ -17,15 +17,15 @@ export default function Shows() {
             />
 
             <div className='shows-grid'>
-                <ShowCard className='no-text-decoration' href='/Shows/Slither' title='Slither (2024)' img='url(/assets/images/show-logos/slither.png)' style={{}}/>
-                <ShowCard className='no-text-decoration' href='/Shows/OnStage' title='On Stage (2023)' img='url(/assets/images/show-logos/on-stage.png)' style={{}}/>
-                <ShowCard className='no-text-decoration' href='/Shows/Rise' title='Rise (2022)' img='url(/assets/images/show-logos/rise.png)' style={{}}/>
-                <ShowCard className='no-text-decoration' href='/Shows/Loop' title='Loop (2021)' img='url(/assets/images/drum-majors-and-guard-captains.png)' style={{}}/>
-                <ShowCard className='no-text-decoration' href='/Shows/Poltergeist' title='Poltergeist (2019)' img='url(/assets/images/show-logos/poltergeist.png)' style={{}}/>
-                <ShowCard className='no-text-decoration' href='/Shows/TheFourDimensions' title='The Four Dimensions (2018)' img='url(/assets/images/drum-majors-and-guard-captains.png)' style={{}}/>
-                <ShowCard className='no-text-decoration' href='/Shows/TheAncientArtOfWar' title='The Ancient Art of War (2017)' img='url(/assets/images/show-logos/the-ancient-art-of-war.png)' style={{}}/>
-                <ShowCard className='no-text-decoration' href='/Shows/Daredevil' title='Daredevil (2016)' img='url(/assets/images/show-logos/daredevil.png)' style={{}}/>
-                <ShowCard className='no-text-decoration' href='/Shows/MirrorMirror' title='Mirror Mirror (2015)' img='url(/assets/images/show-logos/mirror-mirror.png)' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/Slither' title='Slither (2024)' img='assets/images/show-logos/slither.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/OnStage' title='On Stage (2023)' img='assets/images/show-logos/on-stage.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/Rise' title='Rise (2022)' img='assets/images/show-logos/rise.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/Loop' title='Loop (2021)' img='assets/images/drum-majors-and-guard-captains.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/Poltergeist' title='Poltergeist (2019)' img='assets/images/show-logos/poltergeist.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/TheFourDimensions' title='The Four Dimensions (2018)' img='assets/images/show-logos/the-four-dimensions.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/TheAncientArtOfWar' title='The Ancient Art of War (2017)' img='assets/images/show-logos/the-ancient-art-of-war.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/Daredevil' title='Daredevil (2016)' img='assets/images/show-logos/daredevil.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/MirrorMirror' title='Mirror Mirror (2015)' img='assets/images/show-logos/mirror-mirror.png' style={{}}/>
             </div>
         </div>
     );

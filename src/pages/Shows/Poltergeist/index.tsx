@@ -4,7 +4,7 @@ import ClickableButton from '../../../components/Button';
 import NavBar from '../../../components/NavBar';
 import ShowPage from '../../../components/ShowPage';
 
-export default function Daredevil() {
+export default function Poltergeist() {
     return (
         <div className='primary-bg'
             style={{
@@ -14,7 +14,7 @@ export default function Daredevil() {
             }}
         >
             <NavBar />
-            <ShowPage className='' backgroundImage='url(/assets/images/show-logos/poltergeist.png)' title='POLTERGEIST'
+            <ShowPage className='' backgroundImage='assets/images/show-logos/poltergeist.png' title='POLTERGEIST'
                 style={{
                     display: 'flex',
                     flex: '1 0 auto',

@@ -1,15 +1,18 @@
 import * as React from 'react';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import ClickableButton from './Button';
 
 function ShowPage({ className, backgroundImage, title, style }) {
+    const { basePath } = useRouter();
+
     return (
         <div style={style}>
             <div
                 style={{
                     backgroundBlendMode: 'darken',
                     backgroundColor: 'rgba(0, 0, 0, 0.65)',
-                    backgroundImage: backgroundImage,
+                    backgroundImage: `url(${basePath}/${backgroundImage}`,
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
                     flexGrow: 1,

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import ClickableButton from './Button';
 
 function ShowCard({ className, href, title, img, style }) {
@@ -13,6 +14,8 @@ function ShowCard({ className, href, title, img, style }) {
         } else setFocused(false);
     };
 
+    const { basePath } = useRouter();
+
     return (
         <Link className={className} href={href} style={style}>
             <div className={`animated-border ${focused ? 'focused' : ''}`}
@@ -24,7 +27,7 @@ function ShowCard({ className, href, title, img, style }) {
             >
                 <button onFocus={handleFocus} onBlur={handleFocus}
                     style={{
-                        backgroundImage: img,
+                        backgroundImage: `url(${basePath}/${img}`,
                         backgroundColor: 'var(--color-darkgray-main)',
                         backgroundPosition: 'center center',
                         backgroundSize: 'cover',

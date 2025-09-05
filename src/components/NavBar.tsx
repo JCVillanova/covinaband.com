@@ -2,16 +2,18 @@ import * as React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 function ContentList() {
+    const { basePath } = useRouter();
+
     return (
         <div id='navbar'>
             <ul className='left-navbar'>
                 <li className="navbar-logo">
-                    <Image
+                    <img
                         alt="Covina High School's logo"
-                        src="/assets/images/icons/covina-logo.png"
-                        height={400} width={400}
+                        src={`${basePath}/assets/images/icons/covina-logo.png`}
                     />
                 </li>
                 <li id='logo-text'>

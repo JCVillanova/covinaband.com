@@ -14,7 +14,7 @@ export default function Daredevil() {
             }}
         >
             <NavBar />
-            <ShowPage className='' backgroundImage='url(/assets/images/show-logos/daredevil.png)' title='DAREDEVIL'
+            <ShowPage className='' backgroundImage='assets/images/show-logos/daredevil.png' title='DAREDEVIL'
                 style={{
                     display: 'flex',
                     flex: '1 0 auto',

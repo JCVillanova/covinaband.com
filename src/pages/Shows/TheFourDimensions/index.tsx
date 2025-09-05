@@ -2,16 +2,22 @@ import * as React from 'react';
 import useState from 'react';
 import ClickableButton from '../../../components/Button';
 import NavBar from '../../../components/NavBar';
+import ShowPage from '../../../components/ShowPage';
 
-export default function Daredevil() {
+export default function TheFourDimensions() {
     return (
-        <div className='primary-bg'>
+        <div className='primary-bg'
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
+            }}
+        >
             <NavBar />
-            <h2 className='center-text'>THE FOUR DIMENSIONS</h2>
-            <hr
+            <ShowPage className='' backgroundImage='assets/images/show-logos/the-four-dimensions.png' title='THE FOUR DIMENSIONS'
                 style={{
-                    margin: '0 auto 3rem',
-                    width: '25vw',
+                    display: 'flex',
+                    flex: '1 0 auto',
                 }}
             />
         </div>
