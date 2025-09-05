@@ -1,22 +1,25 @@
 import * as React from 'react';
 import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 function ContentList() {
     return (
         <div id='navbar'>
             <ul className='left-navbar'>
                 <li className="navbar-logo">
-                    <img
+                    <Image
                         alt="Covina High School's logo"
                         src="/assets/images/icons/covina-logo.png"
+                        height={400} width={400}
                     />
                 </li>
                 <li id='logo-text'>
                     <button>
-                        <a href='/'>
+                        <Link href='/'>
                             <span className='red-text'>COVINA</span>
                             <span>BAND&GUARD</span>
-                        </a>
+                        </Link>
                     </button>
                 </li>
             </ul>
@@ -28,27 +31,27 @@ function ContentList() {
             <ul className='right-navbar'>
                 <li className='navbar-item'>
                     <button>
-                        <a className='right-link' href='/Shows'>Shows</a>
+                        <Link className='right-link' href='/Shows'>Shows</Link>
                     </button>
                 </li>
                 <li className='navbar-item'>
                     <button>
-                        <a className='right-link' href='/Ensembles'>Ensembles</a>
+                        <Link className='right-link' href='/Ensembles'>Ensembles</Link>
                     </button>
                 </li>
                 <li className='navbar-item'>
                     <button>
-                        <a className='right-link' href='/Staff'>Staff</a>
+                        <Link className='right-link' href='/Staff'>Staff</Link>
                     </button>
                 </li>
                 <li className='navbar-item'>
                     <button>
-                        <a className='right-link' href='/Schedule'>Schedule</a>
+                        <Link className='right-link' href='/Schedule'>Schedule</Link>
                     </button>
                 </li>
                 <li className='navbar-item'>
                     <button>
-                        <a className='right-link' href='/Contact'>Contact</a>
+                        <Link className='right-link' href='/Contact'>Contact</Link>
                     </button>
                 </li>
             </ul>

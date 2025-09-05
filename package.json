@@ -1,10 +1,10 @@
 {
     "private": false,
-    "homepage": "httpd://jcvillanova.github.io/covinaband.com/",
+    "homepage": "https://jcvillanova.github.io/covinaband.com/",
     "scripts": {
         "dev": "next dev",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "build": "next build",
+        "deploy": "gh-pages -d out"
     },
     "dependencies": {
         "@emotion/react": "^11.14.0",

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
+import Link from 'next/link';
 import ClickableButton from './Button';
 
 function ShowCard({ className, href, title, img, style }) {
@@ -13,7 +14,7 @@ function ShowCard({ className, href, title, img, style }) {
     };
 
     return (
-        <a className={className} href={href} style={style}>
+        <Link className={className} href={href} style={style}>
             <div className={`animated-border ${focused ? 'focused' : ''}`}
                 style={{
                     borderRadius: '0.25rem',
@@ -65,7 +66,7 @@ function ShowCard({ className, href, title, img, style }) {
                     </div>
                 </button>
             </div>
-        </a>
+        </Link>
     );
 }
 
