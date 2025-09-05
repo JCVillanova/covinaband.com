@@ -383,6 +383,14 @@ textarea::placeholder {
     z-index: 1;
 }
 
+.show-video {
+    border: none;
+    border-radius: 1rem;
+    display: block;
+    height: 33.75vw;
+    width: 60vw;
+}
+
 .shows-grid {
     display: grid;
     gap: 2rem;

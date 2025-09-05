@@ -4,7 +4,7 @@ import ClickableButton from '../../../components/Button';
 import NavBar from '../../../components/NavBar';
 import ShowPage from '../../../components/ShowPage';
 
-export default function Rise() {
+export default function Arabia() {
     return (
         <div className='primary-bg'
             style={{
@@ -14,7 +14,7 @@ export default function Rise() {
             }}
         >
             <NavBar />
-            <ShowPage className='' backgroundImage='assets/images/show-logos/rise.png' title='RISE' video='https://www.youtube.com/embed/rv1VQA-3blE'
+            <ShowPage className='' backgroundImage='assets/images/show-logos/arabia.png' title='ARABIA' video='https://www.youtube.com/embed/4UHQMf6INe0'
                 style={{
                     display: 'flex',
                     flex: '1 0 auto',

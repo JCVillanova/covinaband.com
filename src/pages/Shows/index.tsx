@@ -26,6 +26,8 @@ export default function Shows() {
                 <ShowCard className='no-text-decoration' href='/Shows/TheAncientArtOfWar' title='The Ancient Art of War (2017)' img='assets/images/show-logos/the-ancient-art-of-war.png' style={{}}/>
                 <ShowCard className='no-text-decoration' href='/Shows/Daredevil' title='Daredevil (2016)' img='assets/images/show-logos/daredevil.png' style={{}}/>
                 <ShowCard className='no-text-decoration' href='/Shows/MirrorMirror' title='Mirror Mirror (2015)' img='assets/images/show-logos/mirror-mirror.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/Arabia' title='Arabia (2014)' img='assets/images/show-logos/arabia.png' style={{}}/>
+                <ShowCard className='no-text-decoration' href='/Shows/EveryPassionHasItsDestiny' title='Every Passion Has Its Destiny (2013)' img='assets/images/show-logos/every-passion-has-its-destiny.png' style={{}}/>
             </div>
         </div>
     );

@@ -14,7 +14,7 @@ export default function TheFourDimensions() {
             }}
         >
             <NavBar />
-            <ShowPage className='' backgroundImage='assets/images/show-logos/the-four-dimensions.png' title='THE FOUR DIMENSIONS'
+            <ShowPage className='' backgroundImage='assets/images/show-logos/the-four-dimensions.png' title='THE FOUR DIMENSIONS' video='https://www.youtube.com/embed/38YfmvoR_JE'
                 style={{
                     display: 'flex',
                     flex: '1 0 auto',

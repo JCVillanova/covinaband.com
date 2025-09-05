@@ -14,7 +14,7 @@ export default function OnStage() {
             }}
         >
             <NavBar />
-            <ShowPage className='' backgroundImage='assets/images/show-logos/on-stage.png' title='ON STAGE'
+            <ShowPage className='' backgroundImage='assets/images/show-logos/on-stage.png' title='ON STAGE' video='https://www.youtube.com/embed/0I8Xftrnwvc'
                 style={{
                     display: 'flex',
                     flex: '1 0 auto',

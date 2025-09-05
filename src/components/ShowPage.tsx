@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import ClickableButton from './Button';
 
-function ShowPage({ className, backgroundImage, title, style }) {
+function ShowPage({ className, backgroundImage, title, video, style }) {
     const { basePath } = useRouter();
 
     return (
@@ -12,7 +12,7 @@ function ShowPage({ className, backgroundImage, title, style }) {
                 style={{
                     backgroundBlendMode: 'darken',
                     backgroundColor: 'rgba(0, 0, 0, 0.65)',
-                    backgroundImage: `url(${basePath}/${backgroundImage}`,
+                    backgroundImage: `url(${basePath}/${backgroundImage})`,
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
                     flexGrow: 1,
@@ -26,6 +26,19 @@ function ShowPage({ className, backgroundImage, title, style }) {
                         width: '25vw',
                     }}
                 />
+                <div className='animated-border'
+                    style={{
+                        borderRadius: '1rem',
+                        margin: 'auto',
+                        width: 'fit-content',
+                    }}
+                >
+                    <iframe className='show-video' src={video} allowFullScreen
+                        style={{
+                            
+                        }}
+                    ></iframe>
+                </div>
             </div>
         </div>
     );

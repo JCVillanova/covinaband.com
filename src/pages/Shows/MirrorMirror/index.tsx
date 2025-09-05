@@ -14,7 +14,7 @@ export default function MirrorMirror() {
             }}
         >
             <NavBar />
-            <ShowPage className='' backgroundImage='assets/images/show-logos/mirror-mirror.png' title='MIRROR MIRROR'
+            <ShowPage className='' backgroundImage='assets/images/show-logos/mirror-mirror.png' title='MIRROR MIRROR' video='https://www.youtube.com/embed/DrHrU9Er8eI'
                 style={{
                     display: 'flex',
                     flex: '1 0 auto',

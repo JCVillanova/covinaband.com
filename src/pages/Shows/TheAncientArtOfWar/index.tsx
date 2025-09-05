@@ -14,7 +14,7 @@ export default function TheAncientArtOfWar() {
             }}
         >
             <NavBar />
-            <ShowPage className='' backgroundImage='assets/images/show-logos/the-ancient-art-of-war.png' title='THE ANCIENT ART OF WAR'
+            <ShowPage className='' backgroundImage='assets/images/show-logos/the-ancient-art-of-war.png' title='THE ANCIENT ART OF WAR' video='https://drive.google.com/file/d/15HBc7U7bVfXZpDHrJ3iyE3GHb7Sy5PEH/preview'
                 style={{
                     display: 'flex',
                     flex: '1 0 auto',

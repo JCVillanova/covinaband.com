@@ -14,7 +14,7 @@ export default function Poltergeist() {
             }}
         >
             <NavBar />
-            <ShowPage className='' backgroundImage='assets/images/show-logos/poltergeist.png' title='POLTERGEIST'
+            <ShowPage className='' backgroundImage='assets/images/show-logos/poltergeist.png' title='POLTERGEIST' video='https://www.youtube.com/embed/-MF3GoXITyI'
                 style={{
                     display: 'flex',
                     flex: '1 0 auto',
