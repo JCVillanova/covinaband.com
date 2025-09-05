@@ -241,6 +241,32 @@ textarea::placeholder {
     text-align: center;
 }
 
+.enlarge-on-hover {
+    border: none;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.enlarge-on-hover::before {
+    background-color: var(--color-darkgray-main);
+    background-image: var(--bg-img);
+    background-position: center center;
+    background-size: cover;
+    border: none;
+    content: '';
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.enlarge-on-hover:hover::before, .enlarge-on-hover:focus::before {
+    transform: scale(1.15);
+}
+
 .form-label {
     display: inline-block;
     padding: 1rem 0 0.5rem;

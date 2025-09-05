@@ -25,16 +25,10 @@ function ShowCard({ className, href, title, img, style }) {
                     width: '100%',
                 }}
             >
-                <button onFocus={handleFocus} onBlur={handleFocus}
+                <button className='enlarge-on-hover' onFocus={handleFocus} onBlur={handleFocus}
                     style={{
-                        backgroundImage: `url(${basePath}/${img}`,
-                        backgroundColor: 'var(--color-darkgray-main)',
-                        backgroundPosition: 'center center',
-                        backgroundSize: 'cover',
-                        border: 'none',
-                        height: '100%',
-                        width: '100%',
-                    }}
+                        '--bg-img': `url(${basePath}/${img})`,
+                    } as React.CSSProperties}
                 >
                     <div // Lighter box that fades in on hover (and fades back out)
                         className='card-hover-anim'
