@@ -1,10 +1,18 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { Award } from '../pages/Shows/data';
 import ClickableButton from './Button';
 
-function ShowPage({ className, backgroundImage, title, video, style }) {
+function ShowPage({ className, backgroundImage, title, video, awards, style }) {
     const { basePath } = useRouter();
+
+    const renderedAwards = awards.map((award: Award) =>
+        <li key={award.id}>
+            <h3>{award.name}</h3>
+            <p>{award.text}</p>
+        </li>
+    );
 
     return (
         <div style={style}>
@@ -39,6 +47,8 @@ function ShowPage({ className, backgroundImage, title, video, style }) {
                         }}
                     ></iframe>
                 </div>
+
+                <ul>{renderedAwards}</ul>
             </div>
         </div>
     );
