@@ -51,6 +51,7 @@ export const poltergeistAwards: Award[] = [{
     text: '11th place with a score of 82.15',
 }];
 
+// No medal this year??
 export const fourDimensionsAwards: Award[] = [{
     id: 0,
     name: 'BOA Regional - Top 3 in Division',
@@ -63,30 +64,46 @@ export const fourDimensionsAwards: Award[] = [{
 
 export const ancientArtOfWarAwards: Award[] = [{
     id: 0,
-    name: null,
-    text: null,
+    name: 'BOA Regional Medalist',
+    text: '1st place in class AA at Downey Regional Championship, 3rd place in class AA at St. George Regional Championship',
+}, {
+    id: 1,
+    name: 'SCSBOA 2A Championships',
+    text: '9th place with a score of 70.05',
 }];
 
+// No medal this year??
 export const daredevilAwards: Award[] = [{
     id: 0,
-    name: null,
-    text: null,
+    name: 'BOA Regional - Top 3 in Division',
+    text: '3rd place in class AA at Long Beach Regional Championship, 3rd place in class AA at San Jose Regional Championship',
+}, {
+    id: 1,
+    name: 'SCSBOA Sweepstakes',
+    text: '1st place at Bonita Field Tournament'
 }];
 
 export const mirrorMirrorAwards: Award[] = [{
     id: 0,
-    name: null,
-    text: null,
+    name: 'BOA Regional Medalist',
+    text: '1st place in class AA at Long Beach Regional Championship, 3rd place in class AA at St. George Regional Championship',
+}, {
+    id: 1,
+    name: 'SCSBOA 4A Championships',
+    text: '12th place with a score of 74.6',
 }];
 
+// Need to ask about SCSBOA champs
+// No medal??
 export const arabiaAwards: Award[] = [{
-    id: 0,
+    id: null,
     name: null,
     text: null,
 }];
 
+// No medal??
 export const everyPassionAwards: Award[] = [{
     id: 0,
-    name: null,
-    text: null,
+    name: 'BOA Regional - Top 3 in Division',
+    text: '2nd place in class AA at Long Beach Regional Championship',
 }];
