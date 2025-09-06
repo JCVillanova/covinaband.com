@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { Award } from '../pages/Shows/data';
+import { Award } from '../data/awards';
 import ClickableButton from './Button';
 
 function ShowPage({ className, backgroundImage, title, video, awards, style }) {
