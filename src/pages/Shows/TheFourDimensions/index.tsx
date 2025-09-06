@@ -1,6 +1,6 @@
 import * as React from 'react';
 import useState from 'react';
-import { fourDimensionsAwards } from '../data';
+import { fourDimensionsAwards } from '../../../data/awards';
 import ClickableButton from '../../../components/Button';
 import NavBar from '../../../components/NavBar';
 import ShowPage from '../../../components/ShowPage';

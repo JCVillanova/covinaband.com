@@ -1,6 +1,6 @@
 import * as React from 'react';
 import useState from 'react';
-import { slitherAwards } from '../data';
+import { slitherAwards } from '../../../data/awards';
 import ClickableButton from '../../../components/Button';
 import NavBar from '../../../components/NavBar';
 import ShowPage from '../../../components/ShowPage';
