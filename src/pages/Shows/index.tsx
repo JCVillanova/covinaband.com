@@ -2,6 +2,7 @@ import * as React from 'react';
 import useState from 'react';
 import ClickableButton from '../../components/Button';
 import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 import ShowCard from '../../components/ShowCard';
 
 export default function Shows() {
@@ -29,6 +30,7 @@ export default function Shows() {
                 <ShowCard className='no-text-decoration' href='/Shows/Arabia' title='Arabia (2014)' img='assets/images/show-logos/arabia.png' style={{}}/>
                 <ShowCard className='no-text-decoration' href='/Shows/EveryPassionHasItsDestiny' title='Every Passion Has Its Destiny (2013)' img='assets/images/show-logos/every-passion-has-its-destiny.png' style={{}}/>
             </div>
+            <Footer />
         </div>
     );
 }

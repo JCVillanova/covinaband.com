@@ -267,6 +267,40 @@ textarea::placeholder {
     transform: scale(1.15);
 }
 
+.footer-category {
+    width: 20%;
+}
+
+.footer-header {
+    color: var(--color-text-primary);
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 2rem;
+    text-decoration: none;
+}
+
+.footer-icon-links {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer-subtext {
+    color: var(--color-text-primary);
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1rem 2rem;
+    text-decoration: none;
+}
+
+.footer-header:hover, .footer-subtext:hover {
+    text-decoration: underline;
+}
+
 .form-label {
     display: inline-block;
     padding: 1rem 0 0.5rem;
@@ -407,6 +441,14 @@ textarea::placeholder {
     margin-top: 1.75rem;
 }
 
+.vertical-divider {
+    background-color: var(--color-red-main);
+    flex: 0 1 auto;
+    height: 16rem;
+    margin: auto 1rem;
+    width: 2px;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px; 
@@ -417,6 +459,22 @@ textarea::placeholder {
     clip: rect(0 0 0 0); 
     overflow: hidden; 
     white-space: nowrap;
+}
+
+.white-icon-container svg {
+    color: var(--color-text-primary);
+    transition: color 0.3s ease-in-out;
+}
+
+.white-icon-container:hover svg {
+    color: var(--color-red-main);
+}
+
+#footer {
+    background-color: var(--color-darkgray-dark);
+    border-top: 2px solid;
+    border-color: var(--color-red-main);
+    display: flex;
 }
 
 #logo-text {
@@ -446,6 +504,11 @@ textarea::placeholder {
     display: flex;
     height: 6vh;
     justify-content: space-between;
+}
+
+#site-map {
+    display: flex;
+    flex: 0.75 1 auto;
 }
 
 ::spelling-error {

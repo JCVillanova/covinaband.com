@@ -53,7 +53,7 @@ function ContentList() {
                 </li>
                 <li className='navbar-item'>
                     <button>
-                        <Link className='right-link' href='/Contact'>Contact</Link>
+                        <Link className='right-link' href='/GetInvolved'>Get Involved</Link>
                     </button>
                 </li>
             </ul>
