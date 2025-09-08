@@ -303,6 +303,9 @@ textarea::placeholder {
 
 .form-label {
     display: inline-block;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
     padding: 1rem 0 0.5rem;
 }
 
@@ -313,6 +316,19 @@ textarea::placeholder {
 .form-label-nested {
     display: block;
     padding: 1rem 0 0;
+}
+
+.form-message {
+    color: var(--color-red-main);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 1.4rem 0 0.1rem;
+    margin: 0;
+}
+
+.horizontal-spread {
+    display: flex;
+    justify-content: space-between;
 }
 
 .left-navbar {

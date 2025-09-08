@@ -3,6 +3,7 @@ import useState from 'react';
 import { arabiaAwards } from '../../../data/awards';
 import ClickableButton from '../../../components/Button';
 import NavBar from '../../../components/NavBar';
+import Footer from '../../../components/Footer';
 import ShowPage from '../../../components/ShowPage';
 
 export default function Arabia() {
