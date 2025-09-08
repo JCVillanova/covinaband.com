@@ -10,6 +10,22 @@ function SiteMap() {
 
     return (
         <div id='site-map'>
+            <div className='footer-category about'>
+                <Link className='footer-header' href='/About'>About</Link>
+                <Link className='footer-subtext' href='/About/Staff'>Staff</Link>
+                <Link className='footer-subtext' href='/About/Boosters'>Band Boosters</Link>
+                <Link className='footer-subtext' href='/About/StudentLeadership'>Student Leadership</Link>
+            </div>
+            <div className='footer-category ensembles'>
+                <Link className='footer-header' href='/Ensembles'>Ensembles</Link>
+                <Link className='footer-subtext' href='/Ensembles/MarchingBand'>Marching Band</Link>
+                <Link className='footer-subtext' href='/Ensembles/ColorGuard'>Color Guard</Link>
+                <Link className='footer-subtext' href='/Ensembles/WinterGuard'>Winter Guard</Link>
+                <Link className='footer-subtext' href='/Ensembles/ConcertBand'>Concert Band</Link>
+                <Link className='footer-subtext' href='/Ensembles/JazzBand'>Jazz Band</Link>
+                <Link className='footer-subtext' href='/Ensembles/LatinBand'>Latin Band</Link>
+                <Link className='footer-subtext' href='/Ensembles/PitOrchestra'>Pit Orchestra</Link>
+            </div>
             <div className='footer-category shows'>
                 <Link className='footer-header' href='/Shows'>Shows</Link>
                 <Link className='footer-subtext' href='/Shows/Slither'>2024 (Slither)</Link>
@@ -19,23 +35,6 @@ function SiteMap() {
                 <Link className='footer-subtext' href='/Shows/Poltergeist'>2019 (Poltergeist)</Link>
                 <Link className='footer-subtext' href='/Shows/TheFourDimensions'>2021 (The Four Dimensions)</Link>
             </div>
-            <div className='footer-category ensembles'>
-                <Link className='footer-header' href='/Ensembles'>Ensembles</Link>
-                <Link className='footer-subtext' href='/Ensembles'>Marching Band</Link>
-                <Link className='footer-subtext' href='/Ensembles'>Color Guard</Link>
-                <Link className='footer-subtext' href='/Ensembles'>Concert Band</Link>
-                <Link className='footer-subtext' href='/Ensembles'>Jazz Band</Link>
-                <Link className='footer-subtext' href='/Ensembles'>Latin Band</Link>
-                <Link className='footer-subtext' href='/Ensembles'>Pit Orchestra</Link>
-            </div>
-            <div className='footer-category staff'>
-                <Link className='footer-header' href='/Staff'>Staff</Link>
-                <Link className='footer-subtext' href='/Staff'>Band Director</Link>
-                <Link className='footer-subtext' href='/Staff'>Color Guard Instructor</Link>
-                <Link className='footer-subtext' href='/Staff'>Marching/Visual Instructor</Link>
-                <Link className='footer-subtext' href='/Staff'>Band Manager</Link>
-                <Link className='footer-subtext' href='/Staff'>Student Leadership</Link>
-            </div>
             <div className='footer-category schedule'>
                 <Link className='footer-header' href='/Schedule'>Schedule</Link>
             </div>
@@ -43,7 +42,6 @@ function SiteMap() {
                 <Link className='footer-header' href='/GetInvolved'>Get Involved</Link>
                 <Link className='footer-subtext' href='/GetInvolved/Contact'>Contact</Link>
                 <Link className='footer-subtext' href='/GetInvolved/Contact'>Donate</Link>
-                <Link className='footer-subtext' href='/GetInvolved/Contact'>Become a Booster</Link>
             </div>
         </div>  
     );

@@ -34,7 +34,81 @@ function ContentList() {
                 />
                 <ul className='right-navbar'>
                     <NavigationMenu.Item className='navbar-item'>
-                        <NavigationMenu.Trigger asChild>
+                        <NavigationMenu.Trigger>
+                            <button>
+                                <Link className='right-link' href='/About'>About</Link>
+                            </button>
+                        </NavigationMenu.Trigger>
+                        <NavigationMenu.Content className='navbar-dropdown'>
+                            <ul>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/About/Staff'>Staff</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/About/Boosters'>Band Boosters</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/About/StudentLeadership'>Student Leadership</Link>
+                                    </button>
+                                </li>
+                            </ul>
+                        </NavigationMenu.Content>
+                    </NavigationMenu.Item>
+
+                    <NavigationMenu.Item className='navbar-item'>
+                        <NavigationMenu.Trigger>
+                            <button>
+                                <Link className='right-link' href='/Ensembles'>Ensembles</Link>
+                            </button>
+                        </NavigationMenu.Trigger>
+                        <NavigationMenu.Content className='navbar-dropdown'>
+                            <ul>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/Ensembles/MarchingBand'>Marching Band</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/Ensembles/ColorGuard'>Color Guard</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/Ensembles/WinterGuard'>Winter Guard</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/Ensembles/ConcertBand'>Concert Band</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/Ensembles/JazzBand'>Jazz Band</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/Ensembles/LatinBand'>Latin Band</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/Ensembles/PitOrchestra'>Pit Orchestra</Link>
+                                    </button>
+                                </li>
+                            </ul>
+                        </NavigationMenu.Content>
+                    </NavigationMenu.Item>
+
+                    <NavigationMenu.Item className='navbar-item'>
+                        <NavigationMenu.Trigger>
                             <button>
                                 <Link className='right-link' href='/Shows'>Shows</Link>
                             </button>
@@ -43,42 +117,55 @@ function ContentList() {
                             <ul>
                                 <li className='navbar-subitem'>
                                     <button>
-                                        <Link className='right-link' href='/Shows/Slither'>Slither</Link>
+                                        <Link className='right-link' href='/Shows/Slither'>Slither (2024)</Link>
                                     </button>
                                 </li>
                                 <li className='navbar-subitem'>
                                     <button>
-                                        <Link className='right-link' href='/Shows/OnStage'>On Stage</Link>
+                                        <Link className='right-link' href='/Shows/OnStage'>On Stage (2023)</Link>
                                     </button>
                                 </li>
                                 <li className='navbar-subitem'>
                                     <button>
-                                        <Link className='right-link' href='/Shows/Rise'>Rise</Link>
+                                        <Link className='right-link' href='/Shows/Rise'>Rise (2022)</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/Shows/Loop'>Loop (2021)</Link>
                                     </button>
                                 </li>
                             </ul>
                         </NavigationMenu.Content>
                     </NavigationMenu.Item>
-                    <li className='navbar-item'>
-                        <button>
-                            <Link className='right-link' href='/Ensembles'>Ensembles</Link>
-                        </button>
-                    </li>
-                    <li className='navbar-item'>
-                        <button>
-                            <Link className='right-link' href='/Staff'>Staff</Link>
-                        </button>
-                    </li>
+
                     <li className='navbar-item'>
                         <button>
                             <Link className='right-link' href='/Schedule'>Schedule</Link>
                         </button>
                     </li>
-                    <li className='navbar-item'>
-                        <button>
-                            <Link className='right-link' href='/GetInvolved'>Get Involved</Link>
-                        </button>
-                    </li>
+
+                    <NavigationMenu.Item className='navbar-item'>
+                        <NavigationMenu.Trigger>
+                            <button>
+                                <Link className='right-link' href='/GetInvolved'>Get Involved</Link>
+                            </button>
+                        </NavigationMenu.Trigger>
+                        <NavigationMenu.Content className='navbar-dropdown right-dropdown'>
+                            <ul>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/GetInvolved/Contact'>Contact</Link>
+                                    </button>
+                                </li>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/GetInvolved/Donate'>Donate</Link>
+                                    </button>
+                                </li>
+                            </ul>
+                        </NavigationMenu.Content>
+                    </NavigationMenu.Item>
                 </ul>
             </NavigationMenu.List>
         </NavigationMenu.Root>  
