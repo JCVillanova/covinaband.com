@@ -34,8 +34,8 @@ function ContentList() {
                 />
                 <ul className='right-navbar'>
                     <NavigationMenu.Item className='navbar-item'>
-                        <NavigationMenu.Trigger>
-                            <button>
+                        <NavigationMenu.Trigger asChild>
+                            <button className='right-link'>
                                 <Link className='right-link' href='/About'>About</Link>
                             </button>
                         </NavigationMenu.Trigger>
@@ -61,7 +61,7 @@ function ContentList() {
                     </NavigationMenu.Item>
 
                     <NavigationMenu.Item className='navbar-item'>
-                        <NavigationMenu.Trigger>
+                        <NavigationMenu.Trigger asChild>
                             <button>
                                 <Link className='right-link' href='/Ensembles'>Ensembles</Link>
                             </button>
@@ -108,7 +108,7 @@ function ContentList() {
                     </NavigationMenu.Item>
 
                     <NavigationMenu.Item className='navbar-item'>
-                        <NavigationMenu.Trigger>
+                        <NavigationMenu.Trigger asChild>
                             <button>
                                 <Link className='right-link' href='/Shows'>Shows</Link>
                             </button>
@@ -139,14 +139,16 @@ function ContentList() {
                         </NavigationMenu.Content>
                     </NavigationMenu.Item>
 
-                    <li className='navbar-item'>
-                        <button>
-                            <Link className='right-link' href='/Schedule'>Schedule</Link>
-                        </button>
-                    </li>
+                    <NavigationMenu.Item className='navbar-item'>
+                        <NavigationMenu.Link asChild>
+                            <button>
+                                <Link className='right-link' href='/Schedule'>Schedule</Link>
+                            </button>
+                        </NavigationMenu.Link>
+                    </NavigationMenu.Item>
 
                     <NavigationMenu.Item className='navbar-item'>
-                        <NavigationMenu.Trigger>
+                        <NavigationMenu.Trigger asChild>
                             <button>
                                 <Link className='right-link' href='/GetInvolved'>Get Involved</Link>
                             </button>

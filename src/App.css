@@ -353,6 +353,14 @@ textarea::placeholder {
     z-index: 2;
 }
 
+.navbar-dropdown[data-state='open'] {
+    animation: fade-anim-in 250ms ease;
+}
+
+.navbar-dropdown[data-state='closed'] {
+    animation: fade-anim-out 250ms ease;
+}
+
 .navbar-dropdown ul {
     list-style: none;
     padding: 0;
@@ -379,7 +387,7 @@ textarea::placeholder {
     transition: background-color 0.4s ease;
 }
 
-.navbar-item .right-link {
+.navbar-item .right-link, .right-link {
     align-items: center;
     color: var(--color-text-primary);
     display: flex;

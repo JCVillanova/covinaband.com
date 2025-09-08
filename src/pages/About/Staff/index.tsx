@@ -6,9 +6,11 @@ import Footer from '../../../components/Footer';
 
 export default function Staff() {
     return (
-        <div className='primary-bg'>
-            <NavBar />
-            <h2>Staff</h2>
+        <div>
+            <div className='primary-bg'>
+                <NavBar />
+                <h2>Staff</h2>
+            </div>
             <Footer />
         </div>
     );
