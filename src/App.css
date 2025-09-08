@@ -344,6 +344,7 @@ textarea::placeholder {
     border: 2px solid var(--color-red-main);
     border-top: none;
     border-radius: 0 0 0.5rem 0.5rem;
+    left: -2px;
     margin-top: -2px;
     overflow: hidden;
     position: absolute;
@@ -359,10 +360,6 @@ textarea::placeholder {
 
 .navbar-dropdown ul li {
     display: block;
-}
-
-.navbar-dropdown ul li button Link {
-    justify-content: left;
 }
 
 .navbar-item {
@@ -453,7 +450,8 @@ textarea::placeholder {
 }
 
 .right-dropdown {
-    right: 0;
+    left: auto;
+    right: -2px;
 }
 
 .right-navbar {
