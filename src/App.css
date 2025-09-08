@@ -333,13 +333,33 @@ textarea::placeholder {
 
 .left-navbar {
     display: flex;
+    flex: none;
+    height: 100%;
     list-style: none;
     padding: 0;
     position: relative;
 }
 
-.navbar-item {
+.navbar-dropdown {
+    border-radius: 0 0 0.5rem 0.5rem;
     overflow: hidden;
+    position: absolute;
+    top: 6vh;
+    width: 15vw;
+    z-index: 2;
+}
+
+.navbar-dropdown ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-dropdown ul li {
+    display: block;
+}
+
+.navbar-item {
+    overflow: visible;
     position: relative;
     flex: 1 0 8rem;
 }
@@ -387,6 +407,18 @@ textarea::placeholder {
     width: 2.5rem;
 }
 
+.navbar-subitem {
+    background-color: var(--color-darkgray-dark);
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-subitem button {
+    height: 6vh;
+    position: relative;
+    width: 100%;
+}
+
 .no-display {
     display: none;
 }
@@ -410,7 +442,9 @@ textarea::placeholder {
 
 .right-navbar {
     display: flex;
-    flex: 1 1;
+    flex: 1 1 auto;
+    height: 100%;
+    list-style: none;
     position: relative;
 }
 
@@ -519,6 +553,7 @@ textarea::placeholder {
     border-color: var(--color-red-main);
     display: flex;
     height: 6vh;
+    padding: 0;
     justify-content: space-between;
 }
 
