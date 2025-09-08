@@ -450,8 +450,10 @@ textarea::placeholder {
 }
 
 .right-dropdown {
+    border-bottom-right-radius: 0;
+    border-right: none;
     left: auto;
-    right: -2px;
+    right: 0;
 }
 
 .right-navbar {
