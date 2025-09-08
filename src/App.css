@@ -420,6 +420,11 @@ textarea::placeholder {
     z-index: 2;
 }
 
+.navbar-subitem .right-link {
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+
 .navbar-subitem button {
     height: 6vh;
     position: relative;
