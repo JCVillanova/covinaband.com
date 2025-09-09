@@ -37,7 +37,7 @@ function SiteMap() {
             </div>
             <div className='footer-category events get-involved'>
                 <div>
-                    <Link className='footer-header' href='/Events'>Schedule</Link>
+                    <Link className='footer-header' href='/Events'>Events</Link>
                     <Link className='footer-subtext' href='/Events/Calendar'>Calendar</Link>
                 </div>
                 <hr style={{ borderColor: 'var(--color-red-main)' }}/>
@@ -78,7 +78,7 @@ function UtilityInfo() {
                         width: 'fit-content',
                     }}
                 >
-                    <Call className='helper-icon' size='1.1rem' variant='Outline' />
+                    <Call className='helper-icon' size='1.1rem' variant='Outline' aria-hidden='true' />
                     <span>(555) 555-5555</span>
                 </Link>
             </div>
@@ -91,7 +91,7 @@ function UtilityInfo() {
                         width: 'fit-content',
                     }}
                 >
-                    <Sms className='helper-icon' size='1.1rem' variant='Outline' />
+                    <Sms className='helper-icon' size='1.1rem' variant='Outline' aria-hidden='true' />
                     <span>covinabac@gmail.com</span>
                 </Link>
             </div>
