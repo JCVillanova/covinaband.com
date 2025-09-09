@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { NavigationMenu, ScrollArea } from 'radix-ui';
-import { ArrowDown2 } from 'iconsax-reactjs';
+import { ArrowDown2, Scroll } from 'iconsax-reactjs';
 
 function ContentList() {
     const { basePath } = useRouter();
@@ -130,28 +130,74 @@ function ContentList() {
                             </button>
                         </NavigationMenu.Trigger>
                         <NavigationMenu.Content className='navbar-dropdown'>
-                            <ul>
-                                <li className='navbar-subitem'>
-                                    <button>
-                                        <Link className='right-link' href='/Shows/Slither'>Slither (2024)</Link>
-                                    </button>
-                                </li>
-                                <li className='navbar-subitem'>
-                                    <button>
-                                        <Link className='right-link' href='/Shows/OnStage'>On Stage (2023)</Link>
-                                    </button>
-                                </li>
-                                <li className='navbar-subitem'>
-                                    <button>
-                                        <Link className='right-link' href='/Shows/Rise'>Rise (2022)</Link>
-                                    </button>
-                                </li>
-                                <li className='navbar-subitem'>
-                                    <button>
-                                        <Link className='right-link' href='/Shows/Loop'>Loop (2021)</Link>
-                                    </button>
-                                </li>
-                            </ul>
+                            <ScrollArea.Root className='scrollable-navbar'>
+                                <ScrollArea.Viewport className='scroll-viewport'>
+                                    <ul>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/Slither'>Slither (2024)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/OnStage'>On Stage (2023)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/Rise'>Rise (2022)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/Loop'>Loop (2021)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/Poltergeist'>Poltergeist (2019)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/TheFourDimensions'>The Four Dimensions (2018)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/TheAncientArtOfWar'>The Ancient Art of War (2017)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/Daredevil'>Daredevil (2016)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/MirrorMirror'>Mirror Mirror (2015)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/Arabia'>Arabia (2014)</Link>
+                                            </button>
+                                        </li>
+                                        <li className='navbar-subitem'>
+                                            <button>
+                                                <Link className='right-link' href='/Shows/EveryPassionHasItsDestiny'>Every Passion Has Its Destiny (2013)</Link>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </ScrollArea.Viewport>
+                                <ScrollArea.Scrollbar orientation='vertical'>
+                                    <ScrollArea.Thumb />
+                                </ScrollArea.Scrollbar>
+                                <ScrollArea.Scrollbar orientation='horizontal'>
+                                    <ScrollArea.Thumb />
+                                </ScrollArea.Scrollbar>
+                                <ScrollArea.Corner />
+                            </ScrollArea.Root>
                         </NavigationMenu.Content>
                     </NavigationMenu.Item>
 

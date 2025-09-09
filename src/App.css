@@ -385,7 +385,7 @@ textarea::placeholder {
 .navbar-item {
     overflow: visible;
     position: relative;
-    flex: 1 0 8rem;
+    flex: 1 0 8rem; /* Important to fix navbar spacing */
 }
 
 .navbar-item button {
@@ -497,6 +497,15 @@ textarea::placeholder {
     margin: auto 0;
     height: 48rem;
     width: auto;
+}
+
+.scrollable-navbar {
+    height: 24vh;
+}
+
+.scrollable-navbar .scroll-viewport {
+    height: 100%;
+    width: 100%;
 }
 
 .secondary-bg {
