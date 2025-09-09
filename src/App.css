@@ -292,6 +292,7 @@ textarea::placeholder {
     flex: 1 1 auto;
     gap: 2rem;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .footer-subtext {
@@ -466,6 +467,11 @@ textarea::placeholder {
     right: 0;
 }
 
+.right-footer {
+    margin: auto;
+    text-align: center;
+}
+
 .right-navbar {
     display: flex;
     flex: 1 1 auto;
@@ -550,6 +556,7 @@ textarea::placeholder {
     border-top: 2px solid;
     border-color: var(--color-red-main);
     display: flex;
+    padding-right: 2rem;
 }
 
 #logo-text {
