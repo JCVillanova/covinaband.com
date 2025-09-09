@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Instagram, Youtube } from 'iconsax-reactjs';
+import { Call, Instagram, Sms, Youtube } from 'iconsax-reactjs';
 
 function SiteMap() {
     const { basePath } = useRouter();
@@ -55,10 +55,10 @@ function IconLinks() {
     return (
         <div className='footer-icon-links'>
             <a className='white-icon-container' href='https://www.instagram.com/coltsmarchingband/' target='_blank'>
-                <Instagram size="4rem" variant="Outline"/>
+                <Instagram size="4rem" variant="Outline" />
             </a>
             <a className='white-icon-container' href='https://www.youtube.com/channel/UCDKcXes61iYEWyzEy9UREag' target='_blank'>
-                <Youtube size="4rem" variant="Outline"/>
+                <Youtube size="4rem" variant="Outline" />
             </a>
         </div>
     );
@@ -68,10 +68,33 @@ function UtilityInfo() {
     return (
         <div>
             <h3 className='footer-header'><span className='red-text'>COVINA</span>BAND&GUARD</h3>
-            <p className='footer-subtext'>463 S Hollenbeck Ave, Room E6</p>
-            <p className='footer-subtext'>Covina, CA 91723</p>
-            <Link className='footer-subtext' href='tel:6264847633'>(555) 555-5555</Link>
-            <p className='footer-subtext'>covinabac@gmail.com</p>
+            <p className='footer-subtext'>463 S Hollenbeck Ave, Room E6,<br/>Covina, CA 91723</p>
+            <div>
+                <Link className='footer-subtext underline-on-hover' href='tel:6264847633'
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        margin: '1rem auto',
+                        width: 'fit-content',
+                    }}
+                >
+                    <Call className='helper-icon' size='1.1rem' variant='Outline' />
+                    <span>(555) 555-5555</span>
+                </Link>
+            </div>
+            <div>
+                <Link className='footer-subtext underline-on-hover' href='mailto:covinabac@gmail.com'
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        margin: '1rem auto',
+                        width: 'fit-content',
+                    }}
+                >
+                    <Sms className='helper-icon' size='1.1rem' variant='Outline' />
+                    <span>covinabac@gmail.com</span>
+                </Link>
+            </div>
         </div>
     );
 }

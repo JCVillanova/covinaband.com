@@ -329,6 +329,11 @@ textarea::placeholder {
     margin: 0;
 }
 
+.helper-icon {
+    display: inline-block;
+    margin-right: 4px;
+}
+
 .horizontal-spread {
     display: flex;
     justify-content: space-between;
@@ -521,6 +526,10 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
     margin-top: 1.75rem;
+}
+
+.underline-on-hover:hover {
+    text-decoration: underline;
 }
 
 .vertical-divider {
