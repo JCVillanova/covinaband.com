@@ -142,7 +142,7 @@ function ContentList() {
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Link asChild>
                             <button>
-                                <Link className='right-link' href='/Schedule'>Schedule</Link>
+                                <Link className='right-link' href='/Events'>Events</Link>
                             </button>
                         </NavigationMenu.Link>
                     </NavigationMenu.Item>

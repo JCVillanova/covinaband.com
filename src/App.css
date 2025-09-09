@@ -268,7 +268,12 @@ textarea::placeholder {
 }
 
 .footer-category {
+    flex: 1 1 auto;
     width: 20%;
+}
+
+.footer-category .footer-header:hover, .footer-category .footer-subtext:hover {
+    text-decoration: underline;
 }
 
 .footer-header {
@@ -293,12 +298,9 @@ textarea::placeholder {
     color: var(--color-text-primary);
     display: block;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     margin: 1rem 2rem;
     text-decoration: none;
-}
-
-.footer-header:hover, .footer-subtext:hover {
-    text-decoration: underline;
 }
 
 .form-label {
@@ -384,7 +386,7 @@ textarea::placeholder {
     margin: 0;
     position: absolute;
     text-align: center;
-    transition: background-color 0.4s ease;
+    transition: background-color 350ms ease;
 }
 
 .navbar-item .right-link, .right-link {
@@ -397,7 +399,7 @@ textarea::placeholder {
     justify-content: center;
     margin: auto;
     text-decoration: none;
-    transition: background-color 0.5s;
+    transition: background-color 350ms ease;
     width: 100%;
 }
 
@@ -518,7 +520,6 @@ textarea::placeholder {
 .vertical-divider {
     background-color: var(--color-red-main);
     flex: 0 1 auto;
-    height: 16rem;
     margin: auto 1rem;
     width: 2px;
 }
@@ -584,6 +585,7 @@ textarea::placeholder {
 #site-map {
     display: flex;
     flex: 0.75 1 auto;
+    margin: 1rem 3rem 1rem 0;
 }
 
 ::spelling-error {

@@ -9,7 +9,7 @@ export default function Schedules() {
         <div>
             <div className='primary-bg'>
                 <NavBar />
-                <h2>Schedules</h2>
+                <h2>Events</h2>
             </div>
             <Footer />
         </div>
