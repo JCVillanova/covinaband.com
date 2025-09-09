@@ -36,8 +36,8 @@ function ContentList() {
                 <ul className='right-navbar'>
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Trigger asChild>
-                            <button className='right-link'>
-                                <Link className='right-link' href='/About'>
+                            <button>
+                                <Link className='right-link main-right-link' href='/About'>
                                     About
                                     <div className='dropdown-arrow'>
                                         <ArrowDown2 size='1rem' variant='Outline' aria-hidden='true' />
@@ -69,7 +69,7 @@ function ContentList() {
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Trigger asChild>
                             <button>
-                                <Link className='right-link' href='/Ensembles'>
+                                <Link className='right-link main-right-link' href='/Ensembles'>
                                     Ensembles
                                     <div className='dropdown-arrow'>
                                         <ArrowDown2 size='1rem' variant='Outline' aria-hidden='true' />
@@ -121,7 +121,7 @@ function ContentList() {
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Trigger asChild>
                             <button>
-                                <Link className='right-link' href='/Shows'>
+                                <Link className='right-link main-right-link' href='/Shows'>
                                     Shows
                                     <div className='dropdown-arrow'>
                                         <ArrowDown2 size='1rem' variant='Outline' aria-hidden='true' />
@@ -185,7 +185,7 @@ function ContentList() {
                                         </li>
                                         <li className='navbar-subitem'>
                                             <button>
-                                                <Link className='right-link' href='/Shows/EveryPassionHasItsDestiny'>Every Passion Has Its Destiny (2013)</Link>
+                                                <Link className='right-link' href='/Shows/EveryPassionHasItsDestiny'>Every Passion Has Its... (2013)</Link>
                                             </button>
                                         </li>
                                     </ul>
@@ -204,7 +204,7 @@ function ContentList() {
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Link asChild>
                             <button>
-                                <Link className='right-link' href='/Events'>Events</Link>
+                                <Link className='right-link main-right-link' href='/Events'>Events</Link>
                             </button>
                         </NavigationMenu.Link>
                     </NavigationMenu.Item>
@@ -212,7 +212,7 @@ function ContentList() {
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Trigger asChild>
                             <button>
-                                <Link className='right-link' href='/GetInvolved'>
+                                <Link className='right-link main-right-link' href='/GetInvolved'>
                                     Get Involved
                                     <div className='dropdown-arrow'>
                                         <ArrowDown2 size='1rem' variant='Outline' aria-hidden='true' />

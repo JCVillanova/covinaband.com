@@ -33,7 +33,7 @@ function SiteMap() {
                 <Link className='footer-subtext' href='/Shows/Rise'>2022 (Rise)</Link>
                 <Link className='footer-subtext' href='/Shows/Loop'>2021 (Loop)</Link>
                 <Link className='footer-subtext' href='/Shows/Poltergeist'>2019 (Poltergeist)</Link>
-                <Link className='footer-subtext' href='/Shows/TheFourDimensions'>2021 (The Four Dimensions)</Link>
+                <Link className='footer-subtext' href='/Shows/TheFourDimensions'>2018 (The Four Dimensions)</Link>
             </div>
             <div className='footer-category events get-involved'>
                 <div>
