@@ -190,8 +190,8 @@ function ContentList() {
                                         </li>
                                     </ul>
                                 </ScrollArea.Viewport>
-                                <ScrollArea.Scrollbar orientation='vertical'>
-                                    <ScrollArea.Thumb />
+                                <ScrollArea.Scrollbar className='scroll-area-bar' orientation='vertical'>
+                                    <ScrollArea.Thumb className='scroll-area-thumb' />
                                 </ScrollArea.Scrollbar>
                                 <ScrollArea.Scrollbar orientation='horizontal'>
                                     <ScrollArea.Thumb />
