@@ -427,7 +427,7 @@ textarea::placeholder {
     transition: transform 125ms linear;
 }
 
-.navbar-item .right-link:hover .navbar-arrow {
+.navbar-item:has(.navbar-dropdown[data-state='open']) .navbar-arrow {
     transform: rotate(-180deg);
 }
 
