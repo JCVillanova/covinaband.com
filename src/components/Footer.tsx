@@ -70,7 +70,7 @@ function UtilityInfo() {
             <h3 className='footer-header'><span className='red-text'>COVINA</span>BAND&GUARD</h3>
             <p className='footer-subtext'>463 S Hollenbeck Ave, Room E6</p>
             <p className='footer-subtext'>Covina, CA 91723</p>
-            <p className='footer-subtext'>(555) 555-5555</p>
+            <Link className='footer-subtext' href='tel:6264847633'>(555) 555-5555</Link>
             <p className='footer-subtext'>covinabac@gmail.com</p>
         </div>
     );
