@@ -3,7 +3,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { NavigationMenu } from 'radix-ui';
+import { NavigationMenu, ScrollArea } from 'radix-ui';
+import { ArrowDown2 } from 'iconsax-reactjs';
 
 function ContentList() {
     const { basePath } = useRouter();
@@ -36,7 +37,12 @@ function ContentList() {
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Trigger asChild>
                             <button className='right-link'>
-                                <Link className='right-link' href='/About'>About</Link>
+                                <Link className='right-link' href='/About'>
+                                    About
+                                    <div className='dropdown-arrow'>
+                                        <ArrowDown2 size='1rem' variant='Outline' aria-hidden='true' />
+                                    </div>
+                                </Link>
                             </button>
                         </NavigationMenu.Trigger>
                         <NavigationMenu.Content className='navbar-dropdown'>
@@ -63,7 +69,12 @@ function ContentList() {
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Trigger asChild>
                             <button>
-                                <Link className='right-link' href='/Ensembles'>Ensembles</Link>
+                                <Link className='right-link' href='/Ensembles'>
+                                    Ensembles
+                                    <div className='dropdown-arrow'>
+                                        <ArrowDown2 size='1rem' variant='Outline' aria-hidden='true' />
+                                    </div>
+                                </Link>
                             </button>
                         </NavigationMenu.Trigger>
                         <NavigationMenu.Content className='navbar-dropdown'>
@@ -110,7 +121,12 @@ function ContentList() {
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Trigger asChild>
                             <button>
-                                <Link className='right-link' href='/Shows'>Shows</Link>
+                                <Link className='right-link' href='/Shows'>
+                                    Shows
+                                    <div className='dropdown-arrow'>
+                                        <ArrowDown2 size='1rem' variant='Outline' aria-hidden='true' />
+                                    </div>
+                                </Link>
                             </button>
                         </NavigationMenu.Trigger>
                         <NavigationMenu.Content className='navbar-dropdown'>
@@ -150,7 +166,12 @@ function ContentList() {
                     <NavigationMenu.Item className='navbar-item'>
                         <NavigationMenu.Trigger asChild>
                             <button>
-                                <Link className='right-link' href='/GetInvolved'>Get Involved</Link>
+                                <Link className='right-link' href='/GetInvolved'>
+                                    Get Involved
+                                    <div className='dropdown-arrow'>
+                                        <ArrowDown2 size='1rem' variant='Outline' aria-hidden='true' />
+                                    </div>
+                                </Link>
                             </button>
                         </NavigationMenu.Trigger>
                         <NavigationMenu.Content className='navbar-dropdown right-dropdown'>

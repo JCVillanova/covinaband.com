@@ -241,6 +241,10 @@ textarea::placeholder {
     text-align: center;
 }
 
+.dropdown-arrow {
+    margin-left: 6px;
+}
+
 .enlarge-on-hover {
     border: none;
     height: 100%;
