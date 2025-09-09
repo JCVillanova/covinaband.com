@@ -422,6 +422,15 @@ textarea::placeholder {
     background-color: var(--color-lightgray-main);
 }
 
+.navbar-item .right-link .navbar-arrow {
+    transform: rotate(0deg);
+    transition: transform 125ms linear;
+}
+
+.navbar-item .right-link:hover .navbar-arrow {
+    transform: rotate(-180deg);
+}
+
 .navbar-logo {
     display: block;
     flex: 1 0 4rem;
