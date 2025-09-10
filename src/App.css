@@ -258,6 +258,7 @@ textarea::placeholder {
 }
 
 .dropdown-arrow {
+    color: var(--color-text-primary);
     margin-left: 6px;
 }
 
@@ -402,15 +403,14 @@ textarea::placeholder {
     display: block;
 }
 
-.navbar-item {
+.navbar-item, .navmenu-item {
     display: inline-block;
     height: 100%;
     overflow: visible;
     position: relative;
-    /* Important to fix navbar spacing */
 }
 
-.navbar-item button {
+.navbar-item button, .navmenu-item button {
     background-color: transparent;
     border: none;
     padding: 0;
@@ -438,16 +438,17 @@ textarea::placeholder {
     width: 100%;
 }
 
-.navbar-item .right-link:hover {
+.navbar-item .right-link:hover, .navmenu-item .right-link:hover {
     background-color: var(--color-lightgray-main);
 }
 
-.navbar-item .right-link .navbar-arrow {
+.navbar-item .right-link .navbar-arrow, .navmenu-item .navbar-arrow {
     transform: rotate(0deg);
     transition: transform 125ms linear;
 }
 
-.navbar-item:has(.navbar-dropdown[data-state='open']) .navbar-arrow {
+.navbar-item:has(.navbar-dropdown[data-state='open']) .navbar-arrow,
+.navmenu-item:has(.navbar-dropdown[data-state='open']) .navbar-arrow {
     transform: rotate(-180deg);
 }
 
@@ -480,6 +481,11 @@ textarea::placeholder {
     height: 6vh;
     position: relative;
     width: 100%;
+}
+
+.navmenu-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .no-display {
@@ -670,7 +676,7 @@ textarea::placeholder {
 }
 
 #navmenu-content {
-    background-color: var(--color-lightgray-main);
+    background-color: var(--color-darkgray-dark);
     height: 80vh;
     left: 50%;
     margin: auto;

@@ -2,14 +2,14 @@ import * as React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Dialog, ScrollArea } from 'radix-ui';
-import { HamburgerMenu } from 'iconsax-reactjs';
+import { Accordion, Dialog, NavigationMenu, ScrollArea } from 'radix-ui';
+import { ArrowDown2, HamburgerMenu } from 'iconsax-reactjs';
 
 export default function NavMenu() {
     return (
         <div id='navmenu'>
             <Dialog.Root>
-                <Dialog.Trigger className='navbar-subitem' asChild>
+                <Dialog.Trigger asChild>
                     <button className='white-icon-container'
                         style={{
                             border: 'none',
@@ -26,6 +26,222 @@ export default function NavMenu() {
                         <Dialog.Description>
                             Something something something
                         </Dialog.Description>
+
+                        <Accordion.Root type='single' collapsible>
+                            <ul>
+                                <Accordion.Item value='item-1'>
+                                    <Link href='/About'>
+                                        About
+                                    </Link>
+                                    <Accordion.Trigger asChild>
+                                        <button>
+                                            <div className='dropdown-arrow'>
+                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                            </div>
+                                        </button>
+                                    </Accordion.Trigger>
+                                    <Accordion.Content>
+                                        <ul>
+                                            <li>
+                                                <button>
+                                                    <Link href='/About/Staff'>Staff</Link>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <Link href='/About/Boosters'>Band Boosters</Link>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <Link href='/About/StudentLeadership'>Student Leadership</Link>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </Accordion.Content>
+                                </Accordion.Item>
+                                <Accordion.Item value='item-2'>
+                                    <Link href='/Ensembles'>
+                                        Ensembles
+                                    </Link>
+                                    <Accordion.Trigger asChild>
+                                        <button>
+                                            <div className='dropdown-arrow'>
+                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                            </div>
+                                        </button>
+                                    </Accordion.Trigger>
+                                    <Accordion.Content>
+                                        <ul>
+                                            <li>
+                                                <button>
+                                                    <Link href='/Ensembles/MarchingBand'>Marching Band</Link>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <Link href='/Ensembles/ColorGuard'>Color Guard</Link>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <Link href='/Ensembles/WinterGuard'>Winter Guard</Link>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <Link href='/Ensembles/ConcertBand'>Concert Band</Link>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <Link href='/Ensembles/JazzBand'>Jazz Band</Link>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <Link href='/Ensembles/LatinBand'>Latin Band</Link>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <Link href='/Ensembles/PitOrchestra'>Pit Orchestra</Link>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </Accordion.Content>
+                                </Accordion.Item>
+                                <Accordion.Item value='item-3'>
+                                    <Link href='/Shows'>
+                                        Shows
+                                    </Link>
+                                    <Accordion.Trigger asChild>
+                                        <button>
+                                            <div className='dropdown-arrow'>
+                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                            </div>
+                                        </button>
+                                    </Accordion.Trigger>
+                                    <Accordion.Content>
+                                        <ScrollArea.Root className='scrollable-navbar'>
+                                            <ScrollArea.Viewport className='scroll-viewport'>
+                                                <ul>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/Slither'>Slither (2024)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/OnStage'>On Stage (2023)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/Rise'>Rise (2022)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/Loop'>Loop (2021)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/Poltergeist'>Poltergeist (2019)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/TheFourDimensions'>The Four Dimensions (2018)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/TheAncientArtOfWar'>The Ancient Art of War (2017)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/Daredevil'>Daredevil (2016)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/MirrorMirror'>Mirror Mirror (2015)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/Arabia'>Arabia (2014)</Link>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button>
+                                                            <Link href='/Shows/EveryPassionHasItsDestiny'>Every Passion Has Its... (2013)</Link>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </ScrollArea.Viewport>
+                                            <ScrollArea.Scrollbar className='scroll-area-bar' orientation='vertical'>
+                                                <ScrollArea.Thumb className='scroll-area-thumb' />
+                                            </ScrollArea.Scrollbar>
+                                            <ScrollArea.Scrollbar orientation='horizontal'>
+                                                <ScrollArea.Thumb />
+                                            </ScrollArea.Scrollbar>
+                                            <ScrollArea.Corner />
+                                        </ScrollArea.Root>
+                                    </Accordion.Content>
+                                </Accordion.Item>
+                                <Accordion.Item value='item-4'>
+                                    <Link href='/Events'>
+                                        Events
+                                    </Link>
+                                    <Accordion.Trigger asChild>
+                                        <button>
+                                            <div className='dropdown-arrow'>
+                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                            </div>
+                                        </button>
+                                    </Accordion.Trigger>
+                                    <Accordion.Content>
+                                        <ul>
+                                            <li>
+                                                <button>
+                                                    <Link href='/Events/Calendar'>Calendar</Link>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </Accordion.Content>
+                                </Accordion.Item>
+                                <Accordion.Item value='item-5'>
+                                    <Link href='/GetInvolved'>
+                                        Get Involved
+                                    </Link>
+                                    <Accordion.Trigger asChild>
+                                        <button>
+                                            <div className='dropdown-arrow'>
+                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                            </div>
+                                        </button>
+                                    </Accordion.Trigger>
+                                    <Accordion.Content>
+                                        <ul>
+                                            <li>
+                                                <button>
+                                                    <Link href='/GetInvolved/Contact'>Contact</Link>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <Link href='/GetInvolved/Donate'>Donate</Link>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </Accordion.Content>
+                                </Accordion.Item>
+                            </ul>
+                        </Accordion.Root>
                     </Dialog.Content>
                 </Dialog.Portal>
             </Dialog.Root>
