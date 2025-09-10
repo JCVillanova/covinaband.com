@@ -872,3 +872,17 @@ textarea::placeholder {
         height: 40vh;
     }
 }
+
+@media (hover: hover) and (pointer: fine) {
+
+}
+
+@media (hover: none), (pointer: coarse) {
+    .navbar-item:has(.navbar-dropdown[data-state='open']) .right-link {
+        pointer-events: all;
+    }
+
+    .right-link {
+        pointer-events: none;
+    }
+}
