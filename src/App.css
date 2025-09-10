@@ -664,6 +664,11 @@ textarea::placeholder {
     justify-content: space-between;
 }
 
+#navmenu {
+    display: flex;
+    margin-right: 0.5rem;
+}
+
 #navmenu-content {
     background-color: var(--color-lightgray-main);
     height: 80vh;
@@ -840,6 +845,10 @@ textarea::placeholder {
 
     #footer {
         padding-right: 2rem;
+    }
+
+    #navmenu {
+        display: none;
     }
 
     #site-map {
