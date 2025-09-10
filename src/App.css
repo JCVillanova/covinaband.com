@@ -100,10 +100,10 @@ h2 {
 h3 {
     color: var(--color-text-primary);
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 1;
-    margin: 1.5rem 1rem;
+    margin: 0.9375rem 0.625rem;
 }
 
 hr {
@@ -762,16 +762,31 @@ textarea::placeholder {
 
 /* MEDIA QUERIES FOR RESPONSIVE LAYOUTS */
 @media (min-width: 480px) {
+    h3 {
+        font-size: 1.5rem;
+        margin: 1.125rem 0.75rem;
+    }
 
+    .show-card {
+        height: 35vh;
+    }
 }
 
 @media (min-width: 768px) {
-    
+    h3 {
+        font-size: 1.75rem;
+        margin: 1.3125rem 0.875rem;
+    }
+
+    .show-card {
+        height: 40vh;
+    }
 }
 
 @media (min-width: 1024px) {
     h3 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        margin: 1.3125rem 0.875rem;
     }
 
     .footer-divider {
@@ -787,7 +802,7 @@ textarea::placeholder {
     }
 
     .show-card {
-        height: 50vh;
+        height: 30vh;
     }
 
     .shows-grid {
@@ -804,5 +819,12 @@ textarea::placeholder {
 }
 
 @media (min-width: 1280px) {
-    
+    h3 {
+        font-size: 2rem;
+        margin: 1.5rem 1rem;
+    }
+
+    .show-card {
+        height: 40vh;
+    }
 }
