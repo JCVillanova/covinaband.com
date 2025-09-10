@@ -32,7 +32,7 @@ function ShowCard({ className, href, title, img, style }) {
                     <div // Lighter box that fades in on hover (and fades back out)
                         className='card-hover-anim'
                         style={{
-                            backgroundColor: '#6c6c6c',
+                            backgroundColor: 'var(--color-darkgray-main)',
                             height: '100%',
                             inset: 0,
                             opacity: 0,

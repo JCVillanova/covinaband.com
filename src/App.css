@@ -47,6 +47,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+html[data-scroll-locked],
+body[data-scroll-locked],
+body[data-scroll-locked][data-scroll-locked] {
+  overflow: auto !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
 button {
     animation: border-anim-out 0.4s both;
     z-index: 1;
@@ -654,6 +662,27 @@ textarea::placeholder {
     height: 6vh;
     padding: 0;
     justify-content: space-between;
+}
+
+#navmenu-content {
+    background-color: var(--color-lightgray-main);
+    height: 80vh;
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    z-index: 1000;
+}
+
+#navmenu-overlay {
+    background-color: var(--color-lightgray-dark);
+    height: 100%;
+    opacity: 0.5;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 #site-map {

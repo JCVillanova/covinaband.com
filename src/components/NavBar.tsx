@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { NavigationMenu, ScrollArea } from 'radix-ui';
 import { ArrowDown2, Scroll } from 'iconsax-reactjs';
+import NavMenu from './NavMenu';
 
 function ContentList() {
     const { basePath } = useRouter();
@@ -250,6 +251,7 @@ function ContentList() {
                         </NavigationMenu.Content>
                     </NavigationMenu.Item>
                 </ul>
+                <NavMenu />
             </NavigationMenu.List>
         </NavigationMenu.Root>  
     );
