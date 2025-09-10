@@ -202,11 +202,25 @@ function ContentList() {
                     </NavigationMenu.Item>
 
                     <NavigationMenu.Item className='navbar-item'>
-                        <NavigationMenu.Link asChild>
+                        <NavigationMenu.Trigger asChild>
                             <button>
-                                <Link className='right-link' href='/Events'>Events</Link>
+                                <Link className='right-link' href='/Events'>
+                                    Events
+                                    <div className='dropdown-arrow'>
+                                        <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                    </div>
+                                </Link>
                             </button>
-                        </NavigationMenu.Link>
+                        </NavigationMenu.Trigger>
+                        <NavigationMenu.Content className='navbar-dropdown'>
+                            <ul>
+                                <li className='navbar-subitem'>
+                                    <button>
+                                        <Link className='right-link' href='/Events/Calendar'>Calendar</Link>
+                                    </button>
+                                </li>
+                            </ul>
+                        </NavigationMenu.Content>
                     </NavigationMenu.Item>
 
                     <NavigationMenu.Item className='navbar-item'>

@@ -18,10 +18,9 @@ function ShowCard({ className, href, title, img, style }) {
 
     return (
         <Link className={className} href={href} style={style}>
-            <div className={`animated-border ${focused ? 'focused' : ''}`}
+            <div className={`animated-border ${focused ? 'focused' : ''} show-card`}
                 style={{
                     borderRadius: '0.25rem',
-                    height: '25vw',
                     width: '100%',
                 }}
             >

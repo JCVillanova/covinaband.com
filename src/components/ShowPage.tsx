@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Award } from '../data/awards';
 import ClickableButton from './Button';
+import { Separator } from 'radix-ui';
 
 function ShowPage({ className, backgroundImage, title, video, awards, style }) {
     const { basePath } = useRouter();
@@ -49,6 +50,7 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
                 </div>
 
                 <ul>{renderedAwards}</ul>
+                <Separator.Root />
             </div>
         </div>
     );
