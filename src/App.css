@@ -259,6 +259,7 @@ textarea::placeholder {
 
 .dropdown-arrow {
     color: var(--color-text-primary);
+    margin-left: 0.5rem;
 }
 
 .enlarge-on-hover {
@@ -489,6 +490,7 @@ textarea::placeholder {
 .navmenu-link {
     color: var(--color-text-primary);
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -501,6 +503,20 @@ textarea::placeholder {
 
 .navmenu-link + button .navbar-arrow {
     float: right;
+}
+
+.navmenu-subcategory ul {
+    list-style-type: none;
+    padding-left: 3rem;
+}
+
+.navmenu-subcategory li {
+    padding: 1rem 0;
+}
+
+.navmenu-subcategory button {
+    background-color: #0000;
+    border: none;
 }
 
 .no-display {
@@ -575,6 +591,15 @@ textarea::placeholder {
 }
 
 .scrollable-navbar .scroll-viewport {
+    height: 100%;
+    width: 100%;
+}
+
+.scrollable-navmenu {
+    height: 90vh;
+}
+
+.scrollable-navmenu .scroll-viewport {
     height: 100%;
     width: 100%;
 }
