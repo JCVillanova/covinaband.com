@@ -691,24 +691,19 @@ textarea::placeholder {
 }
 
 #navmenu-content {
+    animation: navmenu-fade-in 250ms ease-in-out;
     background-color: var(--color-darkgray-dark);
     height: 95vh;
-    padding-top: 1rem;
     opacity: 0.9;
+    padding-top: 1rem;
     position: absolute;
     top: 6vh;
     width: 100vw;
     z-index: 1000;
 }
 
-#navmenu-overlay {
-    background-color: var(--color-lightgray-dark);
-    height: 100%;
-    opacity: 0.5;
-    position: absolute;
-    top: 6vh;
-    width: 100%;
-    z-index: 1000;
+#navmenu-content[data-state='closed'] {
+    animation: navmenu-fade-out 250ms ease-in-out;
 }
 
 #navmenu-trigger {
@@ -803,6 +798,24 @@ textarea::placeholder {
     100% {
         right: -50%;
         width: 200%;
+    }
+}
+
+@keyframes navmenu-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+@keyframes navmenu-fade-out {
+    from {
+        opacity: 0.9;
+    }
+    to {
+        opacity: 0;
     }
 }
 
