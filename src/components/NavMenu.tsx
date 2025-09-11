@@ -10,7 +10,7 @@ export default function NavMenu() {
         <div id='navmenu'>
             <Dialog.Root>
                 <Dialog.Trigger asChild>
-                    <button className='white-icon-container'
+                    <button className='white-icon-container' id='navmenu-trigger'
                         style={{
                             border: 'none',
                             color: 'var(--color-text-primary)',
@@ -22,37 +22,34 @@ export default function NavMenu() {
                 <Dialog.Portal>
                     <Dialog.Overlay id='navmenu-overlay' />
                     <Dialog.Content id='navmenu-content'>
-                        <Dialog.Title>Navigation</Dialog.Title>
-                        <Dialog.Description>
-                            Something something something
-                        </Dialog.Description>
 
                         <Accordion.Root type='single' collapsible>
-                            <ul>
                                 <Accordion.Item value='item-1'>
-                                    <Link href='/About'>
-                                        About
-                                    </Link>
-                                    <Accordion.Trigger asChild>
-                                        <button>
-                                            <div className='dropdown-arrow'>
-                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
-                                            </div>
-                                        </button>
-                                    </Accordion.Trigger>
+                                    <div className="navmenu-item">
+                                        <Link className='navmenu-link' href='/About'>
+                                            About
+                                        </Link>
+                                        <Accordion.Trigger asChild>
+                                            <button>
+                                                <div className='dropdown-arrow'>
+                                                    <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                                </div>
+                                            </button>
+                                        </Accordion.Trigger>
+                                    </div>
                                     <Accordion.Content>
                                         <ul>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/About/Staff'>Staff</Link>
                                                 </button>
                                             </li>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/About/Boosters'>Band Boosters</Link>
                                                 </button>
                                             </li>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/About/StudentLeadership'>Student Leadership</Link>
                                                 </button>
@@ -61,49 +58,51 @@ export default function NavMenu() {
                                     </Accordion.Content>
                                 </Accordion.Item>
                                 <Accordion.Item value='item-2'>
-                                    <Link href='/Ensembles'>
-                                        Ensembles
-                                    </Link>
-                                    <Accordion.Trigger asChild>
-                                        <button>
-                                            <div className='dropdown-arrow'>
-                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
-                                            </div>
-                                        </button>
-                                    </Accordion.Trigger>
+                                    <div className="navmenu-item">
+                                        <Link className='navmenu-link' href='/Ensembles'>
+                                            Ensembles
+                                        </Link>
+                                        <Accordion.Trigger asChild>
+                                            <button>
+                                                <div className='dropdown-arrow'>
+                                                    <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                                </div>
+                                            </button>
+                                        </Accordion.Trigger>
+                                    </div>
                                     <Accordion.Content>
                                         <ul>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/Ensembles/MarchingBand'>Marching Band</Link>
                                                 </button>
                                             </li>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/Ensembles/ColorGuard'>Color Guard</Link>
                                                 </button>
                                             </li>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/Ensembles/WinterGuard'>Winter Guard</Link>
                                                 </button>
                                             </li>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/Ensembles/ConcertBand'>Concert Band</Link>
                                                 </button>
                                             </li>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/Ensembles/JazzBand'>Jazz Band</Link>
                                                 </button>
                                             </li>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/Ensembles/LatinBand'>Latin Band</Link>
                                                 </button>
                                             </li>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/Ensembles/PitOrchestra'>Pit Orchestra</Link>
                                                 </button>
@@ -112,71 +111,73 @@ export default function NavMenu() {
                                     </Accordion.Content>
                                 </Accordion.Item>
                                 <Accordion.Item value='item-3'>
-                                    <Link href='/Shows'>
-                                        Shows
-                                    </Link>
-                                    <Accordion.Trigger asChild>
-                                        <button>
-                                            <div className='dropdown-arrow'>
-                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
-                                            </div>
-                                        </button>
-                                    </Accordion.Trigger>
+                                    <div className="navmenu-item">
+                                        <Link className='navmenu-link' href='/Shows'>
+                                            Shows
+                                        </Link>
+                                        <Accordion.Trigger asChild>
+                                            <button>
+                                                <div className='dropdown-arrow'>
+                                                    <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                                </div>
+                                            </button>
+                                        </Accordion.Trigger>
+                                    </div>
                                     <Accordion.Content>
                                         <ScrollArea.Root className='scrollable-navbar'>
                                             <ScrollArea.Viewport className='scroll-viewport'>
                                                 <ul>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/Slither'>Slither (2024)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/OnStage'>On Stage (2023)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/Rise'>Rise (2022)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/Loop'>Loop (2021)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/Poltergeist'>Poltergeist (2019)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/TheFourDimensions'>The Four Dimensions (2018)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/TheAncientArtOfWar'>The Ancient Art of War (2017)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/Daredevil'>Daredevil (2016)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/MirrorMirror'>Mirror Mirror (2015)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/Arabia'>Arabia (2014)</Link>
                                                         </button>
                                                     </li>
-                                                    <li>
+                                                    <li className='navmenu-link'>
                                                         <button>
                                                             <Link href='/Shows/EveryPassionHasItsDestiny'>Every Passion Has Its... (2013)</Link>
                                                         </button>
@@ -194,19 +195,21 @@ export default function NavMenu() {
                                     </Accordion.Content>
                                 </Accordion.Item>
                                 <Accordion.Item value='item-4'>
-                                    <Link href='/Events'>
-                                        Events
-                                    </Link>
-                                    <Accordion.Trigger asChild>
-                                        <button>
-                                            <div className='dropdown-arrow'>
-                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
-                                            </div>
-                                        </button>
-                                    </Accordion.Trigger>
+                                    <div className="navmenu-item">
+                                        <Link className='navmenu-link' href='/Events'>
+                                            Events
+                                        </Link>
+                                        <Accordion.Trigger asChild>
+                                            <button>
+                                                <div className='dropdown-arrow'>
+                                                    <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                                </div>
+                                            </button>
+                                        </Accordion.Trigger>
+                                    </div>
                                     <Accordion.Content>
                                         <ul>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/Events/Calendar'>Calendar</Link>
                                                 </button>
@@ -215,24 +218,26 @@ export default function NavMenu() {
                                     </Accordion.Content>
                                 </Accordion.Item>
                                 <Accordion.Item value='item-5'>
-                                    <Link href='/GetInvolved'>
-                                        Get Involved
-                                    </Link>
-                                    <Accordion.Trigger asChild>
-                                        <button>
-                                            <div className='dropdown-arrow'>
-                                                <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
-                                            </div>
-                                        </button>
-                                    </Accordion.Trigger>
+                                    <div className='navmenu-item'>
+                                        <Link className='navmenu-link' href='/GetInvolved'>
+                                            Get Involved
+                                        </Link>
+                                        <Accordion.Trigger asChild>
+                                            <button>
+                                                <div className='dropdown-arrow'>
+                                                    <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                                </div>
+                                            </button>
+                                        </Accordion.Trigger>
+                                    </div>
                                     <Accordion.Content>
                                         <ul>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/GetInvolved/Contact'>Contact</Link>
                                                 </button>
                                             </li>
-                                            <li>
+                                            <li className='navmenu-link'>
                                                 <button>
                                                     <Link href='/GetInvolved/Donate'>Donate</Link>
                                                 </button>
@@ -240,7 +245,6 @@ export default function NavMenu() {
                                         </ul>
                                     </Accordion.Content>
                                 </Accordion.Item>
-                            </ul>
                         </Accordion.Root>
                     </Dialog.Content>
                 </Dialog.Portal>

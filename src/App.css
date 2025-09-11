@@ -259,7 +259,6 @@ textarea::placeholder {
 
 .dropdown-arrow {
     color: var(--color-text-primary);
-    margin-left: 6px;
 }
 
 .enlarge-on-hover {
@@ -403,14 +402,14 @@ textarea::placeholder {
     display: block;
 }
 
-.navbar-item, .navmenu-item {
+.navbar-item{
     display: inline-block;
     height: 100%;
     overflow: visible;
     position: relative;
 }
 
-.navbar-item button, .navmenu-item button {
+.navbar-item button {
     background-color: transparent;
     border: none;
     padding: 0;
@@ -438,17 +437,16 @@ textarea::placeholder {
     width: 100%;
 }
 
-.navbar-item .right-link:hover, .navmenu-item .right-link:hover {
+.navbar-item .right-link:hover {
     background-color: var(--color-lightgray-main);
 }
 
-.navbar-item .right-link .navbar-arrow, .navmenu-item .navbar-arrow {
+.navbar-item .right-link .navbar-arrow {
     transform: rotate(0deg);
     transition: transform 125ms linear;
 }
 
-.navbar-item:has(.navbar-dropdown[data-state='open']) .navbar-arrow,
-.navmenu-item:has(.navbar-dropdown[data-state='open']) .navbar-arrow {
+.navbar-item:has(.navbar-dropdown[data-state='open']) .navbar-arrow {
     transform: rotate(-180deg);
 }
 
@@ -485,7 +483,24 @@ textarea::placeholder {
 
 .navmenu-item {
     display: flex;
-    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+.navmenu-link {
+    color: var(--color-text-primary);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.navmenu-link + button {
+    background-color: #0000;
+    border: none;
+    flex: 1 1 auto;
+    padding: 0;
+}
+
+.navmenu-link + button .navbar-arrow {
+    float: right;
 }
 
 .no-display {
@@ -677,13 +692,12 @@ textarea::placeholder {
 
 #navmenu-content {
     background-color: var(--color-darkgray-dark);
-    height: 80vh;
-    left: 50%;
-    margin: auto;
+    height: 95vh;
+    padding-top: 1rem;
+    opacity: 0.9;
     position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw;
+    top: 6vh;
+    width: 100vw;
     z-index: 1000;
 }
 
@@ -691,9 +705,14 @@ textarea::placeholder {
     background-color: var(--color-lightgray-dark);
     height: 100%;
     opacity: 0.5;
-    position: fixed;
+    position: absolute;
+    top: 6vh;
     width: 100%;
     z-index: 1000;
+}
+
+#navmenu-trigger {
+    background-color: #0000;
 }
 
 #site-map {
