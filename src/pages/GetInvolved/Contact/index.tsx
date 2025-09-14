@@ -9,7 +9,7 @@ import InteractableInput from '../../../components/Input';
 import InteractableTextArea from '../../../components/TextArea';
 import { FormMessage } from '@radix-ui/react-form';
 
-export default function Contact() {
+export default function Contact() { // TODO: FIX MOBILE RESPONSIVENESS OF CONTACT CARD
     const { basePath } = useRouter();
 
     const [firstNameMissing, setFirstNameMissing] = useState(false);
@@ -62,7 +62,7 @@ export default function Contact() {
                             >
                                 CONTACT US
                             </h2>
-                            <Separator.Root className='horizontal-divider' decorative/>
+                            <Separator.Root className='horizontal-divider' decorative />
                             <Form.Root action='/contact-form-submissions' method='post'>
                                 <Form.Field className='same-line-inputs' name='name'
                                     style={{

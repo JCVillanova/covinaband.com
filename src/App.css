@@ -100,9 +100,11 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.875rem;
     font-weight: 500;
+    left: 0.25rem;
     letter-spacing: 0.5rem;
     line-height: 1;
     margin: 0.9375rem 1rem;
+    position: relative;
 }
 
 h3 {
@@ -259,7 +261,10 @@ textarea::placeholder {
 
 .dropdown-arrow {
     color: var(--color-text-primary);
+    height: 1rem;
     margin-left: 0.5rem;
+    position: relative;
+    width: 1rem;
 }
 
 .enlarge-on-hover {
@@ -315,9 +320,14 @@ textarea::placeholder {
     align-items: center;
     display: flex;
     flex: 1 1 auto;
-    gap: 2rem;
+    gap: 1.5rem;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-icon-links svg {
+    height: 3rem;
+    width: 3rem;
 }
 
 .footer-subtext {
@@ -368,7 +378,7 @@ textarea::placeholder {
 .horizontal-divider {
     background-color: var(--color-text-primary);
     height: 2px;
-    margin-bottom: 1.75rem;
+    margin: 0 auto 1.75rem;
     width: 60vw;
 }
 
@@ -647,8 +657,8 @@ textarea::placeholder {
     border: none;
     border-radius: 1rem;
     display: block;
-    height: 33.75vw;
-    width: 60vw;
+    height: 45vw;
+    width: 80vw;
 }
 
 .shows-grid {
@@ -707,7 +717,8 @@ textarea::placeholder {
 }
 
 #logo-text {
-    margin: auto;
+    align-items: center;
+    display: flex;
 }
 
 #logo-text button {
@@ -731,7 +742,7 @@ textarea::placeholder {
     border-bottom: 2px solid;
     border-color: var(--color-red-main);
     display: flex;
-    height: 6vh;
+    height: 3.5rem;
     padding: 0;
     justify-content: space-between;
 }
@@ -902,6 +913,11 @@ textarea::placeholder {
     .show-card {
         height: 35vh;
     }
+
+    .show-video {
+        height: 42.1875vw;
+        width: 75vw;
+    }
 }
 
 @media (min-width: 768px) {
@@ -915,13 +931,38 @@ textarea::placeholder {
         margin: 1.3125rem 0.875rem;
     }
 
+    .footer-header {
+        font-size: 1.5rem;
+        margin: 1rem 2rem;
+    }
+
+    .footer-icon-links {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-icon-links svg {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .footer-subtext {
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+
     .horizontal-divider {
-        margin-bottom: 2.25rem;
+        margin: 0 auto 2.25rem;
         width: 40vw;
     }
 
     .show-card {
         height: 40vh;
+    }
+
+    .show-video {
+        height: 39.375vw;
+        width: 70vw;
     }
 
     .shows-grid {
@@ -945,9 +986,36 @@ textarea::placeholder {
         margin: 1.3125rem 1rem;
     }
 
+    .dropdown-arrow {
+        bottom: 0.275rem;
+        height: 0.9rem;
+        margin-left: 0.45rem;
+        width: 0.9rem;
+    }
+
     .footer-divider {
         display: block;
         height: 16rem;
+    }
+
+    .footer-header {
+        font-size: 1.25rem;
+        margin: 0.833rem 1.667rem;
+    }
+
+    .footer-icon-links {
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-icon-links svg {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .footer-subtext {
+        font-size: 0.833rem;
+        margin: 0.833rem 1.667rem;
     }
 
     .homepage-intro {
@@ -970,6 +1038,11 @@ textarea::placeholder {
 
     .show-card {
         height: 30vh;
+    }
+
+    .show-video {
+        height: 36.5625vw;
+        width: 65vw;
     }
 
     .shows-grid {
@@ -1015,6 +1088,13 @@ textarea::placeholder {
         margin: 1.5rem 1rem;
     }
 
+    .dropdown-arrow {
+        bottom: 0.2rem;
+        height: 1rem;
+        margin-left: 0.5rem;
+        width: 1rem;
+    }
+
     .footer-divider {
         height: 20rem;
     }
@@ -1022,6 +1102,16 @@ textarea::placeholder {
     .footer-header {
         font-size: 1.5rem;
         margin: 1rem 2rem;
+    }
+
+    .footer-icon-links {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-icon-links svg {
+        height: 4rem;
+        width: 4rem;
     }
 
     .footer-subtext {
@@ -1035,7 +1125,7 @@ textarea::placeholder {
     }
 
     .horizontal-divider {
-        margin-bottom: 3rem;
+        margin: 0 auto 3rem;
         width: 25vw;
     }
 
@@ -1046,6 +1136,11 @@ textarea::placeholder {
 
     .show-card {
         height: 40vh;
+    }
+
+    .show-video {
+        height: 33.75vw;
+        width: 60vw;
     }
 }
 

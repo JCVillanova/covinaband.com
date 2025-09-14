@@ -12,10 +12,15 @@ export default function Homepage() {
                 <NavBar />
                 <div className='homepage-intro'>
                     <h1>COVINA HIGH SCHOOL</h1>
-                    <h2>BAND & GUARD</h2>
+                    <h2
+                        style={{
+                            left: 0,
+                        }}
+                    >BAND & GUARD</h2>
                     <Separator.Root className='horizontal-divider' decorative
                         style={{
                             marginLeft: '1rem',
+                            width: '100%',
                         }}
                     />
                     <p>

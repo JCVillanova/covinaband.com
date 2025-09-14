@@ -56,10 +56,10 @@ function IconLinks() {
     return (
         <div className='footer-icon-links'>
             <a className='white-icon-container' href='https://www.instagram.com/coltsmarchingband/' target='_blank'>
-                <Instagram size="4rem" variant="Outline" />
+                <Instagram variant="Outline" />
             </a>
             <a className='white-icon-container' href='https://www.youtube.com/channel/UCDKcXes61iYEWyzEy9UREag' target='_blank'>
-                <Youtube size="4rem" variant="Outline" />
+                <Youtube variant="Outline" />
             </a>
         </div>
     );

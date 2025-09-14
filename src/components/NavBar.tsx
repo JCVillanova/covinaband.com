@@ -41,7 +41,7 @@ function ContentList() {
                                 <Link className='right-link' href='/About'>
                                     About
                                     <div className='dropdown-arrow'>
-                                        <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                        <ArrowDown2 className='navbar-arrow' variant='Outline' aria-hidden='true' />
                                     </div>
                                 </Link>
                             </button>
@@ -73,7 +73,7 @@ function ContentList() {
                                 <Link className='right-link' href='/Ensembles'>
                                     Ensembles
                                     <div className='dropdown-arrow'>
-                                        <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                        <ArrowDown2 className='navbar-arrow' variant='Outline' aria-hidden='true' />
                                     </div>
                                 </Link>
                             </button>
@@ -125,7 +125,7 @@ function ContentList() {
                                 <Link className='right-link' href='/Shows'>
                                     Shows
                                     <div className='dropdown-arrow'>
-                                        <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                        <ArrowDown2 className='navbar-arrow' variant='Outline' aria-hidden='true' />
                                     </div>
                                 </Link>
                             </button>
@@ -208,7 +208,7 @@ function ContentList() {
                                 <Link className='right-link' href='/Events'>
                                     Events
                                     <div className='dropdown-arrow'>
-                                        <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                        <ArrowDown2 className='navbar-arrow' variant='Outline' aria-hidden='true' />
                                     </div>
                                 </Link>
                             </button>
@@ -230,7 +230,7 @@ function ContentList() {
                                 <Link className='right-link' href='/GetInvolved'>
                                     Get Involved
                                     <div className='dropdown-arrow'>
-                                        <ArrowDown2 className='navbar-arrow' size='1rem' variant='Outline' aria-hidden='true' />
+                                        <ArrowDown2 className='navbar-arrow' variant='Outline' aria-hidden='true' />
                                     </div>
                                 </Link>
                             </button>

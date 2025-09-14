@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { Separator } from 'radix-ui';
 import ClickableButton from './Button';
 
 function ShowCard({ className, href, title, img, style }) {
@@ -52,7 +53,7 @@ function ShowCard({ className, href, title, img, style }) {
                                 position: 'relative',
                             }}
                         >{title}</h3>
-                        <hr
+                        <Separator.Root className='horizontal-divider'
                             style={{
                                 position: 'relative',
                                 margin: 'auto',

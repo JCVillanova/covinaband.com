@@ -29,11 +29,7 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
                 }}
             >
                 <h2 className='center-text'>{title}</h2>
-                <Separator.Root className='horizontal-divider' decorative
-                    style={{
-                        margin: '0 auto 3rem',
-                    }}
-                />
+                <Separator.Root className='horizontal-divider' decorative />
                 <div className='animated-border'
                     style={{
                         borderRadius: '1rem',
@@ -48,7 +44,7 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
                     ></iframe>
                 </div>
 
-                <ul>{renderedAwards}</ul>
+                <ul>{renderedAwards}</ul> {/* TODO: FIX LAYOUT OF SHOWPAGE AWARD TEXT */}
                 <Separator.Root />
             </div>
         </div>

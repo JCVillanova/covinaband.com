@@ -11,12 +11,7 @@ export default function Shows() {
         <div className='primary-bg'>
             <NavBar />
             <h2 className='center-text'>SHOWS</h2>
-            <Separator.Root className='horizontal-divider' decorative
-                style={{
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                }}
-            />
+            <Separator.Root className='horizontal-divider' decorative />
 
             <div className='shows-grid'>
                 <ShowCard className='no-text-decoration' href='/Shows/Slither' title='Slither (2024)' img='assets/images/show-logos/slither.png' style={{}}/>
