@@ -62,7 +62,7 @@ export default function Contact() {
                             >
                                 CONTACT US
                             </h2>
-                            <hr />
+                            <hr className='horizontal-divider' />
                             <Form.Root action='/contact-form-submissions' method='post'>
                                 <Form.Field className='same-line-inputs' name='name'
                                     style={{

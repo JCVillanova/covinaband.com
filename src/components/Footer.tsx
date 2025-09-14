@@ -103,7 +103,7 @@ export default function Footer() {
     return (
         <div id='footer'>
             <SiteMap />
-            <div className='vertical-divider footer-divider' style={{ height: '20rem' }}></div>
+            <div className='vertical-divider footer-divider'></div>
             <div className='right-footer'>
                 <IconLinks />
                 <UtilityInfo />

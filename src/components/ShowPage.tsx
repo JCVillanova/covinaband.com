@@ -29,7 +29,7 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
                 }}
             >
                 <h2 className='center-text'>{title}</h2>
-                <hr
+                <hr className='horizontal-divider'
                     style={{
                         margin: '0 auto 3rem',
                         width: '25vw',

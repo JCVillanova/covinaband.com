@@ -10,9 +10,10 @@ export default function Shows() {
         <div className='primary-bg'>
             <NavBar />
             <h2 className='center-text'>SHOWS</h2>
-            <hr
+            <hr className='horizontal-divider'
                 style={{
-                    margin: '0 auto 3rem',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
                     width: '25vw',
                 }}
             />

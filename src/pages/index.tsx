@@ -9,15 +9,10 @@ export default function Homepage() {
         <div>
             <div className='primary-bg'>
                 <NavBar />
-                <div
-                    style={{
-                        margin: '1.5rem 1rem',
-                        width: '45vw',
-                    }}
-                >
+                <div className='homepage-intro'>
                     <h1>COVINA HIGH SCHOOL</h1>
                     <h2>BAND & GUARD</h2>
-                    <hr
+                    <hr className='horizontal-divider'
                         style={{
                             marginLeft: '1rem',
                         }}

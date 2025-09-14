@@ -89,20 +89,20 @@ fieldset {
 h1 {
     color: var(--color-red-main);
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 1;
-    margin: 1.5rem 1rem;
+    margin: 0.9375rem 1rem;
 }
 
 h2 {
     color: var(--color-text-primary);
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 1.875rem;
+    font-weight: 500;
     letter-spacing: 0.5rem;
     line-height: 1;
-    margin: 1.5rem 1rem;
+    margin: 0.9375rem 1rem;
 }
 
 h3 {
@@ -305,9 +305,9 @@ textarea::placeholder {
     color: var(--color-text-primary);
     display: block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin: 1rem 2rem;
+    margin: 0.833rem 1.667rem;
     text-decoration: none;
 }
 
@@ -324,8 +324,8 @@ textarea::placeholder {
     color: var(--color-text-primary);
     display: block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    margin: 1rem 2rem;
+    font-size: 0.833rem;
+    margin: 0.833rem 1.667rem;
     text-decoration: none;
 }
 
@@ -357,6 +357,16 @@ textarea::placeholder {
 .helper-icon {
     display: inline-block;
     margin-right: 4px;
+}
+
+.homepage-intro {
+    margin: 1.5rem auto;
+    text-align: center;
+    width: 80vw;
+}
+
+.horizontal-divider {
+    margin-bottom: 1.5rem;
 }
 
 .horizontal-spread {
@@ -631,7 +641,7 @@ textarea::placeholder {
     grid-template-columns: repeat(1, 1fr);
     margin: auto;
     padding: 0 0 2rem;
-    width: 60vw;
+    width: 70vw;
 }
 
 .submit-button {
@@ -859,6 +869,11 @@ textarea::placeholder {
 
 /* MEDIA QUERIES FOR RESPONSIVE LAYOUTS */
 @media (min-width: 480px) {
+    h2 {
+        font-size: 2.25rem;
+
+    }
+
     h3 {
         font-size: 1.5rem;
         margin: 1.125rem 0.75rem;
@@ -870,6 +885,11 @@ textarea::placeholder {
 }
 
 @media (min-width: 768px) {
+    h2 {
+        font-size: 2.625rem;
+        margin: 1.3125rem 1rem;
+    }
+
     h3 {
         font-size: 1.75rem;
         margin: 1.3125rem 0.875rem;
@@ -878,16 +898,41 @@ textarea::placeholder {
     .show-card {
         height: 40vh;
     }
+
+    .shows-grid {
+        width: 65vw;
+    }
 }
 
 @media (min-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+        margin: 1.3125rem 1rem;
+    }
+
+    h2 {
+        font-size: 2.625rem;
+        margin: 1.3125rem 1rem;
+    }
+
     h3 {
         font-size: 1.75rem;
-        margin: 1.3125rem 0.875rem;
+        margin: 1.3125rem 1rem;
     }
 
     .footer-divider {
         display: block;
+        height: 16rem;
+    }
+
+    .homepage-intro {
+        margin: 1.5rem 1rem;
+        text-align: left;
+        width: 60vw;
+    }
+
+    .horizontal-divider {
+        margin-bottom: 2rem;
     }
 
     .right-footer {
@@ -904,6 +949,7 @@ textarea::placeholder {
 
     .shows-grid {
         grid-template-columns: repeat(2, 1fr);
+        width: 60vw;
     }
 
     #footer {
@@ -920,9 +966,51 @@ textarea::placeholder {
 }
 
 @media (min-width: 1280px) {
+    h1 {
+        color: var(--color-red-main);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 1;
+        margin: 1.5rem 1rem;
+    }
+
+    h2 {
+        color: var(--color-text-primary);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+        line-height: 1;
+        margin: 1.5rem 1rem;
+    }
+
     h3 {
         font-size: 2rem;
         margin: 1.5rem 1rem;
+    }
+
+    .footer-divider {
+        height: 20rem;
+    }
+
+    .footer-header {
+        font-size: 1.5rem;
+        margin: 1rem 2rem;
+    }
+
+    .footer-subtext {
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+
+    .homepage-intro {
+        margin: 1.5rem 1rem;
+        width: 45vw;
+    }
+
+    .horizontal-divider {
+        margin-bottom: 3rem;
     }
 
     .show-card {
