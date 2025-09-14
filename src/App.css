@@ -366,7 +366,10 @@ textarea::placeholder {
 }
 
 .horizontal-divider {
-    margin-bottom: 1.5rem;
+    background-color: var(--color-text-primary);
+    height: 2px;
+    margin-bottom: 1.75rem;
+    width: 60vw;
 }
 
 .horizontal-spread {
@@ -438,11 +441,11 @@ textarea::placeholder {
     color: var(--color-text-primary);
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     height: 100%;
     justify-content: center;
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 1.8rem;
     text-decoration: none;
     transition: background-color 350ms ease;
     width: 100%;
@@ -499,6 +502,7 @@ textarea::placeholder {
 
 .navmenu-link {
     color: var(--color-text-primary);
+    flex: 1 1 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     text-decoration: none;
@@ -507,7 +511,6 @@ textarea::placeholder {
 .navmenu-link + button {
     background-color: #0000;
     border: none;
-    flex: 1 1 auto;
     padding: 0;
 }
 
@@ -617,6 +620,19 @@ textarea::placeholder {
 .secondary-bg {
     background-color: var(--color-red-dark);
     min-height: 100vh;
+}
+
+.separator {
+    background-color: var(--color-red-main);
+}
+
+.separator[data-orientation='horizontal'] {
+    height: 2px;
+}
+
+.separator[data-orientation='vertical'] {
+    margin: auto 0;
+    width: 2px;
 }
 
 .show-card {
@@ -879,6 +895,10 @@ textarea::placeholder {
         margin: 1.125rem 0.75rem;
     }
 
+    .horizontal-divider {
+        width: 50vw;
+    }
+
     .show-card {
         height: 35vh;
     }
@@ -893,6 +913,11 @@ textarea::placeholder {
     h3 {
         font-size: 1.75rem;
         margin: 1.3125rem 0.875rem;
+    }
+
+    .horizontal-divider {
+        margin-bottom: 2.25rem;
+        width: 40vw;
     }
 
     .show-card {
@@ -932,7 +957,7 @@ textarea::placeholder {
     }
 
     .horizontal-divider {
-        margin-bottom: 2rem;
+        width: 30vw;
     }
 
     .right-footer {
@@ -1011,6 +1036,12 @@ textarea::placeholder {
 
     .horizontal-divider {
         margin-bottom: 3rem;
+        width: 25vw;
+    }
+
+    .navbar-item .right-link, .right-link {
+        font-size: 1rem;
+        padding: 0 2rem;
     }
 
     .show-card {

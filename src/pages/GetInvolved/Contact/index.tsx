@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { Form } from 'radix-ui';
+import { Form, Separator } from 'radix-ui';
 import ClickableButton from '../../../components/Button';
 import NavBar from '../../../components/NavBar';
 import Footer from '../../../components/Footer';
@@ -62,7 +62,7 @@ export default function Contact() {
                             >
                                 CONTACT US
                             </h2>
-                            <hr className='horizontal-divider' />
+                            <Separator.Root className='horizontal-divider' decorative/>
                             <Form.Root action='/contact-form-submissions' method='post'>
                                 <Form.Field className='same-line-inputs' name='name'
                                     style={{

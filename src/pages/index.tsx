@@ -1,5 +1,6 @@
 import * as React from 'react';
 import useState from 'react';
+import { Separator } from 'radix-ui';
 import ClickableButton from '../components/Button';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
@@ -12,7 +13,7 @@ export default function Homepage() {
                 <div className='homepage-intro'>
                     <h1>COVINA HIGH SCHOOL</h1>
                     <h2>BAND & GUARD</h2>
-                    <hr className='horizontal-divider'
+                    <Separator.Root className='horizontal-divider' decorative
                         style={{
                             marginLeft: '1rem',
                         }}

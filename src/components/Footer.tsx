@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Call, Instagram, Sms, Youtube } from 'iconsax-reactjs';
+import { Separator } from 'radix-ui';
 
 function SiteMap() {
     const { basePath } = useRouter();
@@ -40,7 +41,7 @@ function SiteMap() {
                     <Link className='footer-header' href='/Events'>Events</Link>
                     <Link className='footer-subtext' href='/Events/Calendar'>Calendar</Link>
                 </div>
-                <hr style={{ borderColor: 'var(--color-red-main)' }}/>
+                <Separator.Root className='separator' decorative />
                 <div>
                     <Link className='footer-header' href='/GetInvolved'>Get Involved</Link>
                     <Link className='footer-subtext' href='/GetInvolved/Contact'>Contact</Link>
@@ -103,7 +104,7 @@ export default function Footer() {
     return (
         <div id='footer'>
             <SiteMap />
-            <div className='vertical-divider footer-divider'></div>
+            <Separator.Root className='footer-divider separator' orientation='vertical' />
             <div className='right-footer'>
                 <IconLinks />
                 <UtilityInfo />

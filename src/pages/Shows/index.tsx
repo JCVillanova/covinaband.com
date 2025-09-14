@@ -1,5 +1,6 @@
 import * as React from 'react';
 import useState from 'react';
+import { Separator } from 'radix-ui';
 import ClickableButton from '../../components/Button';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
@@ -10,11 +11,10 @@ export default function Shows() {
         <div className='primary-bg'>
             <NavBar />
             <h2 className='center-text'>SHOWS</h2>
-            <hr className='horizontal-divider'
+            <Separator.Root className='horizontal-divider' decorative
                 style={{
                     marginLeft: 'auto',
                     marginRight: 'auto',
-                    width: '25vw',
                 }}
             />
 
