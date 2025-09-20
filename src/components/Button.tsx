@@ -69,7 +69,7 @@ function ClickableButton({ className, buttonSize, buttonColor, buttonText, style
                             className='button-text'
                             style={{
                                 // Change the font size of text based on button's size
-                                fontSize: buttonSize == 'large' ? '2rem' : buttonSize == 'medium' ? '1.5rem' : '1rem',
+                                fontSize: buttonSize == 'large' ? '2rem' : buttonSize == 'medium' ? '1.5rem' : '1.125rem',
                                 lineHeight: 1,
                                 margin: '0 1rem',
                                 position: 'relative',

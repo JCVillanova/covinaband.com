@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Form, Separator } from 'radix-ui';
 import ClickableButton from '../../../components/Button';
@@ -19,6 +19,17 @@ export default function Contact() { // TODO: FIX MOBILE RESPONSIVENESS OF CONTAC
     firstNameMissing ? 'Please enter your first name' :
     lastNameMissing ? 'Please enter your last name' : ' ';
 
+    const [buttonSize, setButtonSize] = useState(window.matchMedia('(max-width: 768px)').matches ? 'small' : 'medium');
+    
+    useEffect(() => {
+        const buttonThreshold = window.matchMedia('(max-width: 768px)');
+        const handleResize = (event) => {
+            setButtonSize(event.matches ? 'small' : 'medium');
+        };
+        buttonThreshold.addEventListener('change', handleResize);
+        return () => buttonThreshold.removeEventListener('change', handleResize);
+    }, []);
+
     return (
         <div>
             <div className='primary-bg'
@@ -29,40 +40,24 @@ export default function Contact() { // TODO: FIX MOBILE RESPONSIVENESS OF CONTAC
                 }}
             >
                 <NavBar />
-                <div className='contact-content'
-                    style={{
-                        display: 'flex',
-                        flexGrow: '1',
-                    }}
-                >
-                    <div className='contact-card'
-                        style={{
-                            alignItems: 'center',
-                            display: 'flex',
-                            flex: '0 1 80vw',
-                            justifyContent: 'center',
-                            margin: 'auto',
-                        }}
-                    >
-                        <div className='contact-form'
-                            style={{
-                                backgroundColor: 'var(--color-lightgray-light)',
-                                borderRadius: '2rem 0 0 2rem',
-                                flex: '1 1 auto',
-                                margin: '0',
-                                height: '48rem',
-                                padding: '2rem',
-                            }}
-                        >
+                <div id='contact-content'>
+                    <div id='contact-card'>
+                        <div id='contact-form'>
                             <h2
                                 style={{
-                                    margin: '0 0 1.5rem',
+                                    marginLeft: 0,
+                                    marginRight: 0,
+                                    marginTop: 0,
                                     textAlign: 'center',
                                 }}
                             >
                                 CONTACT US
                             </h2>
-                            <Separator.Root className='horizontal-divider' decorative />
+                            <Separator.Root className='contact-divider' decorative
+                                style={{
+                                    marginBottom: 0,
+                                }}
+                            />
                             <Form.Root action='/contact-form-submissions' method='post'>
                                 <Form.Field className='same-line-inputs' name='name'
                                     style={{
@@ -75,12 +70,7 @@ export default function Contact() { // TODO: FIX MOBILE RESPONSIVENESS OF CONTAC
                                             {nameMessage}
                                         </FormMessage>
                                     </div>
-                                    <div
-                                        style={{
-                                            display: 'flex',
-                                            gap: '1rem',
-                                        }}
-                                    >
+                                    <div className='name-input'>
                                         <Form.Label className='visually-hidden' htmlFor='first'>First name</Form.Label>
                                         <InteractableInput className='' style={{flex: '1 1 auto'}}
                                             autofocus={false}
@@ -148,29 +138,13 @@ export default function Contact() { // TODO: FIX MOBILE RESPONSIVENESS OF CONTAC
                                         <Form.Label className='form-label' htmlFor='message' title='required'>Message <span className='required' aria-hidden='true'>*</span></Form.Label>
                                         <Form.Message className='form-message' match='valueMissing'>Please enter a message</Form.Message>
                                     </div>
-                                    <InteractableTextArea className='' autofocus={false} inputID='message' inputName='message' placeholder='' numRows={4} required={true} spellcheck={true} style={{}} />
+                                    <InteractableTextArea className='' autofocus={false} inputID='message' inputName='message' placeholder='' numRows={5} required={true} spellcheck={true} style={{}} />
                                 </Form.Field>
 
                                 <Form.Submit asChild>
-                                    <ClickableButton className='submit-button' buttonSize='medium' buttonColor='light' buttonText='Send Message' style={{}}/>
+                                    <ClickableButton className='submit-button' buttonSize={buttonSize} buttonColor='light' buttonText='Send Message' style={{}}/>
                                 </Form.Submit>
                             </Form.Root>
-            
-                        </div>
-                        <div className='contact-image'
-                            style={{
-                                display: 'flex',
-                                flex: 'none',
-                            }}
-                        >
-                            <img className='screen-height-image'
-                                alt="Covina High School's 2024-2025 drum majors and guard captains"
-                                src={`${basePath}/assets/images/drum-majors-and-guard-captains.png`}
-                                style={{
-                                    borderRadius: '0 2rem 2rem 0',
-                                    flex: 'none',
-                                }}
-                            />
                         </div>
                     </div>
                 </div>

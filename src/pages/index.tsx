@@ -17,7 +17,7 @@ export default function Homepage() {
                             left: 0,
                         }}
                     >BAND & GUARD</h2>
-                    <Separator.Root className='horizontal-divider' decorative
+                    <Separator.Root className='contact-divider' decorative
                         style={{
                             marginLeft: '1rem',
                             width: '100%',
