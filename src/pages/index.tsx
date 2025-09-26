@@ -5,6 +5,12 @@ import ClickableButton from '../components/Button';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 
+/*
+    TODO: OVERHAUL HOMEPAGE
+      - mobile responsiveness
+      - populate with important links, including sections for about, ensembles, shows, events, and get involved
+*/
+
 export default function Homepage() {
     return (
         <div>

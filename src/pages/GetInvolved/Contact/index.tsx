@@ -9,7 +9,7 @@ import InteractableInput from '../../../components/Input';
 import InteractableTextArea from '../../../components/TextArea';
 import { FormMessage } from '@radix-ui/react-form';
 
-export default function Contact() { // TODO: FIX MOBILE RESPONSIVENESS OF CONTACT CARD
+export default function Contact() {
     const { basePath } = useRouter();
 
     const [firstNameMissing, setFirstNameMissing] = useState(false);
