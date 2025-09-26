@@ -19,16 +19,21 @@ export default function Contact() {
     firstNameMissing ? 'Please enter your first name' :
     lastNameMissing ? 'Please enter your last name' : ' ';
 
-    const [buttonSize, setButtonSize] = useState(window.matchMedia('(max-width: 768px)').matches ? 'small' : 'medium');
+    const [buttonSize, setButtonSize] = useState(null);
     
     useEffect(() => {
         const buttonThreshold = window.matchMedia('(max-width: 768px)');
         const handleResize = (event) => {
             setButtonSize(event.matches ? 'small' : 'medium');
         };
+
+        setButtonSize(buttonThreshold.matches ? 'small' : 'medium');
+
         buttonThreshold.addEventListener('change', handleResize);
         return () => buttonThreshold.removeEventListener('change', handleResize);
     }, []);
+
+    if (buttonSize === null) return null;
 
     return (
         <div>
