@@ -211,10 +211,8 @@ textarea::placeholder {
 .animated-border {
     align-items: center;
     border: 2px solid var(--color-text-primary);
-    display: flex;
     overflow: hidden;
     position: relative;
-    justify-content: center;
 }
 
 .animated-border:hover {
@@ -253,6 +251,24 @@ textarea::placeholder {
     ) border-box;
     border: 2px solid #0000;
     margin: 0;
+}
+
+.award-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    justify-content: center;
+}
+
+.award-list {
+    align-items: center;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3rem;
+    padding: 0;
+    text-align: center;
 }
 
 .center-text {
@@ -557,6 +573,10 @@ textarea::placeholder {
 
 .no-display {
     display: none;
+}
+
+.no-list-style {
+    list-style: none;
 }
 
 .no-text-decoration {
@@ -1054,6 +1074,9 @@ textarea::placeholder {
     h3 {
         font-size: 1.75rem;
         margin: 1.3125rem 1rem;
+    }
+
+    .award-list {
     }
 
     .contact-divider {

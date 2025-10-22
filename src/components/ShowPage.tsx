@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Award } from '../data/awards';
+import Card from './Card';
 import ClickableButton from './Button';
 import { Separator } from 'radix-ui';
 
@@ -9,9 +10,11 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
     const { basePath } = useRouter();
 
     const renderedAwards = awards.map((award: Award) =>
-        <li key={award.id}>
-            <h3>{award.name}</h3>
-            <p>{award.text}</p>
+        <li className='no-list-style' key={award.id}>
+            <Card className='award-card' style={{}}>
+                <h3>{award.name}</h3>
+                <p>{award.text}</p>
+            </Card>
         </li>
     );
 
@@ -44,7 +47,7 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
                     ></iframe>
                 </div>
 
-                <ul>{renderedAwards}</ul> {/* TODO: FIX LAYOUT OF SHOWPAGE AWARD TEXT */}
+                <ul className='award-list'>{renderedAwards}</ul> {/* TODO: FIX LAYOUT OF SHOWPAGE AWARD TEXT */}
                 <Separator.Root />
             </div>
         </div>
