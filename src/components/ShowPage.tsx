@@ -10,7 +10,7 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
     const { basePath } = useRouter();
 
     const renderedAwards = awards.map((award: Award) =>
-        <li className='no-list-style' key={award.id}>
+        <li className='awards-list-child no-list-style' key={award.id}>
             <Card className='award-card' style={{}}>
                 <h3>{award.name}</h3>
                 <p>{award.text}</p>

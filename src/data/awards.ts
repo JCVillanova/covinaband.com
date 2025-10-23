@@ -24,46 +24,6 @@ export const slitherAwards: Award[] = [{
     id: 1,
     name: 'SCSBOA 2A Championships',
     text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
 }];
 
 export const onStageAwards: Award[] = [{
@@ -87,11 +47,7 @@ export const riseAwards: Award[] = [{
 }];
 
 // =(
-export const loopAwards: Award[] = [{
-    id: null,
-    name: null,
-    text: null,
-}];
+export const loopAwards: Award[] = [];
 
 export const poltergeistAwards: Award[] = [{
     id: 0,

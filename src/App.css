@@ -255,7 +255,9 @@ textarea::placeholder {
 
 .award-card {
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     height: 45vh;
     justify-content: center;
@@ -263,12 +265,17 @@ textarea::placeholder {
 
 .award-list {
     align-items: center;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     margin: 3rem;
     padding: 0;
     text-align: center;
+}
+
+.awards-list-child {
+    flex-basis: 30vw;
 }
 
 .center-text {
