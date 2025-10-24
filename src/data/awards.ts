@@ -12,18 +12,6 @@ export const slitherAwards: Award[] = [{
     id: 1,
     name: 'SCSBOA 2A Championships',
     text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
-}, {
-    id: 1,
-    name: 'SCSBOA 2A Championships',
-    text: '9th place with a score of 78.45',
 }];
 
 export const onStageAwards: Award[] = [{

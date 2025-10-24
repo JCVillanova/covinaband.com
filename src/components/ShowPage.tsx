@@ -13,6 +13,11 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
         <li className='awards-list-child no-list-style' key={award.id}>
             <Card className='award-card' style={{}}>
                 <h3>{award.name}</h3>
+                <Separator.Root className='horizontal-divider' decorative
+                    style={{
+                        marginBottom: 0,
+                    }}
+                />
                 <p>{award.text}</p>
             </Card>
         </li>
@@ -48,7 +53,6 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
                 </div>
 
                 <ul className='award-list'>{renderedAwards}</ul> {/* TODO: FIX LAYOUT OF SHOWPAGE AWARD TEXT */}
-                <Separator.Root />
             </div>
         </div>
     );
