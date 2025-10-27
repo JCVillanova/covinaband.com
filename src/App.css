@@ -208,6 +208,17 @@ textarea::placeholder {
     color: var(--color-lightgray-light);
 }
 
+.about-card {
+    padding: 1.5rem;
+}
+
+.about-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1.5rem 1.5rem;
+}
+
 .animated-border {
     align-items: center;
     border: 2px solid var(--color-text-primary);
