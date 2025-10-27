@@ -2,7 +2,7 @@
   --color-text-primary: #FCFCFC;
   --color-text-secondary: #80263F;
   --color-red-main: #80263F;
-  --color-red-light: #A0465F;
+  --color-red-light: #8f5767;
   --color-red-dark: #400018;
   --color-darkgray-main: #1C1E24;
   --color-darkgray-light: #22242A;
@@ -255,17 +255,11 @@ textarea::placeholder {
 
 .award-card {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
     height: 45vh;
     justify-content: center;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.award-card:hover {
-    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .award-list {
@@ -281,6 +275,15 @@ textarea::placeholder {
 
 .awards-list-child {
     flex-basis: 30vw;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .center-text {
@@ -593,6 +596,13 @@ textarea::placeholder {
 
 .no-text-decoration {
     text-decoration: none;
+}
+
+.plain-border {
+    align-items: center;
+    border: 2px solid var(--color-text-primary);
+    overflow: hidden;
+    position: relative;
 }
 
 .primary-bg {

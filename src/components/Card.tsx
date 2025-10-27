@@ -10,7 +10,7 @@ function Card({ children, className, style }) {
 
     return (
         <div style={style}>
-            <div className={className}
+            <div className={`${className} card`}
                 style={{
                     border: '2px solid var(--color-text-primary)',
                     borderRadius: '1rem',

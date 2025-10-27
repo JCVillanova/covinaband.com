@@ -24,9 +24,10 @@ function ClickableButton({ className, buttonSize, buttonColor, buttonText, style
                     width: 'fit-content',
                 }}
             >
-                <div className={`animated-border ${buttonSize}`}
+                <div className={`${buttonColor === 'transparent' ? 'plain-border' : 'animated-border'} ${buttonSize}`}
                     style={{
                         borderRadius: buttonSize == 'large' ? '1rem' : buttonSize == 'medium' ? '0.8rem' : '0.5rem',
+                        pointerEvents: buttonColor == 'transparent' ? 'none' : 'all',
                     }}
                 >
                     <button
@@ -37,32 +38,20 @@ function ClickableButton({ className, buttonSize, buttonColor, buttonText, style
                             borderRadius: buttonSize == 'large' ? '1rem' : buttonSize == 'medium' ? '0.8rem' : '0.5rem',
                             overflow: 'hidden',
                             padding: buttonSize == 'large' ? '1.5rem 3rem' : buttonSize == 'medium' ? '1rem 2rem' : '0.75rem 1.5rem',
+                            pointerEvents: 'auto',
                             position: 'relative',
                         }}
                     >
                         <div // Lighter box that fades in on hover (and fades back out)
                             className='button-hover-anim'
                             style={{
-                                backgroundColor: '#6c6c6c',
+                                backgroundColor: buttonColor == 'transparent' ? 'rgba(255, 255, 255, 0.2)' : '#6c6c6c',
                                 height: '100%',
                                 inset: 0,
                                 opacity: 0,
                                 position: 'absolute',
                                 width: '100%',
                                 zIndex: 0,
-                            }}
-                        ></div>
-                        <div // Another diagonal box that expands from center of button on click (then shrinks)
-                            className={`button-click-anim ${clicked ? 'clicked' : ''}`}
-                            style={{
-                                backgroundColor: '#8c8c8c',
-                                bottom: '-200%',
-                                height: '500%',
-                                position: 'absolute',
-                                right: '50%',
-                                width: '0%',
-                                zIndex: 0,
-                                WebkitTransform: 'skewX(-45deg)',
                             }}
                         ></div>
                         <p
