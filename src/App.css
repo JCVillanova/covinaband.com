@@ -271,6 +271,7 @@ textarea::placeholder {
     flex-direction: column;
     height: 45vh;
     justify-content: center;
+    width: 80vw;
 }
 
 .award-list {
@@ -429,6 +430,10 @@ textarea::placeholder {
     height: 2px;
     margin: 0 auto 1.75rem;
     width: 60vw;
+}
+
+.horizontal-divider.award-divider {
+    width: 70%;
 }
 
 .horizontal-spread {
@@ -992,6 +997,10 @@ textarea::placeholder {
         margin: 1.125rem 0.75rem;
     }
 
+    .award-card {
+        width: 75vw;
+    }
+
     .contact-divider {
         width: 85%;
     }
@@ -1035,6 +1044,10 @@ textarea::placeholder {
     textarea {
         font-size: 1.125rem;
         padding: 1rem 1rem 0;
+    }
+
+    .award-card {
+        width: 40vw;
     }
 
     .contact-divider {
@@ -1219,6 +1232,10 @@ textarea::placeholder {
     h3 {
         font-size: 2rem;
         margin: 1.5rem 1rem;
+    }
+
+    .award-card {
+        width: 30vw;
     }
 
     .contact-divider {
