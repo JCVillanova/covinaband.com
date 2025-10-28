@@ -12,7 +12,7 @@ export default function About() {
     const [buttonSize, setButtonSize] = useState(null);
         
     useEffect(() => {
-        const buttonThreshold = window.matchMedia('(max-width: 768px)');
+        const buttonThreshold = window.matchMedia('(max-width: 1280px)');
         const handleResize = (event) => {
             setButtonSize(event.matches ? 'small' : 'medium');
         };
@@ -29,12 +29,13 @@ export default function About() {
         <div>
             <div className='secondary-bg'>
                 <NavBar />
-                <h2 className='center-text'>About</h2>
+                <h2 className='center-text'>ABOUT</h2>
                 <Separator.Root className='horizontal-divider' decorative />
 
                 <div className='about-cards'>
                     <Card className='about-card' style={{}}>
                         <h3>Staff</h3>
+                        <Separator.Root className='horizontal-divider card-divider' decorative />
                         <p>
                             Leading this program requires dedicated people who are invested in our students' success and growth, not just as musicians, but as people. We
                             have a wonderful team of staff who share this philosophy and are committed to making Covina's band and guard the most enjoyable and fulfilling
@@ -44,17 +45,19 @@ export default function About() {
                     </Card>
                     <Card className='about-card' style={{}}>
                         <h3>Boosters</h3>
+                        <Separator.Root className='horizontal-divider card-divider' decorative />
                         <p>
                             Our boosters do incredible work to assist at competitions, support the program, and connect with band families. With many of them being
                             current band parents, they are vital to our community.
                         </p>
-                        <div className='horizontal-buttons'>
+                        <div className='about-buttons'>
                             <ClickableButton className='' buttonSize={buttonSize} buttonColor='transparent' buttonText='View boosters' style={{}} />
                             <ClickableButton className='' buttonSize={buttonSize} buttonColor='transparent' buttonText='Become a booster' style={{}} />
                         </div>
                     </Card>
                     <Card className='about-card' style={{}}>
                         <h3>Students</h3>
+                        <Separator.Root className='horizontal-divider card-divider' decorative />
                         <p>
                             Covina's band and guard would not be possible without the help of student leadership. These inspiring young leaders work tirelessly to help
                             their peers achieve their fullest potential and are instrumental to the program's operation.

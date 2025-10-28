@@ -13,11 +13,7 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
         <li className='awards-list-child no-list-style' key={award.id}>
             <Card className='award-card' style={{}}>
                 <h3>{award.name}</h3>
-                <Separator.Root className='horizontal-divider award-divider' decorative
-                    style={{
-                        marginBottom: 0,
-                    }}
-                />
+                <Separator.Root className='horizontal-divider card-divider' decorative />
                 <p>{award.text}</p>
             </Card>
         </li>
