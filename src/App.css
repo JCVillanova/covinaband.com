@@ -13,11 +13,6 @@
   --color-background-default: #12141A;
   --color-background-other: #3d181c;
   --color-transparent: #0000;
-
-  --breakpoint-sm: 480px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1280px;
 }
 
 *, ::before, ::after {
@@ -175,9 +170,9 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
     color: var(--color-text-primary);
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.25rem;
+    font-size: 0.78125rem;
     line-height: 1.5;
-    margin: 1.5rem 1rem;
+    margin: 0.9375rem 0.625rem;
 }
 
 span {
@@ -209,14 +204,22 @@ textarea::placeholder {
 }
 
 .about-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
     padding: 1.5rem;
+    text-align: center;
 }
 
 .about-cards {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 0 1.5rem 1.5rem;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    width: 90vw;
 }
 
 .animated-border {
@@ -423,6 +426,10 @@ textarea::placeholder {
     margin: 1.5rem auto;
     text-align: center;
     width: 80vw;
+}
+
+.horizontal-buttons {
+    display: flex;
 }
 
 .horizontal-divider {
@@ -997,6 +1004,15 @@ textarea::placeholder {
         margin: 1.125rem 0.75rem;
     }
 
+    p {
+        font-size: 0.9375rem;
+        margin: 1.125rem 0.75rem;
+    }
+
+    .about-cards {
+        width: 80vw;
+    }
+
     .award-card {
         width: 75vw;
     }
@@ -1035,6 +1051,11 @@ textarea::placeholder {
         margin: 1.3125rem 0.875rem;
     }
 
+    p {
+        font-size: 1.09375rem;
+        margin: 1.3125rem 0.875rem;
+    }
+
     input {
         font-size: 1.125rem;
         height: 4rem;
@@ -1044,6 +1065,10 @@ textarea::placeholder {
     textarea {
         font-size: 1.125rem;
         padding: 1rem 1rem 0;
+    }
+
+    .about-cards {
+        width: 70vw;
     }
 
     .award-card {
@@ -1122,7 +1147,13 @@ textarea::placeholder {
         margin: 1.3125rem 1rem;
     }
 
-    .award-list {
+    p {
+        font-size: 1.09375rem;
+        margin: 1.3125rem 1rem;
+    }
+
+    .about-cards {
+        width: 60vw;
     }
 
     .contact-divider {
@@ -1232,6 +1263,15 @@ textarea::placeholder {
     h3 {
         font-size: 2rem;
         margin: 1.5rem 1rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin: 1.5rem 1rem;
+    }
+
+    .about-cards {
+        width: 50vw;
     }
 
     .award-card {
