@@ -1,10 +1,13 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Card from '../../components/Card';
 import ClickableButton from '../../components/Button';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import { Separator } from 'radix-ui';
+
+import AboutImage from '../../../public/assets/images/full-band-2024.png';
 
 // TODO: POPULATE ABOUT PAGE
 
@@ -31,6 +34,35 @@ export default function About() {
                 <NavBar />
                 <h2 className='center-text'>ABOUT</h2>
                 <Separator.Root className='horizontal-divider' decorative />
+
+                <div
+                    style={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        margin: 'auto',
+                        marginBottom: '3rem',
+                        width: '60vw',
+                    }}
+                >
+                    <div
+                        style={{
+                            flex: '1 1 40vw',
+                        }}
+                    >
+                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes.</p>
+                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes.</p>
+                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit.</p>
+                    </div>
+                    <Image
+                        src={AboutImage}
+                        alt='hello'
+                        style={{
+                            borderRadius: '1rem',
+                            height: 'auto',
+                            width: '50%',
+                        }}
+                    />
+                </div>
 
                 <div className='about-cards'>
                     <Card className='about-card' style={{}}>
