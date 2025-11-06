@@ -479,7 +479,7 @@ textarea::placeholder {
     margin-top: -2px;
     overflow: hidden;
     position: absolute;
-    top: 6vh;
+    top: 3.5rem;
     width: 15vw;
     z-index: 2;
 }
@@ -501,7 +501,7 @@ textarea::placeholder {
     display: block;
 }
 
-.navbar-item{
+.navbar-item {
     display: inline-block;
     height: 100%;
     overflow: visible;
@@ -575,7 +575,7 @@ textarea::placeholder {
 }
 
 .navbar-subitem button {
-    height: 6vh;
+    height: 3.5rem;
     position: relative;
     width: 100%;
 }
@@ -701,6 +701,7 @@ textarea::placeholder {
 
 .scrollable-navbar .scroll-viewport {
     height: 100%;
+    overflow-x: hidden !important;
     width: 100%;
 }
 
@@ -1343,6 +1344,7 @@ textarea::placeholder {
     .navbar-item .right-link, .right-link {
         font-size: 1rem;
         padding: 0 2rem;
+        white-space: nowrap;
     }
 
     .show-card {
