@@ -35,12 +35,10 @@ function ContentOnImageCard({ children, className, img, style }) {
                 <div className=''
                     style={{
                         background: 'linear-gradient(to bottom, var(--color-darkgray-dark), rgba(0, 0, 0, 0.5))',
-                        height: 0,
-                        paddingTop: '60%',
                         zIndex: 1,
                     }}
                 >
-                    <div style={{ marginTop: '-60%' }}>{children}</div>
+                    <div style={{}}>{children}</div>
                 </div>
             </div>
         </div>

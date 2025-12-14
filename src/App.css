@@ -225,10 +225,25 @@ textarea::placeholder {
 .about-cards {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     margin: auto;
     padding-bottom: 3rem;
     width: 90vw;
+}
+
+.about-image-card .card-background::before {
+    background-position: 50% 25%;
+    background-size: 35rem 35rem;
+}
+
+.about-image-card div div{
+    height: 25rem;
+    padding-top: 10%;
+    padding-bottom: 0.1rem;
+}
+
+.about-image-card div div div {
+    margin-top: -20%;
 }
 
 .animated-border {
@@ -1050,6 +1065,15 @@ textarea::placeholder {
         width: 80vw;
     }
 
+    .about-image-card .card-background::before {
+        background-position: 50% 20%;
+        background-size: 38rem 38rem;
+    }
+
+    .about-image-card div div{
+        height: 30rem;
+    }
+
     .award-card {
         width: 75vw;
     }
@@ -1106,6 +1130,15 @@ textarea::placeholder {
 
     .about-cards {
         width: 70vw;
+    }
+
+    .about-image-card .card-background::before {
+        background-position: 50% 40%;
+        background-size: 45rem 45rem;
+    }
+
+    .about-image-card div div{
+        height: 30rem;
     }
 
     .award-card {
@@ -1195,7 +1228,17 @@ textarea::placeholder {
     }
 
     .about-cards {
+        gap: 3rem;
         width: 60vw;
+    }
+
+    .about-image-card .card-background::before {
+        background-position: 50% 40%;
+        background-size: 48rem 48rem;
+    }
+
+    .about-image-card div div{
+        height: 35rem;
     }
 
     .contact-divider {
@@ -1318,6 +1361,15 @@ textarea::placeholder {
 
     .about-cards {
         width: 60vw;
+    }
+
+    .about-image-card .card-background::before {
+        background-position: 50% 60%;
+        background-size: cover;
+    }
+
+    .about-image-card div div{
+        height: 40rem;
     }
 
     .award-card {

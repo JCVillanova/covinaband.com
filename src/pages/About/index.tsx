@@ -33,7 +33,7 @@ export default function About() {
         <Separator.Root className='horizontal-divider' decorative />
 
         <div className='about-cards'>
-          <ContentOnImageCard className='' img='assets/images/full-band-2024.png' style={{}}>
+          <ContentOnImageCard className='about-image-card' img='assets/images/full-band-2024.png' style={{}}>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes.</p>
 
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit.</p>
