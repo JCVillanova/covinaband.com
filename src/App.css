@@ -17,8 +17,6 @@
 
 *, ::before, ::after {
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
 }
 
 * {
@@ -32,7 +30,7 @@
 }
 
 body {
-    background-color: '#12141a';
+    background-color: #12141a;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -83,7 +81,7 @@ fieldset {
 
 h1 {
     color: var(--color-red-main);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 1;
@@ -92,7 +90,7 @@ h1 {
 
 h2 {
     color: var(--color-text-primary);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.875rem;
     font-weight: 400;
     left: 0.25rem;
@@ -104,7 +102,7 @@ h2 {
 
 h3 {
     color: var(--color-text-primary);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1;
@@ -130,7 +128,7 @@ input {
     border: none;
     border-radius: 0.25rem;
     color: var(--color-text-primary);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     height: 3rem;
     padding-left: 0.75rem;
@@ -151,14 +149,14 @@ input::placeholder {
 
 label {
     color: var(--color-text-primary);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.25rem;
     line-height: 1.5;
 }
 
 legend {
     color: var(--color-text-primary);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.25rem;
     line-height: 1.5;
 }
@@ -169,8 +167,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 p {
     color: var(--color-text-primary);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.78125rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.7813rem;  /* 0.78125 */
     line-height: 1.5;
     margin: 0.9375rem 0.625rem;
 }
@@ -184,7 +182,7 @@ textarea {
     border: none;
     border-radius: 0.25rem;
     color: var(--color-text-primary);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     padding: 1rem 0.75rem 0;
     resize: vertical;
@@ -304,12 +302,12 @@ textarea::placeholder {
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgb(255 255 255 / 20%);
     transition: background-color 0.3s ease-in-out;
 }
 
 .card:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(255 255 255 / 30%);
 }
 
 .card-background {
@@ -393,7 +391,7 @@ textarea::placeholder {
 .footer-header {
     color: var(--color-text-primary);
     display: block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0.833rem 1.667rem;
@@ -417,7 +415,7 @@ textarea::placeholder {
 .footer-subtext {
     color: var(--color-text-primary);
     display: block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 0.833rem;
     margin: 0.833rem 1.667rem;
     text-decoration: none;
@@ -442,7 +440,7 @@ textarea::placeholder {
 
 .form-message {
     color: var(--color-red-main);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     padding: 1.4rem 0 0.1rem;
     margin: 0;
@@ -550,7 +548,7 @@ textarea::placeholder {
     align-items: center;
     color: var(--color-text-primary);
     display: flex;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 0.9rem;
     height: 100%;
     justify-content: center;
@@ -613,7 +611,7 @@ textarea::placeholder {
 .navmenu-link {
     color: var(--color-text-primary);
     flex: 1 1 auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     text-decoration: none;
 }
@@ -684,7 +682,7 @@ textarea::placeholder {
 
 .right-footer {
     margin: auto;
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 1rem;
     text-align: center;
 }
 
@@ -709,7 +707,7 @@ textarea::placeholder {
 
 .scroll-area-bar {
     background: var(--color-lightgray-dark);
-    border-radius: 0.35rem 0 0.25rem 0;
+    border-radius: 0.35rem 0 0.25rem;
     padding: 0.2rem;
     width: 0.75rem;
     z-index: 3;
@@ -807,7 +805,7 @@ textarea::placeholder {
     margin: -1px; 
     border: 0; 
     padding: 0;
-    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
     overflow: hidden; 
     white-space: nowrap;
 }
@@ -863,7 +861,7 @@ textarea::placeholder {
 }
 
 #logo-text button a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     font-weight: 900;
     text-decoration: none;
@@ -915,16 +913,12 @@ textarea::placeholder {
 }
 
 @keyframes border-anim-in {
-    0% {
-    }
     100% {
         border-color: var(--color-lightgray-main);
     }
 }
 
 @keyframes border-anim-out {
-    0% {
-    }
     100% {
         border-color: var(--color-text-primary);
     }
@@ -934,6 +928,7 @@ textarea::placeholder {
     0% {
         opacity: 0.7;
     }
+
     100% {
         opacity: 0.9;
     }
@@ -943,6 +938,7 @@ textarea::placeholder {
     0% {
         opacity: 0.9;
     }
+
     100% {
         opacity: 0.7;
     }
@@ -952,6 +948,7 @@ textarea::placeholder {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 100;
     }
@@ -961,6 +958,7 @@ textarea::placeholder {
     0% {
         opacity: 100;
     }
+
     100% {
         opacity: 0;
     }
@@ -970,6 +968,7 @@ textarea::placeholder {
     0% {
         background-color: transparent;
     }
+
     100% {
         background-color: var(--color-lightgray-main);
     }
@@ -979,6 +978,7 @@ textarea::placeholder {
     0% {
         backgroundColor: var(--color-lightgray-main);
     }
+
     100% {
         backgroundColor: transparent;
     }
@@ -989,6 +989,7 @@ textarea::placeholder {
         right: 50%;
         width: 0%;
     }
+
     100% {
         right: -50%;
         width: 200%;
@@ -999,6 +1000,7 @@ textarea::placeholder {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 0.9;
     }
@@ -1008,6 +1010,7 @@ textarea::placeholder {
     from {
         opacity: 0.9;
     }
+
     to {
         opacity: 0;
     }
@@ -1027,7 +1030,7 @@ textarea::placeholder {
 
 
 /* MEDIA QUERIES FOR RESPONSIVE LAYOUTS */
-@media (min-width: 480px) {
+@media (width >= 480px) {
     h2 {
         font-size: 2.25rem;
         letter-spacing: 0.35rem;
@@ -1073,7 +1076,7 @@ textarea::placeholder {
     }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
     h2 {
         font-size: 2.625rem;
         letter-spacing: 0.4rem;
@@ -1086,7 +1089,7 @@ textarea::placeholder {
     }
 
     p {
-        font-size: 1.09375rem;
+        font-size: 1.0938rem;  /* 1.09375 */
         margin: 1.3125rem 0.875rem;
     }
 
@@ -1164,7 +1167,7 @@ textarea::placeholder {
     }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
     h1 {
         font-size: 3.5rem;
         margin: 1.3125rem 1rem;
@@ -1182,7 +1185,7 @@ textarea::placeholder {
     }
 
     p {
-        font-size: 1.09375rem;
+        font-size: 1.0938rem;  /* 1.90375 */
         margin: 1.3125rem 1rem;
     }
 
@@ -1280,10 +1283,10 @@ textarea::placeholder {
     }
 }
 
-@media (min-width: 1280px) {
+@media (width >= 1280px) {
     h1 {
         color: var(--color-red-main);
-        font-family: 'Montserrat', sans-serif;
+        font-family: Montserrat, sans-serif;
         font-size: 4rem;
         font-weight: 800;
         line-height: 1;
@@ -1292,7 +1295,7 @@ textarea::placeholder {
 
     h2 {
         color: var(--color-text-primary);
-        font-family: 'Montserrat', sans-serif;
+        font-family: Montserrat, sans-serif;
         font-size: 3rem;
         letter-spacing: 0.5rem;
         line-height: 1;
@@ -1387,7 +1390,7 @@ textarea::placeholder {
 }
 
 @media (hover: hover) and (pointer: fine) {
-
+    /* Might be useful for mouse user UI things in the future? */
 }
 
 @media (hover: none), (pointer: coarse) {

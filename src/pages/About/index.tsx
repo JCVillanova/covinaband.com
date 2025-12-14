@@ -1,14 +1,10 @@
-import * as React from 'react';
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import Card from '../../components/Card';
 import ClickableButton from '../../components/Button';
 import ContentOnImageCard from '../../components/ContentOnImageCard'
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import { Separator } from 'radix-ui';
-
-import AboutImage from '../../../public/assets/images/full-band-2024.png';
 
 // TODO: POPULATE ABOUT PAGE
 
@@ -17,7 +13,7 @@ export default function About() {
 
   useEffect(() => {
     const buttonThreshold = window.matchMedia('(max-width: 1280px)');
-    const handleResize = (event) => {
+    const handleResize = (event: MediaQueryListEvent) => {
       setButtonSize(event.matches ? 'small' : 'medium');
     };
 
