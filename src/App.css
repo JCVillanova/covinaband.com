@@ -177,6 +177,14 @@ span {
     color: var(--color-text-primary);
 }
 
+strong {
+    color: var(--color-text-primary);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.7813rem;  /* 0.78125 */
+    line-height: 1.5;
+    margin: 0.9375rem 0.625rem;
+}
+
 textarea {
     background-color: var(--color-lightgray-main);
     border: none;
@@ -503,6 +511,14 @@ textarea::placeholder {
     margin-right: 0;
 }
 
+.link {
+    color: var(--color-text-primary);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.7813rem;  /* 0.78125 */
+    line-height: 1.5;
+    margin: 0.9375rem 0.625rem;
+}
+
 .name-input {
     display: flex;
     flex-direction: column;
@@ -678,6 +694,27 @@ textarea::placeholder {
     background-color: var(--color-darkgray-main);
     min-height: 100vh;
     width: 100%;
+}
+
+.profile-card {
+    padding: 1rem;
+    width: 85%;
+}
+
+.profile-card-email {
+    margin-top: 0;
+    text-align: center;
+}
+
+.profile-card-picture {
+    height: auto;
+    margin: auto;
+    width: 12rem;
+}
+
+.profile-card-title {
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .red-text {
@@ -1061,6 +1098,11 @@ textarea::placeholder {
         margin: 1.125rem 0.75rem;
     }
 
+    strong {
+        font-size: 0.9375rem;
+        margin: 1.125rem 0.75rem;
+    }
+
     .about-cards {
         width: 80vw;
     }
@@ -1084,6 +1126,11 @@ textarea::placeholder {
 
     .horizontal-divider {
         width: 50vw;
+    }
+
+    .link {
+        font-size: 0.9375rem;
+        margin: 1.125rem 0.75rem;
     }
 
     .show-card {
@@ -1113,6 +1160,11 @@ textarea::placeholder {
     }
 
     p {
+        font-size: 1.0938rem;  /* 1.09375 */
+        margin: 1.3125rem 0.875rem;
+    }
+
+    strong {
         font-size: 1.0938rem;  /* 1.09375 */
         margin: 1.3125rem 0.875rem;
     }
@@ -1182,6 +1234,11 @@ textarea::placeholder {
         width: 40vw;
     }
 
+    .link {
+        font-size: 1.0938rem;  /* 1.09375 */
+        margin: 1.3125rem 0.875rem;
+    }
+
     .name-input {
         flex-direction: row;
     }
@@ -1218,6 +1275,11 @@ textarea::placeholder {
     }
 
     p {
+        font-size: 1.0938rem;  /* 1.90375 */
+        margin: 1.3125rem 1rem;
+    }
+
+    strong {
         font-size: 1.0938rem;  /* 1.90375 */
         margin: 1.3125rem 1rem;
     }
@@ -1285,6 +1347,11 @@ textarea::placeholder {
 
     .horizontal-divider {
         width: 30vw;
+    }
+
+    .link {
+        font-size: 1.0938rem;  /* 1.90375 */
+        margin: 1.3125rem 1rem;
     }
 
     .right-footer {
@@ -1355,6 +1422,11 @@ textarea::placeholder {
         margin: 1.5rem 1rem;
     }
 
+    strong {
+        font-size: 1.25rem;
+        margin: 1.5rem 1rem;
+    }
+
     .about-buttons {
         gap: 2rem;
     }
@@ -1419,6 +1491,11 @@ textarea::placeholder {
     .horizontal-divider {
         margin: 0 auto 3rem;
         width: 25vw;
+    }
+
+    .link {
+        font-size: 1.25rem;
+        margin: 1.5rem 1rem;
     }
 
     .navbar-item .right-link, .right-link {
