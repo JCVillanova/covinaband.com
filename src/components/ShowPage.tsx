@@ -48,7 +48,7 @@ function ShowPage({ className, backgroundImage, title, video, awards, style }) {
                     ></iframe>
                 </div>
 
-                <ul className='award-list'>{renderedAwards}</ul> {/* TODO: FIX LAYOUT OF SHOWPAGE AWARD TEXT */}
+                <ul className='award-list'>{renderedAwards}</ul>
             </div>
         </div>
     );

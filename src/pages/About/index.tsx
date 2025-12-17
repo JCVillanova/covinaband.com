@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Card from '../../components/Card';
 import ClickableButton from '../../components/Button';
 import ContentOnImageCard from '../../components/ContentOnImageCard'
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import { Separator } from 'radix-ui';
-
-// TODO: POPULATE ABOUT PAGE
 
 export default function About() {
   const [buttonSize, setButtonSize] = useState(null);
@@ -34,6 +33,7 @@ export default function About() {
 
         <div className='about-cards'>
           <ContentOnImageCard className='about-image-card' img='assets/images/full-band-2024.png' style={{}}>
+            { /* TODO: CHANGE PLACEHOLDER TEXT */ }
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes.</p>
 
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit.</p>
@@ -46,7 +46,9 @@ export default function About() {
               have a wonderful team of staff who share this philosophy and are committed to making Covina's band and guard the most enjoyable and fulfilling
               program it can be.
             </p>
-            <ClickableButton className='' buttonSize={buttonSize} buttonColor='transparent' buttonText='View staff' style={{}} />
+            <Link href='/About/Staff'>
+              <ClickableButton className='' buttonSize={buttonSize} buttonColor='transparent' buttonText='View staff' style={{}} />
+            </Link>
           </Card>
           <Card className='about-card' style={{}}>
             <h3>Boosters</h3>
@@ -56,7 +58,10 @@ export default function About() {
               current band parents, they are vital to our community.
             </p>
             <div className='about-buttons'>
-              <ClickableButton className='' buttonSize={buttonSize} buttonColor='transparent' buttonText='View boosters' style={{}} />
+              <Link href='/About/Boosters'>
+                <ClickableButton className='' buttonSize={buttonSize} buttonColor='transparent' buttonText='View boosters' style={{}} />
+              </Link>
+              { /* TODO: ASK BOOSTERS IF THIS PAGE IS WANTED */ }
               <ClickableButton className='' buttonSize={buttonSize} buttonColor='transparent' buttonText='Become a booster' style={{}} />
             </div>
           </Card>
@@ -67,7 +72,9 @@ export default function About() {
               Covina's band and guard would not be possible without the help of student leadership. These inspiring young leaders work tirelessly to help
               their peers achieve their fullest potential and are instrumental to the program's operation.
             </p>
-            <ClickableButton className='' buttonSize={buttonSize} buttonColor='transparent' buttonText='View leaders' style={{}} />
+            <Link href='/About/StudentLeadership'>
+              <ClickableButton className='' buttonSize={buttonSize} buttonColor='transparent' buttonText='View leaders' style={{}} />
+            </Link>
           </Card>
         </div>
       </div>
