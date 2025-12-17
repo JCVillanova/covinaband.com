@@ -10,7 +10,7 @@ import Footer from '../../../components/Footer';
 export default function StudentLeadership() {
     return (
         <div>
-            <div className='primary-bg'>
+            <div className='secondary-bg'>
                 <NavBar />
                 <h2 className='center-text'>STUDENT LEADERSHIP</h2>
                 <Separator.Root className='horizontal-divider' decorative />
