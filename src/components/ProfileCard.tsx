@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Card from "./Card";
 import useWindowDimensions from "../utils/useWindowDimensions";
-import { ProfileCircle } from "iconsax-reactjs";
+import { ArrowDown2, ProfileCircle } from "iconsax-reactjs";
 
 function ProfileCard({
     children,
@@ -52,12 +52,27 @@ function ProfileCard({
                     }
                     <div
                         style={{
-                            display: ((mobile && opened) || !mobile) ? "block" : "none",
+                            display: ((mobile && opened) || !mobile) ? 'block' : 'none',
                         }}
                     >
                         <p className="profile-card-bio">{children}</p>{" "}
                         {/* Bio here */}
                     </div>
+					<div
+						className='profile-card-button'
+						style={{
+							display: mobile ? 'block' : 'none',
+						}}
+					>
+						<p
+							style={{
+								
+							}}
+						>
+							More
+							<ArrowDown2 className='profile-card-arrow' variant='Outline' aria-hidden='true' />
+						</p>
+					</div>
                 </div>
             </div>
         </Card>
