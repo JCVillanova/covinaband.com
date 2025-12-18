@@ -697,14 +697,17 @@ textarea::placeholder {
 }
 
 .profile-card {
-    display: flex;
-    flex-direction: column;
     padding: 1rem;
     width: 85%;
 }
 
 .profile-card-bio {
     margin-bottom: 0;
+}
+
+.profile-card-content-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-card-email {
@@ -1360,13 +1363,17 @@ textarea::placeholder {
         margin: 1.3125rem 1rem;
     }
 
-    .profile-card {
-        align-items: center;
-        flex-direction: row;
+    .profile-card-bio {
+        height: auto;
     }
 
     .profile-card-content {
         flex-grow: 1;
+    }
+
+    .profile-card-content-container {
+        align-items: center;
+        flex-direction: row;
     }
 
     .profile-card-email {
