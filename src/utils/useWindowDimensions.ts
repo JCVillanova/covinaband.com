@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
 function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
+    const hasWindow = typeof window !== "undefined";
+    
     return {
-        width,
-        height,
+      width: hasWindow ? window.innerWidth : null,
+      height: hasWindow ? window.innerHeight : null,
     };
 }
 
@@ -19,7 +20,7 @@ export default function useWindowDimensions() {
     // Add event listener when the component mounts
     window.addEventListener('resize', handleResize);
     // Call handleResize initially to set state
-    handleResize();
+    handleResize();119.4
 
     // Cleanup
     return () => window.removeEventListener('resize', handleResize);
