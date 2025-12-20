@@ -13,22 +13,22 @@ function ContentList() {
     return (
         <NavigationMenu.Root>
             <NavigationMenu.List id='navbar'>
-                <ul className='left-navbar'>
-                    <li className="navbar-logo">
-                        <img
-                            alt="Covina High School's logo"
-                            src={`${basePath}/assets/images/icons/covina-logo.png`}
-                        />
-                    </li>
-                    <li id='logo-text'>
-                        <button>
-                            <Link href='/'>
-                                <span className='red-text'>COVINA</span>
-                                <span>BAND&GUARD</span>
-                            </Link>
-                        </button>
-                    </li>
-                </ul>
+                <button className='no-button-styles'>
+                    <Link href='/' className='no-link-styles'>
+                        <ul className='left-navbar'>
+                            <li className="navbar-logo">
+                                <img
+                                    alt="Covina High School's logo"
+                                    src={`${basePath}/assets/images/icons/covina-logo.png`}
+                                />
+                            </li>
+                            <li id='logo-text'>
+                                        <span className='red-text'>COVINA</span>
+                                        <span>BAND&GUARD</span>
+                            </li>
+                        </ul>
+                    </Link>
+                </button>
                 <div
                     style={{
                         flex: '4 1 auto',
