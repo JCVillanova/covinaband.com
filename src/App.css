@@ -247,7 +247,7 @@ textarea::placeholder {
     flex-direction: column;
     gap: 2rem;
     margin: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     width: 90vw;
 }
 
@@ -722,7 +722,7 @@ textarea::placeholder {
 
 .profile-card {
     padding: 1rem;
-    
+
     /* Adding a height transition here breaks Card hover transition */
     width: 85%;
 }
@@ -782,6 +782,14 @@ textarea::placeholder {
 .profile-card-title {
     margin-bottom: 0;
     text-align: center;
+}
+
+.profile-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+    padding-bottom: 2rem;
 }
 
 .red-text {
@@ -1373,6 +1381,7 @@ textarea::placeholder {
 
     .about-cards {
         gap: 3rem;
+        padding-bottom: 3rem;
         width: 60vw;
     }
 
@@ -1467,6 +1476,11 @@ textarea::placeholder {
     .profile-card-title {
         margin: 0;
         text-align: left;
+    }
+
+    .profile-cards {
+        gap: 3rem;
+        padding-bottom: 3rem;
     }
 
     .right-footer {
