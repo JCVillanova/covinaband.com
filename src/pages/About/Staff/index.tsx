@@ -24,6 +24,33 @@ export default function Staff() {
                 >
                     Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes. Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit.
                 </ProfileCard>
+                <ProfileCard
+                    className=''
+                    name='Ashley Gonzalez'
+                    position='Color Guard Instructor'
+                    email='something@example.com'
+                    style={{}}
+                >
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes. Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit.
+                </ProfileCard>
+                <ProfileCard
+                    className=''
+                    name='Melody Franco'
+                    position='Marching/Visual Instructor'
+                    email='mfranco@c-vusd.org'
+                    style={{}}
+                >
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes. Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit.
+                </ProfileCard>
+                <ProfileCard
+                    className=''
+                    name='Jedrick Enclona'
+                    position='Band Manager'
+                    email='jedrickenclona2@gmail.com'
+                    style={{}}
+                >
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit. Mus lectus urna tellus auctor quisque egestas fames efficitur. Molestie potenti convallis, rutrum ante semper diam ultricies montes. Lorem ipsum odor amet, consectetuer adipiscing elit. Vel ornare parturient feugiat diam molestie hac. Auctor curae mi platea purus hendrerit.
+                </ProfileCard>
             </div>
             <Footer />
         </div>

@@ -344,6 +344,9 @@ textarea::placeholder {
 
 .card {
     background-color: rgb(255 255 255 / 20%);
+    border: 2px solid var(--color-text-primary);
+    border-radius: 1rem;
+    margin: auto;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -719,7 +722,8 @@ textarea::placeholder {
 
 .profile-card {
     padding: 1rem;
-    transition: height 500ms linear;
+    
+    /* Adding a height transition here breaks Card hover transition */
     width: 85%;
 }
 

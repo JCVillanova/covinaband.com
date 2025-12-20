@@ -16,11 +16,9 @@ function ProfileCard({
 }) {
     const { width } = useWindowDimensions();
     const mobileBreakPoint = 1024;
-    const [opened, setOpened] = useState(false);
     const [mobile, setMobile] = useState(false);
     const [mounted, setMounted] = useState(false);
     const [openValue, setOpenValue] = useState("none");
-    const [buttonText, setButtonText] = useState("More");
 
     useEffect(() => {
         setMounted(true);
@@ -73,13 +71,13 @@ function ProfileCard({
     }
 
     return (
-        <Card className="profile-card" style={{}}>
-            <Accordion.Root
-                type="single"
-                collapsible
-                value={openValue}
-                onValueChange={setOpenValue}
-            >
+        <Accordion.Root
+            type="single"
+            collapsible
+            value={openValue}
+            onValueChange={setOpenValue}
+        >
+            <Card className="profile-card" style={{}}>
                 <div className="profile-card-content-container">
                     <ProfileCircle
                         className="profile-card-picture"
@@ -126,11 +124,7 @@ function ProfileCard({
                                     display: mobile ? "block" : "none",
                                 }}
                             >
-                                <p
-                                    onClick={() => {
-                                        setOpened(!opened);
-                                    }}
-                                >
+                                <p>
                                     <span
                                         data-open="Collapse"
                                         data-closed="More"
@@ -145,8 +139,8 @@ function ProfileCard({
                         </Accordion.Header>
                     </Accordion.Item>
                 </div>
-            </Accordion.Root>
-        </Card>
+            </Card>
+        </Accordion.Root>
     );
 }
 
